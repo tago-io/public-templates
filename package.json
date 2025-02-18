@@ -1,0 +1,38 @@
+{
+  "name": "public-templates",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "linter": "biome lint --diagnostic-level=error .",
+    "start": "npx --yes tsx --env-file .env src/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@swc/core": "1.10.15",
+    "@tago-io/sdk": "11.3.8",
+    "@types/lodash-es": "4.17.12",
+    "@types/luxon": "3.4.2",
+    "@types/node": "22.13.1",
+    "@types/uuid": "10.0.0",
+    "@types/validator": "13.12.2",
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1",
+    "better-sqlite3": "11.8.1",
+    "bson-objectid": "2.0.4",
+    "knex": "3.1.0",
+    "lodash-es": "4.17.21",
+    "luxon": "3.5.0",
+    "sqlite3": "5.1.7",
+    "typescript": "5.5.2",
+    "uuid": "11.0.5",
+    "validator": "13.12.0",
+    "vitest": "3.0.5",
+    "zod": "3.24.2"
+  }
+}

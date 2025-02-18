@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../src/schema/dashboard-template.json",
+  "name": "Chicago Bus",
+  "images": {
+    "logo": "./assets/logo.png"
+  },
+  "structure": {
+    "standard": "./standard/structure.json"
+  },
+  "manifest": {
+    "standard": "./standard/template-config.jsonc"
+  },
+  "description": "../description.md"
+}

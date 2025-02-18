@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Template details Configuration Schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "The JSON schema version."
+    },
+    "type": {
+      "type": "string",
+      "enum": ["standard", "blueprint"],
+      "description": "Type of dashboard, which can be either 'standard' or 'blueprint'."
+    },
+    "use_mock": {
+      "type": "boolean",
+      "description": "Flag to indicate if the template should use mock data."
+    },
+    "setup": {
+      "type": "object",
+      "description": "Object containing the setup of devices or analysis information for the template.",
+      "properties": {
+        "analysis": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": ["id", "name", "description"],
+            "additionalProperties": false
+          }
+        },
+        "devices": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": ["id", "name", "description"],
+            "additionalProperties": false
+          }
+        },
+        "blueprints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "device_id": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": ["id", "device_id", "name", "description"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "use_mock",
+    "setup"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": { "type": { "const": "standard" } }
+      },
+      "then": {
+        "properties": {
+          "setup": {
+            "required": ["devices"],
+            "not": {
+              "required": ["blueprints"]
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "type": { "const": "blueprint" } }
+      },
+      "then": {
+        "properties": {
+          "setup": {
+            "required": ["blueprints"],
+            "not": {
+              "required": ["devices"]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

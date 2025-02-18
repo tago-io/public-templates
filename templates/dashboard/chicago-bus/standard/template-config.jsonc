@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../../src/schema/dashboard-template-config.json",
+  "use_mock": true,
+  "type": "standard",
+  "setup": {
+    "analysis": [{
+      "id": "chicago-bus-analysis",
+      "name": "Chicago Bus",
+      "description": "Chicago Bus Analysis"
+    }],
+    "devices": [{
+      "id": "chicago-bus-device",
+      "name": "Chicago Bus",
+      "description": "Chicago Bus Device"
+    }]
+  }
+}

@@ -1,0 +1,1560 @@
+{
+  "dashboard": {
+    "label": "Bus in Chicago",
+    "arrangement": [
+      {
+        "x": 0,
+        "y": 0,
+        "tab": "1619551481168",
+        "width": 2,
+        "height": 7,
+        "widget_id": "60888a272bab760010876ec0"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "tab": "1619551481168",
+        "width": 2,
+        "height": 4.5,
+        "widget_id": "60888a272bab760010876ec4"
+      },
+      {
+        "x": 2,
+        "y": 9,
+        "tab": "1619551481168",
+        "width": 1,
+        "height": 2.5,
+        "widget_id": "60888a272bab760010876ec3"
+      },
+      {
+        "x": 3,
+        "y": 9,
+        "tab": "1619551481168",
+        "width": 1,
+        "height": 2.5,
+        "widget_id": "60888a272bab760010876ec2"
+      },
+      {
+        "x": 0,
+        "y": 14,
+        "tab": "1619551481168",
+        "width": 2,
+        "height": 3.5,
+        "widget_id": "60888a272bab760010876ec1"
+      },
+      {
+        "x": 2,
+        "y": 14,
+        "tab": "1619551481168",
+        "width": 1,
+        "height": 3.5,
+        "widget_id": "60888a272bab760010876ebf"
+      },
+      {
+        "x": 3,
+        "y": 14,
+        "tab": "1619551481168",
+        "width": 1,
+        "height": 3.5,
+        "widget_id": "60888a272bab760010876ec5"
+      },
+      {
+        "x": 0,
+        "y": 21,
+        "tab": "1619551481168",
+        "width": 2,
+        "height": 4.5,
+        "widget_id": "611d6375a63d3c0013a3dfe3"
+      }
+    ],
+    "tags": [],
+    "visible": true,
+    "setup": {},
+    "group_by": [],
+    "tabs": [
+      {
+        "key": "1619551481168",
+        "link": "",
+        "value": "Main"
+      }
+    ],
+    "icon": {
+      "url": "https://api.tago.io/file/547e1bee7dbf3af122c02572/chicago_bus.svg",
+      "color": "#0433ff"
+    },
+    "background": {
+      "type": "color"
+    },
+    "type": "dashboard",
+    "filter": null,
+    "blueprint_devices": null,
+    "blueprint_device_behavior": null,
+    "blueprint_selector_behavior": null,
+    "disable_blueprint_fallback": false,
+    "theme": null
+  },
+  "widgets": [
+    {
+      "display": {
+        "center_options": {
+          "center_all_variables": true,
+          "show_only_last_values": false,
+          "variables": []
+        },
+        "custom_text": {
+          "SEARCH_FOR_FILTER": "Select one or more buses"
+        },
+        "direction_variable": {},
+        "filter_by": "variable",
+        "filter_list_by": "variable",
+        "filter_variables": [],
+        "group_by": "time",
+        "group_markers": true,
+        "header_buttons": [],
+        "help": "",
+        "infobox_config": {
+          "date_format": "",
+          "image": {
+            "behavior": "landscape",
+            "object_fit": "contain",
+            "position": "top"
+          },
+          "show_window_closed": true
+        },
+        "initial_mode": "basic",
+        "intervals": [
+          "5 min",
+          "15 min",
+          "1 hour",
+          "6 hour"
+        ],
+        "max_points": 20,
+        "show_directions": false,
+        "show_filter": true,
+        "show_lines": true,
+        "show_lines_animated": true,
+        "variables": [
+          {
+            "alias_type": "text",
+            "icon_conditions": [],
+            "infobox": {
+              "image": {
+                "static_image": "https://api.tago.io/file/547e1bee7dbf3af122c02572/chigaco_bus_pin.jpg"
+              }
+            },
+            "origin": "60888a20ea380c001298a45d",
+            "pin_config": {
+              "color": "#00a3ff",
+              "icon": "bus",
+              "icon_type": "fixed"
+            },
+            "variable": "location",
+            "alias": "Bus1",
+            "originName": "Bus #1"
+          }
+        ],
+        "initial_zoom": "72"
+      },
+      "label": "Map",
+      "realtime": null,
+      "type": "map",
+      "data": [
+        {
+          "qty": 20,
+          "bucket": "60888a20ea380c001298a45d",
+          "origin": "60888a20ea380c001298a45d",
+          "timezone": "America/Sao_Paulo",
+          "variables": [
+            "location"
+          ],
+          "start_date": "1 hour"
+        }
+      ]
+    },
+    {
+      "display": {
+        "downsample": {
+          "enabled": false,
+          "factor": 10,
+          "threshold": 1000
+        },
+        "group_by": "time",
+        "header_buttons": [],
+        "help": "",
+        "intervals": [
+          ""
+        ],
+        "line_curve": "smooth",
+        "max_points": 20,
+        "order_by": "time",
+        "show_legend": true,
+        "show_point_values": false,
+        "theme": {
+          "color": {
+            "background": null,
+            "header": null,
+            "label": null,
+            "tick": null
+          }
+        },
+        "variables": [
+          {
+            "color": "hsl(210, 71%, 70%)",
+            "origin": "60888a20ea380c001298a45d",
+            "variable": "speed",
+            "alias": "Bus #1",
+            "formula": {
+              "formula_type": "fixed",
+              "unit_type": "fixed"
+            }
+          }
+        ],
+        "x_axis": {
+          "plot_by": "realtime",
+          "type": "time"
+        },
+        "y_axis": {
+          "scale": {
+            "type": "dynamic"
+          },
+          "show_metric_abbreviation": ""
+        }
+      },
+      "label": "Bus Speed ",
+      "realtime": null,
+      "type": "area_chart",
+      "data": [
+        {
+          "qty": 20,
+          "bucket": "60888a20ea380c001298a45d",
+          "origin": "60888a20ea380c001298a45d",
+          "timezone": "America/Sao_Paulo",
+          "variables": [
+            "speed"
+          ],
+          "start_date": "1 hour"
+        }
+      ]
+    },
+    {
+      "display": {
+        "alias": "",
+        "formula": {
+          "fixed_unit": "%",
+          "unit_type": "fixed"
+        },
+        "header_buttons": [],
+        "help": "",
+        "number_format": {
+          "decimals": 1,
+          "show_thousand": false
+        },
+        "range": {
+          "type": "minmax",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "show_variables": false,
+        "theme": {
+          "color": {
+            "background": null,
+            "fill": null,
+            "outline": null,
+            "text": null,
+            "text_border": null
+          }
+        }
+      },
+      "label": "Fuel Bus #1",
+      "realtime": null,
+      "type": "solid",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "60888a20ea380c001298a45d",
+          "origin": "60888a20ea380c001298a45d",
+          "timezone": "America/Sao_Paulo",
+          "variables": [
+            "fuel_level"
+          ]
+        }
+      ]
+    },
+    {
+      "display": {
+        "alias": "",
+        "formula": {
+          "formula_type": "fixed",
+          "fixed_unit": "mph"
+        },
+        "header_buttons": [
+          {
+            "color": null,
+            "icon": "",
+            "text": "",
+            "trigger": "widget",
+            "widget": null
+          }
+        ],
+        "help": "",
+        "number_format": {
+          "decimals": "2"
+        },
+        "range": {
+          "type": "minmax",
+          "minimum": 0,
+          "maximum": 50
+        },
+        "show_variables": false,
+        "theme": {
+          "color": {
+            "background": null,
+            "fill": null,
+            "outline": null,
+            "text": null,
+            "text_border": null
+          }
+        }
+      },
+      "label": "Speed Bus #1",
+      "realtime": null,
+      "type": "angular",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "60888a20ea380c001298a45d",
+          "origin": "60888a20ea380c001298a45d",
+          "timezone": "America/Sao_Paulo",
+          "variables": [
+            "speed"
+          ]
+        }
+      ]
+    },
+    {
+      "display": {
+        "header_buttons": [],
+        "help": "",
+        "theme": {
+          "color": {}
+        },
+        "variables": [
+          {
+            "allow_resize": true,
+            "data_type": "text",
+            "id": "Kz0Talz20t94qTmAK6ssS",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "text_content": "",
+            "show_bold": true,
+            "size": "auto"
+          },
+          {
+            "allow_resize": true,
+            "data_type": "text",
+            "id": "78lK2Eek9G7hL-Z_xZHZ1",
+            "position": {
+              "x": 1,
+              "y": 0
+            },
+            "text_content": "Bus #1",
+            "show_bold": true,
+            "size": "auto"
+          },
+          {
+            "allow_resize": true,
+            "data_type": "text",
+            "id": "2OC5C11nKHRbR6KMlYW5y",
+            "position": {
+              "x": 0,
+              "y": 1
+            },
+            "text_content": "Fuel Level",
+            "show_bold": true,
+            "size": "auto"
+          },
+          {
+            "content_type": "value",
+            "allow_resize": true,
+            "data": {
+              "origin": "60888a20ea380c001298a45d",
+              "variable": "fuel_level",
+              "query": "last_value"
+            },
+            "data_type": "variable",
+            "id": "NCRoGH3zyL9oIVannT841",
+            "position": {
+              "x": 1,
+              "y": 1
+            },
+            "size": "auto"
+          },
+          {
+            "allow_resize": true,
+            "data_type": "text",
+            "id": "L1ia1lVN2JLgQH1XJCimm",
+            "position": {
+              "x": 0,
+              "y": 2
+            },
+            "text_content": "Trip odometer",
+            "show_bold": true,
+            "size": "auto"
+          },
+          {
+            "content_type": "value",
+            "allow_resize": true,
+            "data": {
+              "origin": "60888a20ea380c001298a45d",
+              "variable": "trip_odometer",
+              "query": "last_value"
+            },
+            "data_type": "variable",
+            "id": "CTmwrNb9BD4psg0OWP86z",
+            "position": {
+              "x": 1,
+              "y": 2
+            },
+            "size": "auto"
+          },
+          {
+            "allow_resize": true,
+            "data_type": "text",
+            "id": "zu_krmUijMrgJbeOm0vYM",
+            "position": {
+              "x": 0,
+              "y": 3
+            },
+            "text_content": "Speed",
+            "show_bold": true,
+            "size": "auto"
+          },
+          {
+            "content_type": "value",
+            "allow_resize": true,
+            "data": {
+              "origin": "60888a20ea380c001298a45d",
+              "variable": "speed",
+              "query": "last_value"
+            },
+            "data_type": "variable",
+            "id": "B9jtyLwUXAnkuNgsacKoD",
+            "position": {
+              "x": 1,
+              "y": 3
+            },
+            "size": "auto"
+          },
+          {
+            "allow_resize": true,
+            "data_type": "text",
+            "id": "P9kI6T1nXFFIBS5m00-1p",
+            "position": {
+              "x": 0,
+              "y": 4
+            },
+            "text_content": "Internal temperature",
+            "show_bold": true,
+            "size": "auto"
+          },
+          {
+            "allow_resize": true,
+            "data_type": "text",
+            "id": "cfpub6BB6Q1NzzhTD-nPz",
+            "position": {
+              "x": 1,
+              "y": 4
+            },
+            "text_content": "N/A",
+            "show_bold": true,
+            "size": "auto"
+          },
+          {
+            "allow_resize": true,
+            "data_type": "text",
+            "id": "TuhBabwtokUtTaDByWCiT",
+            "position": {
+              "x": 0,
+              "y": 5
+            },
+            "text_content": "Air conditioning (ON/OFF)",
+            "show_bold": true,
+            "size": "auto"
+          },
+          {
+            "allow_resize": true,
+            "data_type": "text",
+            "id": "1ATc2tsIvStKTVH3Lz6KN",
+            "position": {
+              "x": 1,
+              "y": 5
+            },
+            "text_content": "OFF",
+            "show_bold": true,
+            "size": "auto"
+          }
+        ]
+      },
+      "label": "Tago Analysis (Status)",
+      "realtime": null,
+      "type": "static_table",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "60888a20ea380c001298a45d",
+          "origin": "60888a20ea380c001298a45d",
+          "timezone": "America/Sao_Paulo",
+          "variables": [
+            "fuel_level",
+            "trip_odometer",
+            "speed"
+          ]
+        }
+      ]
+    },
+    {
+      "display": {
+        "header_buttons": [],
+        "help": "",
+        "show_last_update": false,
+        "theme": {
+          "color": {
+            "background": null,
+            "fill": null,
+            "header": null,
+            "outline": null,
+            "text": null,
+            "text_border": null
+          }
+        }
+      },
+      "label": "Chicago Time",
+      "realtime": null,
+      "type": "clock",
+      "data": [
+        {
+          "timezone": "America/Sao_Paulo"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "qty": 1000
+        }
+      ],
+      "display": {
+        "header_buttons": [],
+        "help": "",
+        "value": "#### This dashboard uses simulated data that is generated by TagoIO scripts. You can see these scripts at TagoIO [Github](https://github.com/tago-io/analysis-chicagobus) page."
+      },
+      "label": "NOTE",
+      "realtime": null,
+      "type": "note"
+    }
+  ],
+  "mock_data": [
+    {
+      "id": "67b3f40436089a000acf3287",
+      "time": "2025-02-18T02:44:20.095Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739846660093",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f40436089a000acf3286",
+      "time": "2025-02-18T02:44:20.095Z",
+      "value": 4.81,
+      "variable": "speed",
+      "group": "1739846660093",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f40436089a000acf3285",
+      "time": "2025-02-18T02:44:20.095Z",
+      "unit": "%",
+      "value": 16,
+      "variable": "fuel_level",
+      "group": "1739846660093",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f40436089a000acf3284",
+      "time": "2025-02-18T02:44:20.094Z",
+      "value": "41.887392,-87.626122",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.626122,
+          41.887392
+        ]
+      },
+      "group": "1739846660093",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f3fdcaec190009225efd",
+      "time": "2025-02-18T02:44:13.286Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739846653283",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f3fdcaec190009225efc",
+      "time": "2025-02-18T02:44:13.286Z",
+      "value": 4.36,
+      "variable": "speed",
+      "group": "1739846653283",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f3fdcaec190009225efb",
+      "time": "2025-02-18T02:44:13.285Z",
+      "unit": "%",
+      "value": 16,
+      "variable": "fuel_level",
+      "group": "1739846653283",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f3fdcaec190009225efa",
+      "time": "2025-02-18T02:44:13.285Z",
+      "value": "41.887392,-87.626122",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.626122,
+          41.887392
+        ]
+      },
+      "group": "1739846653283",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f3405e7119000a5e162d",
+      "time": "2025-02-18T02:41:04.246Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739846464243",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f3405e7119000a5e162c",
+      "time": "2025-02-18T02:41:04.246Z",
+      "value": 3.04,
+      "variable": "speed",
+      "group": "1739846464243",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f3405e7119000a5e162b",
+      "time": "2025-02-18T02:41:04.246Z",
+      "unit": "%",
+      "value": 17,
+      "variable": "fuel_level",
+      "group": "1739846464243",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f3405e7119000a5e162a",
+      "time": "2025-02-18T02:41:04.246Z",
+      "value": "41.888286,-87.625221",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.625221,
+          41.888286
+        ]
+      },
+      "group": "1739846464243",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f33d1f2a61000a9046fa",
+      "time": "2025-02-18T02:41:01.694Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739846461691",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f33d1f2a61000a9046f9",
+      "time": "2025-02-18T02:41:01.694Z",
+      "value": 4.88,
+      "variable": "speed",
+      "group": "1739846461691",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f33d1f2a61000a9046f8",
+      "time": "2025-02-18T02:41:01.694Z",
+      "unit": "%",
+      "value": 17,
+      "variable": "fuel_level",
+      "group": "1739846461691",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f33d1f2a61000a9046f7",
+      "time": "2025-02-18T02:41:01.693Z",
+      "value": "41.888286,-87.625221",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.625221,
+          41.888286
+        ]
+      },
+      "group": "1739846461691",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f27d5ddef4000a9c0303",
+      "time": "2025-02-18T02:37:49.052Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739846269049",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f27d5ddef4000a9c0302",
+      "time": "2025-02-18T02:37:49.052Z",
+      "value": 1.64,
+      "variable": "speed",
+      "group": "1739846269049",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f27d5ddef4000a9c0301",
+      "time": "2025-02-18T02:37:49.052Z",
+      "unit": "%",
+      "value": 18,
+      "variable": "fuel_level",
+      "group": "1739846269049",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f27d5ddef4000a9c0300",
+      "time": "2025-02-18T02:37:49.051Z",
+      "value": "41.88833,-87.624792",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.624792,
+          41.88833
+        ]
+      },
+      "group": "1739846269049",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f275d6423c000ad54d9b",
+      "time": "2025-02-18T02:37:41.620Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739846261616",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f275d6423c000ad54d9a",
+      "time": "2025-02-18T02:37:41.619Z",
+      "value": 0.89,
+      "variable": "speed",
+      "group": "1739846261616",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f275d6423c000ad54d99",
+      "time": "2025-02-18T02:37:41.619Z",
+      "unit": "%",
+      "value": 18,
+      "variable": "fuel_level",
+      "group": "1739846261616",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f275d6423c000ad54d98",
+      "time": "2025-02-18T02:37:41.619Z",
+      "value": "41.88833,-87.624792",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.624792,
+          41.88833
+        ]
+      },
+      "group": "1739846261616",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f1b836089a000acef27b",
+      "time": "2025-02-18T02:34:32.117Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739846072114",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f1b836089a000acef27a",
+      "time": "2025-02-18T02:34:32.117Z",
+      "value": 4.55,
+      "variable": "speed",
+      "group": "1739846072114",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f1b836089a000acef279",
+      "time": "2025-02-18T02:34:32.117Z",
+      "unit": "%",
+      "value": 19,
+      "variable": "fuel_level",
+      "group": "1739846072114",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f1b836089a000acef278",
+      "time": "2025-02-18T02:34:32.116Z",
+      "value": "41.886817,-87.624448",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.624448,
+          41.886817
+        ]
+      },
+      "group": "1739846072114",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f1b2627515000919a825",
+      "time": "2025-02-18T02:34:26.196Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739846066193",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f1b2627515000919a824",
+      "time": "2025-02-18T02:34:26.196Z",
+      "value": 3.82,
+      "variable": "speed",
+      "group": "1739846066193",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f1b2627515000919a823",
+      "time": "2025-02-18T02:34:26.196Z",
+      "unit": "%",
+      "value": 19,
+      "variable": "fuel_level",
+      "group": "1739846066193",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f1b2627515000919a822",
+      "time": "2025-02-18T02:34:26.196Z",
+      "value": "41.884314,-87.624448",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.624448,
+          41.884314
+        ]
+      },
+      "group": "1739846066193",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f0e570d187000a1c7899",
+      "time": "2025-02-18T02:31:01.995Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739845861991",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f0e570d187000a1c7898",
+      "time": "2025-02-18T02:31:01.995Z",
+      "value": 0,
+      "variable": "speed",
+      "group": "1739845861991",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f0e570d187000a1c7897",
+      "time": "2025-02-18T02:31:01.995Z",
+      "unit": "%",
+      "value": 20,
+      "variable": "fuel_level",
+      "group": "1739845861991",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f0e570d187000a1c7896",
+      "time": "2025-02-18T02:31:01.994Z",
+      "value": "41.881923,-87.624205",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.624205,
+          41.881923
+        ]
+      },
+      "group": "1739845861991",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f0e163586e000b009f27",
+      "time": "2025-02-18T02:30:57.577Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739845857574",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f0e163586e000b009f26",
+      "time": "2025-02-18T02:30:57.577Z",
+      "value": 0,
+      "variable": "speed",
+      "group": "1739845857574",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f0e163586e000b009f25",
+      "time": "2025-02-18T02:30:57.577Z",
+      "unit": "%",
+      "value": 20,
+      "variable": "fuel_level",
+      "group": "1739845857574",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f0e163586e000b009f24",
+      "time": "2025-02-18T02:30:57.576Z",
+      "value": "41.881546,-87.624205",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.624205,
+          41.881546
+        ]
+      },
+      "group": "1739845857574",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f022f40ba2000a497507",
+      "time": "2025-02-18T02:27:46.683Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739845666680",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f022f40ba2000a497506",
+      "time": "2025-02-18T02:27:46.683Z",
+      "value": 9.54,
+      "variable": "speed",
+      "group": "1739845666680",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f022f40ba2000a497505",
+      "time": "2025-02-18T02:27:46.683Z",
+      "unit": "%",
+      "value": 21,
+      "variable": "fuel_level",
+      "group": "1739845666680",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f022f40ba2000a497504",
+      "time": "2025-02-18T02:27:46.683Z",
+      "value": "41.877992,-87.624205",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.624205,
+          41.877992
+        ]
+      },
+      "group": "1739845666680",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f016f40ba2000a4973dc",
+      "time": "2025-02-18T02:27:34.466Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739845654463",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f016f40ba2000a4973db",
+      "time": "2025-02-18T02:27:34.466Z",
+      "value": 11.89,
+      "variable": "speed",
+      "group": "1739845654463",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f016f40ba2000a4973da",
+      "time": "2025-02-18T02:27:34.466Z",
+      "unit": "%",
+      "value": 21,
+      "variable": "fuel_level",
+      "group": "1739845654463",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3f016f40ba2000a4973d9",
+      "time": "2025-02-18T02:27:34.465Z",
+      "value": "41.87856,-87.624205",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.624205,
+          41.87856
+        ]
+      },
+      "group": "1739845654463",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ef48576be9000a694c30",
+      "time": "2025-02-18T02:24:08.775Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739845448772",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ef48576be9000a694c2f",
+      "time": "2025-02-18T02:24:08.775Z",
+      "value": 7.83,
+      "variable": "speed",
+      "group": "1739845448772",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ef48576be9000a694c2e",
+      "time": "2025-02-18T02:24:08.775Z",
+      "unit": "%",
+      "value": 22,
+      "variable": "fuel_level",
+      "group": "1739845448772",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ef48576be9000a694c2d",
+      "time": "2025-02-18T02:24:08.774Z",
+      "value": "41.875697,-87.625578",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.625578,
+          41.875697
+        ]
+      },
+      "group": "1739845448772",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ef48f52f96000a803f37",
+      "time": "2025-02-18T02:24:08.504Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739845448500",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ef48f52f96000a803f36",
+      "time": "2025-02-18T02:24:08.504Z",
+      "value": 7.55,
+      "variable": "speed",
+      "group": "1739845448500",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ef48f52f96000a803f35",
+      "time": "2025-02-18T02:24:08.504Z",
+      "unit": "%",
+      "value": 22,
+      "variable": "fuel_level",
+      "group": "1739845448500",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ef48f52f96000a803f34",
+      "time": "2025-02-18T02:24:08.503Z",
+      "value": "41.875697,-87.627687",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.627687,
+          41.875697
+        ]
+      },
+      "group": "1739845448500",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ee7c70d187000a1c37fc",
+      "time": "2025-02-18T02:20:44.556Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739845244553",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ee7c70d187000a1c37fa",
+      "time": "2025-02-18T02:20:44.556Z",
+      "unit": "%",
+      "value": 24,
+      "variable": "fuel_level",
+      "group": "1739845244553",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ee7c70d187000a1c37fb",
+      "time": "2025-02-18T02:20:44.556Z",
+      "value": 3.22,
+      "variable": "speed",
+      "group": "1739845244553",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ee7c70d187000a1c37f9",
+      "time": "2025-02-18T02:20:44.555Z",
+      "value": "41.875501,-87.633624",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.633624,
+          41.875501
+        ]
+      },
+      "group": "1739845244553",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ee74394a4d000a0a9ec4",
+      "time": "2025-02-18T02:20:36.206Z",
+      "unit": "%",
+      "value": 24,
+      "variable": "fuel_level",
+      "group": "1739845236203",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ee74394a4d000a0a9ec5",
+      "time": "2025-02-18T02:20:36.206Z",
+      "value": 7.39,
+      "variable": "speed",
+      "group": "1739845236203",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ee74394a4d000a0a9ec6",
+      "time": "2025-02-18T02:20:36.206Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739845236203",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ee74394a4d000a0a9ec3",
+      "time": "2025-02-18T02:20:36.205Z",
+      "value": "41.875501,-87.633624",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.633624,
+          41.875501
+        ]
+      },
+      "group": "1739845236203",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3edb3a04298000ac1bdce",
+      "time": "2025-02-18T02:17:23.621Z",
+      "value": 5.23,
+      "variable": "speed",
+      "group": "1739845043618",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3edb3a04298000ac1bdcf",
+      "time": "2025-02-18T02:17:23.621Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739845043618",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3edb3a04298000ac1bdcc",
+      "time": "2025-02-18T02:17:23.620Z",
+      "value": "41.875788,-87.633713",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.633713,
+          41.875788
+        ]
+      },
+      "group": "1739845043618",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3edb3a04298000ac1bdcd",
+      "time": "2025-02-18T02:17:23.620Z",
+      "unit": "%",
+      "value": 25,
+      "variable": "fuel_level",
+      "group": "1739845043618",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3edae6275150009193be1",
+      "time": "2025-02-18T02:17:18.489Z",
+      "value": 0.47,
+      "variable": "speed",
+      "group": "1739845038486",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3edae6275150009193be2",
+      "time": "2025-02-18T02:17:18.489Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739845038486",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3edae6275150009193bdf",
+      "time": "2025-02-18T02:17:18.488Z",
+      "value": "41.875813,-87.633713",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.633713,
+          41.875813
+        ]
+      },
+      "group": "1739845038486",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3edae6275150009193be0",
+      "time": "2025-02-18T02:17:18.488Z",
+      "unit": "%",
+      "value": 25,
+      "variable": "fuel_level",
+      "group": "1739845038486",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ecd3caec19000921a28a",
+      "time": "2025-02-18T02:13:39.133Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739844819130",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ecd3caec19000921a287",
+      "time": "2025-02-18T02:13:39.132Z",
+      "value": "41.876808,-87.635496",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.635496,
+          41.876808
+        ]
+      },
+      "group": "1739844819130",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ecd3caec19000921a288",
+      "time": "2025-02-18T02:13:39.132Z",
+      "unit": "%",
+      "value": 26,
+      "variable": "fuel_level",
+      "group": "1739844819130",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ecd3caec19000921a289",
+      "time": "2025-02-18T02:13:39.132Z",
+      "value": 8.77,
+      "variable": "speed",
+      "group": "1739844819130",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3eccdbf3e17000a09c5e8",
+      "time": "2025-02-18T02:13:33.373Z",
+      "unit": "%",
+      "value": 26,
+      "variable": "fuel_level",
+      "group": "1739844813369",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3eccdbf3e17000a09c5e9",
+      "time": "2025-02-18T02:13:33.373Z",
+      "value": 3.3,
+      "variable": "speed",
+      "group": "1739844813369",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3eccdbf3e17000a09c5ea",
+      "time": "2025-02-18T02:13:33.373Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739844813369",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3eccdbf3e17000a09c5e7",
+      "time": "2025-02-18T02:13:33.372Z",
+      "value": "41.876808,-87.634625",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.634625,
+          41.876808
+        ]
+      },
+      "group": "1739844813369",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ec0df52f96000a7fe6f4",
+      "time": "2025-02-18T02:10:21.818Z",
+      "unit": "%",
+      "value": 27,
+      "variable": "fuel_level",
+      "group": "1739844621815",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ec0df52f96000a7fe6f5",
+      "time": "2025-02-18T02:10:21.818Z",
+      "value": 5.71,
+      "variable": "speed",
+      "group": "1739844621815",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ec0df52f96000a7fe6f6",
+      "time": "2025-02-18T02:10:21.818Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739844621815",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ec0df52f96000a7fe6f3",
+      "time": "2025-02-18T02:10:21.817Z",
+      "value": "41.876816,-87.636808",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.636808,
+          41.876816
+        ]
+      },
+      "group": "1739844621815",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ec075ddef4000a9b53f0",
+      "time": "2025-02-18T02:10:15.308Z",
+      "unit": "%",
+      "value": 27,
+      "variable": "fuel_level",
+      "group": "1739844615305",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ec075ddef4000a9b53f1",
+      "time": "2025-02-18T02:10:15.308Z",
+      "value": 6.23,
+      "variable": "speed",
+      "group": "1739844615305",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ec075ddef4000a9b53f2",
+      "time": "2025-02-18T02:10:15.308Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739844615305",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ec075ddef4000a9b53ef",
+      "time": "2025-02-18T02:10:15.307Z",
+      "value": "41.876816,-87.636808",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.636808,
+          41.876816
+        ]
+      },
+      "group": "1739844615305",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3eb45f52f96000a7fd2c3",
+      "time": "2025-02-18T02:07:01.301Z",
+      "unit": "%",
+      "value": 28,
+      "variable": "fuel_level",
+      "group": "1739844421298",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3eb45f52f96000a7fd2c4",
+      "time": "2025-02-18T02:07:01.301Z",
+      "value": 9.42,
+      "variable": "speed",
+      "group": "1739844421298",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3eb45f52f96000a7fd2c5",
+      "time": "2025-02-18T02:07:01.301Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739844421298",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3eb45f52f96000a7fd2c2",
+      "time": "2025-02-18T02:07:01.300Z",
+      "value": "41.878303,-87.637054",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.637054,
+          41.878303
+        ]
+      },
+      "group": "1739844421298",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3eb40d6423c000ad4852b",
+      "time": "2025-02-18T02:06:56.872Z",
+      "value": 2.93,
+      "variable": "speed",
+      "group": "1739844416869",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3eb40d6423c000ad4852c",
+      "time": "2025-02-18T02:06:56.872Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739844416869",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3eb40d6423c000ad48529",
+      "time": "2025-02-18T02:06:56.871Z",
+      "value": "41.879033,-87.637054",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.637054,
+          41.879033
+        ]
+      },
+      "group": "1739844416869",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3eb40d6423c000ad4852a",
+      "time": "2025-02-18T02:06:56.871Z",
+      "unit": "%",
+      "value": 28,
+      "variable": "fuel_level",
+      "group": "1739844416869",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ea8139006c000ab7beb8",
+      "time": "2025-02-18T02:03:45.265Z",
+      "unit": "%",
+      "value": 29,
+      "variable": "fuel_level",
+      "group": "1739844225260",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ea8139006c000ab7beb9",
+      "time": "2025-02-18T02:03:45.265Z",
+      "value": 16.92,
+      "variable": "speed",
+      "group": "1739844225260",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ea8139006c000ab7beba",
+      "time": "2025-02-18T02:03:45.265Z",
+      "value": 0.19,
+      "variable": "trip_odometer",
+      "group": "1739844225260",
+      "device": "60888a20ea380c001298a45d"
+    },
+    {
+      "id": "67b3ea8139006c000ab7beb7",
+      "time": "2025-02-18T02:03:45.264Z",
+      "value": "41.882209,-87.637054",
+      "variable": "location",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -87.637054,
+          41.882209
+        ]
+      },
+      "group": "1739844225260",
+      "device": "60888a20ea380c001298a45d"
+    }
+  ]
+}

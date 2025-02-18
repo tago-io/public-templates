@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "JSON Schema for main Template information",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "The JSON schema version."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the configuration."
+    },
+    "images": {
+      "type": "object",
+      "description": "A collection of image paths.",
+      "properties": {
+        "logo": {
+          "type": "string",
+          "description": "Path to the logo image."
+        },
+        "banner": {
+          "type": "string",
+          "description": "Path to the banner image."
+        }
+      },
+      "required": ["logo"]
+    },
+    "structure": {
+      "type": "object",
+      "description": "Paths to structure files.",
+      "properties": {
+        "standard": {
+          "type": "string",
+          "description": "Path to the standard structure file."
+        },
+        "blueprint": {
+          "type": "string",
+          "description": "Path to the blueprint structure file."
+        }
+      },
+      "anyOf": [
+        {
+          "required": ["standard"]
+        },
+        {
+          "required": ["blueprint"]
+        }
+      ]
+    },
+    "manifest": {
+      "type": "object",
+      "description": "Paths to manifest files.",
+      "properties": {
+        "standard": {
+          "type": "string",
+          "description": "Path to the standard manifest file."
+        },
+        "blueprint": {
+          "type": "string",
+          "description": "Path to the blueprint manifest file."
+        }
+      },
+      "anyOf": [
+        {
+          "required": ["standard"]
+        },
+        {
+          "required": ["blueprint"]
+        }
+      ]
+    },
+    "description": {
+      "type": "string",
+      "description": "Path to the description file."
+    }
+  },
+  "additionalProperties": false,
+  "required": ["name", "images"]
+}
