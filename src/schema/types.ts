@@ -22,7 +22,7 @@ type DashboardTemplateManifest = {
     | { standard: string }
     | { blueprint: string }
   );
-  description?: string;
+  description: string;
 };
 
 type DashboardTemplateConfig = {

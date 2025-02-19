@@ -110,13 +110,13 @@ async function validateTemplateFiles(directoryPath: string): Promise<void> {
         throw `manifest.jsonc manifest file not found in ${filePath}`;
       }
 
-      if (!fs.existsSync(path.join(filePath, "description.md"))) {
-        throw `description.md file not found in ${filePath}`;
-      }
-
       const dashboardTemplateData: DashboardTemplateManifest = JSON.parse(
         fs.readFileSync(manifestDir, "utf8")
       );
+
+      if (!fs.existsSync(path.join(filePath, dashboardTemplateData.description))) {
+        throw `${dashboardTemplateData.description} file not found in ${filePath}`;
+      }
 
       if (dashboardTemplateData?.images.logo && !fs.existsSync(path.join(filePath, dashboardTemplateData?.images.logo))) {
         throw `logo is being passed on images.logo, but file not found in ${filePath}`;

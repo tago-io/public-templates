@@ -14,6 +14,19 @@ const zDevicesField = z.object({
 const zBlueprintsField = z.object({
   name: z.string(),
   description: z.string(),
+  conditions: z.array(
+    z.object({
+      key: z.string(),
+      value: z.string(),
+    })
+  ),
+  filter_conditions: z.array(
+    z.object({
+      type: z.string(),
+      tag_key: z.string(),
+      blueprint_device: z.string(),
+    })
+  ).nullish(),
 });
 
 const zSetup = z
