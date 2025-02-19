@@ -7,6 +7,7 @@ import dashboardTemplateSchema from "../schema/dashboard-template.json" assert {
 import dashboardTemplateConfigSchema from "../schema/dashboard-template-config.json" assert { type: "json" };
 import type { DashboardTemplateConfig, DashboardTemplateManifest } from "../schema/types";
 import { zDashboardStructure } from "../validator/dashboard-structure";
+import { generateID } from "../helpers/generate-id";
 
 const __filename = nodeUrl.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -23,6 +24,8 @@ addFormats(ajv);
 // Compile Dashboard template schemas
 const validateDashTemplate = ajv.compile(dashboardTemplateSchema);
 const validateDashTemplateConfig = ajv.compile(dashboardTemplateConfigSchema);
+
+const ids = new Set<string>();
 
 function validateTemplateConfig(
   templateData: DashboardTemplateManifest,
@@ -80,6 +83,13 @@ function validateTemplateConfig(
         2
       )}`;
     }
+
+    const id = generateID(templateData.name, configData.type);
+
+    if (ids.has(id)) {
+      throw `Name ${templateData.name} and type ${configData.type} already exists. Please change the template name or type.`;
+    }
+    ids.add(id);
   }
 }
 
@@ -100,9 +110,21 @@ async function validateTemplateFiles(directoryPath: string): Promise<void> {
         throw `manifest.jsonc manifest file not found in ${filePath}`;
       }
 
+      if (!fs.existsSync(path.join(filePath, "description.md"))) {
+        throw `description.md file not found in ${filePath}`;
+      }
+
       const dashboardTemplateData: DashboardTemplateManifest = JSON.parse(
         fs.readFileSync(manifestDir, "utf8")
       );
+
+      if (dashboardTemplateData?.images.logo && !fs.existsSync(path.join(filePath, dashboardTemplateData?.images.logo))) {
+        throw `logo is being passed on images.logo, but file not found in ${filePath}`;
+      }
+
+      if (dashboardTemplateData?.images.banner && !fs.existsSync(path.join(filePath, dashboardTemplateData?.images.banner))) {
+        throw `logo is being passed on images.banner, but file not found in ${filePath}`;
+      }
 
       for (const element of Object.keys(dashboardTemplateData?.manifest || {})) {
         if (!fs.existsSync(path.join(filePath, element))) {

@@ -25,9 +25,6 @@
           "items": {
             "type": "object",
             "properties": {
-              "id": {
-                "type": "string"
-              },
               "name": {
                 "type": "string"
               },
@@ -35,7 +32,7 @@
                 "type": "string"
               }
             },
-            "required": ["id", "name", "description"],
+            "required": ["name", "description"],
             "additionalProperties": false
           }
         },
@@ -44,9 +41,6 @@
           "items": {
             "type": "object",
             "properties": {
-              "id": {
-                "type": "string"
-              },
               "name": {
                 "type": "string"
               },
@@ -54,7 +48,7 @@
                 "type": "string"
               }
             },
-            "required": ["id", "name", "description"],
+            "required": ["name", "description"],
             "additionalProperties": false
           }
         },
@@ -63,20 +57,14 @@
           "items": {
             "type": "object",
             "properties": {
-              "id": {
-                "type": "string"
-              },
               "name": {
-                "type": "string"
-              },
-              "device_id": {
                 "type": "string"
               },
               "description": {
                 "type": "string"
               }
             },
-            "required": ["id", "device_id", "name", "description"],
+            "required": ["name", "description"],
             "additionalProperties": false
           }
         }

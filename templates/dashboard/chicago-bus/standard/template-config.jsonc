@@ -4,12 +4,10 @@
   "type": "standard",
   "setup": {
     "analysis": [{
-      "id": "chicago-bus-analysis",
       "name": "Chicago Bus",
       "description": "Chicago Bus Analysis"
     }],
     "devices": [{
-      "id": "chicago-bus-device",
       "name": "Chicago Bus",
       "description": "Chicago Bus Device"
     }]

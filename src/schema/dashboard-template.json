@@ -24,7 +24,7 @@
           "description": "Path to the banner image."
         }
       },
-      "required": ["logo"]
+      "required": []
     },
     "structure": {
       "type": "object",

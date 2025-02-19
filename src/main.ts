@@ -1,6 +1,6 @@
 const fn = process.argv[2];
-if (fn === "validator") {
-  import("./functions/tagoio-validator");
+if (fn === "validate") {
+  import("./functions/validate-templates");
 } else if (fn === "generate") {
   import("./functions/generate-template-db");
 } else {

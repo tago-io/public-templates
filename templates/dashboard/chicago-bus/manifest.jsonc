@@ -10,5 +10,5 @@
   "manifest": {
     "standard": "./standard/template-config.jsonc"
   },
-  "description": "../description.md"
+  "description": "./description.md"
 }
