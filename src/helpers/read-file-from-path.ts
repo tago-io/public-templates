@@ -1,7 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
+import { deflate } from "node:zlib";
+import { promisify } from "node:util";
 
-function readFileFromPath(filePath: string, file?: string, buffer?: boolean): Buffer | string | null {
+const deflateAsync = promisify(deflate);
+
+async function readFileFromPath(filePath: string, file?: string, compress?: boolean): Promise<Buffer | string | null> {
   if (!file) {
     return null;
   }
@@ -12,8 +16,10 @@ function readFileFromPath(filePath: string, file?: string, buffer?: boolean): Bu
     return null;
   }
 
-  if (buffer) {
-    return fs.readFileSync(directory);
+  if (compress) {
+    // ? Compress the device data
+    const data = await deflateAsync(fs.readFileSync(directory));
+    return data;
   }
 
   return fs.readFileSync(directory, "utf8");

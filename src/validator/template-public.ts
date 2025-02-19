@@ -20,13 +20,15 @@ const zBlueprintsField = z.object({
       value: z.string(),
     })
   ),
-  filter_conditions: z.array(
-    z.object({
-      type: z.string(),
-      tag_key: z.string(),
-      blueprint_device: z.string(),
-    })
-  ).nullish(),
+  filter_conditions: z
+    .array(
+      z.object({
+        type: z.string(),
+        tag_key: z.string(),
+        blueprint_device: z.string(),
+      })
+    )
+    .nullish(),
 });
 
 const zSetup = z
@@ -50,12 +52,23 @@ const zTemplatePublic = z
     id: zResourceID,
     name: zName,
     type: z.enum(["dashboard_standard", "dashboard_blueprint"]),
-    structure: z.instanceof(Buffer),
     description: z.string(),
     logo: z.string().nullish(),
     banner: z.string().nullish(),
     setup: zSetup,
     use_mock: z.boolean().default(false),
+    structure: z.instanceof(Buffer).refine((value) => {
+      if (!value) {
+        return false;
+      }
+
+      const size = Buffer.byteLength(value, "utf8");
+
+      if (size > 100_000) {
+        return false;
+      }
+      return true;
+    }, "structure size is too big, max 100kb"),
   })
   .superRefine((data, ctx) => {
     if (data.type === "dashboard_standard" && (!data.setup.devices || data.setup.blueprints)) {

@@ -24,8 +24,8 @@ async function createTemplate(knexClient: Knex, templateData: DashboardTemplateM
     const data = {
       id: generateID(templateData.name, configData.type),
       name: templateData.name,
-      structure: readFileFromPath(filePath, templateData.structure?.[validateType], true),
-      description: readFileFromPath(filePath, templateData.description),
+      structure: await readFileFromPath(filePath, templateData.structure?.[validateType], true),
+      description: await readFileFromPath(filePath, templateData.description),
       logo: generateAssetURL(filePath, templateData?.images?.logo),
       banner: generateAssetURL(filePath, templateData?.images?.banner),
       setup: configData.setup,
