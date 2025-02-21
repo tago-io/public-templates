@@ -9,7 +9,7 @@ export async function up(knex: Knex): Promise<void> {
       table.text("description").defaultTo(null);
       table.boolean("use_mock").defaultTo(false);
       table.binary("structure").notNullable();
-      table.jsonb("setup").notNullable();
+      table.text("setup").notNullable();
       table.text("logo");
       table.text("banner");
 

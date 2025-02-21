@@ -85,6 +85,11 @@ const zTemplatePublic = z
         path: ["setup"],
       });
     }
+  }).transform((data) => {
+    return {
+      ...data,
+      setup: JSON.stringify(data.setup),
+    };
   });
 
 type TemplatePublic = z.infer<typeof zTemplatePublic>;
