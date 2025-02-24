@@ -28,6 +28,10 @@
           "items": {
             "type": "object",
             "properties": {
+              "id": {
+                "type": "string",
+                "description": "Analysis ID to be replaced in the template installation."
+              },
               "name": {
                 "type": "string"
               },
@@ -36,6 +40,7 @@
               }
             },
             "required": [
+              "id",
               "name",
               "description"
             ],
@@ -47,6 +52,10 @@
           "items": {
             "type": "object",
             "properties": {
+              "id": {
+                "type": "string",
+                "description": "Device ID to be replaced in the template installation. This ID must the included in widget object"
+              },
               "name": {
                 "type": "string"
               },
@@ -55,6 +64,7 @@
               }
             },
             "required": [
+              "id",
               "name",
               "description"
             ],
@@ -67,7 +77,16 @@
             "type": "object",
             "properties": {
               "id": {
-                "type": "string"
+                "type": "string",
+                "description": "Blueprint ID to be replaced in the template installation."
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "device",
+                  "entity"
+                ],
+                "description": "Type of resource to be replaced in the template installation."
               },
               "name": {
                 "type": "string"
@@ -121,6 +140,8 @@
                     }
                   },
                   "required": [
+                    "id",
+                    "name",
                     "type",
                     "tag_key",
                     "blueprint_device"

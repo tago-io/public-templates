@@ -3,11 +3,8 @@
   "use_mock": true,
   "type": "standard",
   "setup": {
-    "analysis": [{
-      "name": "Chicago Bus",
-      "description": "Chicago Bus Analysis"
-    }],
     "devices": [{
+      "id": "60888a20ea380c001298a45d",
       "name": "Chicago Bus",
       "description": "Chicago Bus Device"
     }]
