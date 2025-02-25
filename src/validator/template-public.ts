@@ -2,16 +2,20 @@ import { z } from "zod";
 import { zName, zResourceID } from "./utils/common";
 
 const zAnalysisField = z.object({
+  id: zResourceID,
   name: z.string(),
   description: z.string(),
 });
 
 const zDevicesField = z.object({
+  id: zResourceID,
   name: z.string(),
   description: z.string(),
 });
 
 const zBlueprintsField = z.object({
+  id: zResourceID,
+  type: z.enum(["device", "entity"]),
   name: z.string(),
   description: z.string(),
   conditions: z.array(

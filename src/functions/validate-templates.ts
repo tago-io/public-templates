@@ -59,7 +59,7 @@ function validateTemplateConfig(
       throw `field 'type' does not match in ${detailsPath}. Should be ${validateType}`;
     }
 
-    const isConfigValid = validateDashTemplateConfig(configData); // GPT: issue is happening here
+    const isConfigValid = validateDashTemplateConfig(configData);
     if (!isConfigValid) {
       throw `Validation errors in ${detailsPath}.\n\n${JSON.stringify(
         validateDashTemplateConfig.errors,

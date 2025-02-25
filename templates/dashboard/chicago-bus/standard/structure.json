@@ -169,7 +169,8 @@
           ],
           "start_date": "1 hour"
         }
-      ]
+      ],
+      "id": "60888a272bab760010876ec0"
     },
     {
       "display": {
@@ -234,7 +235,8 @@
           ],
           "start_date": "1 hour"
         }
-      ]
+      ],
+      "id": "60888a272bab760010876ec4"
     },
     {
       "display": {
@@ -278,7 +280,8 @@
             "fuel_level"
           ]
         }
-      ]
+      ],
+      "id": "60888a272bab760010876ec3"
     },
     {
       "display": {
@@ -329,7 +332,8 @@
             "speed"
           ]
         }
-      ]
+      ],
+      "id": "60888a272bab760010876ec2"
     },
     {
       "display": {
@@ -512,7 +516,8 @@
             "speed"
           ]
         }
-      ]
+      ],
+      "id": "60888a272bab760010876ec1"
     },
     {
       "display": {
@@ -537,7 +542,8 @@
         {
           "timezone": "America/Sao_Paulo"
         }
-      ]
+      ],
+      "id": "60888a272bab760010876ebf"
     },
     {
       "data": [
@@ -552,7 +558,8 @@
       },
       "label": "NOTE",
       "realtime": null,
-      "type": "note"
+      "type": "note",
+      "id": "60888a272bab760010876ec5"
     }
   ],
   "mock_data": [

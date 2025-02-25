@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { DateTime } from "luxon";
-import { zResourceID, zResourceIDAutoGen, zDateAutoGen, parseRelativeDate } from "./utils/common.ts";
+import { zResourceID, zResourceIDAutoGen, zDateAutoGen, parseRelativeDate, generateID } from "./utils/common.ts";
 import { zWidgetData, zWidgetResource } from "./widget-extend.ts";
 
 const ONE_MINUTE_IN_SECONDS = 30;
@@ -63,7 +63,6 @@ const zWidget = z.object({
 });
 
 const zWidgetCreate = zWidget.extend({
-  id: zResourceIDAutoGen,
   data: zWidget.shape.data.default([]),
   resource: zWidget.shape.resource.default([]),
   realtime: zWidget.shape.realtime.default("true"),
