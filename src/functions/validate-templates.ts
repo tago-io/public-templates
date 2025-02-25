@@ -76,12 +76,29 @@ function validateTemplateConfig(
         )
       )
     );
+
     if (!isStructureValid.success) {
       throw `Validation errors in ${detailsPath}.\n\n${JSON.stringify(
         isStructureValid.error,
         null,
         2
       )}`;
+    }
+
+    const { dashboard, widgets } = isStructureValid.data;
+
+    if (dashboard.arrangement?.length !== widgets.length) {
+      throw `Number of widgets in dashboard.arrangement does not match with widgets in structure.json in ${detailsPath}`;
+    }
+
+    for (const widget of widgets) {
+      if (configData.use_mock && !widget.mock_data) {
+        throw `Mock data is required for widget ${widget.id} in ${detailsPath}`;
+      }
+
+      if (!dashboard.arrangement?.find((arrange) => arrange.widget_id === widget.id)) {
+        throw `Widget ${widget.id} not found in dashboard.arrangement in ${detailsPath}`;
+      }
     }
 
     const id = generateID(templateData.name, configData.type);
