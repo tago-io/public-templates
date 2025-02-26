@@ -58,7 +58,7 @@ const zWidget = z.object({
     .optional()
     .nullable(),
   realtime: z.union([z.string(), z.boolean()]).optional().nullable(),
-  mock_data: z.array(zDataCreate).nullish(),
+  mock_data: z.array(z.object({ data: zWidgetData, result: z.array(zDataCreate) })).nullish(),
   created_at: z.date(),
   updated_at: z.date(),
 });

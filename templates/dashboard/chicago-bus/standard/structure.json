@@ -1,6 +1,9 @@
 {
   "dashboard": {
+    "id": "60888a272bab760010876ebe",
+    "type": "dashboard",
     "label": "Bus in Chicago",
+    "description": "",
     "arrangement": [
       {
         "x": 0,
@@ -59,15 +62,20 @@
         "widget_id": "60888a272bab760010876ec5"
       }
     ],
+    "created_at": "2021-04-27T22:03:19.000Z",
+    "updated_at": "2025-02-26T18:00:09.437Z",
     "tags": [],
-    "visible": true,
-    "setup": {},
     "group_by": [],
     "tabs": [
       {
         "key": "1619551481168",
         "link": "",
         "value": "Main"
+      },
+      {
+        "key": "1619551485899",
+        "link": "",
+        "value": "How to use"
       }
     ],
     "icon": {
@@ -77,442 +85,35 @@
     "background": {
       "type": "color"
     },
-    "type": "dashboard",
-    "filter": null,
     "blueprint_devices": null,
     "blueprint_device_behavior": null,
     "blueprint_selector_behavior": null,
+    "setup": {},
+    "theme": null,
+    "public_token_expire": null,
     "disable_blueprint_fallback": false,
-    "theme": null
+    "filter": null
   },
   "widgets": [
     {
-      "display": {
-        "center_options": {
-          "center_all_variables": true,
-          "show_only_last_values": false,
-          "variables": []
-        },
-        "custom_text": {
-          "SEARCH_FOR_FILTER": "Select one or more buses"
-        },
-        "direction_variable": {},
-        "filter_by": "variable",
-        "filter_list_by": "variable",
-        "filter_variables": [],
-        "group_by": "time",
-        "group_markers": true,
-        "header_buttons": [],
-        "help": "",
-        "infobox_config": {
-          "date_format": "",
-          "image": {
-            "behavior": "landscape",
-            "object_fit": "contain",
-            "position": "top"
-          },
-          "show_window_closed": true
-        },
-        "initial_mode": "basic",
-        "intervals": [
-          "5 min",
-          "15 min",
-          "1 hour",
-          "6 hour"
-        ],
-        "max_points": 20,
-        "show_directions": false,
-        "show_filter": true,
-        "show_lines": true,
-        "show_lines_animated": true,
-        "variables": [
-          {
-            "alias_type": "text",
-            "icon_conditions": [],
-            "infobox": {
-              "image": {
-                "static_image": "https://api.tago.io/file/547e1bee7dbf3af122c02572/chigaco_bus_pin.jpg"
-              }
-            },
-            "origin": "60888a20ea380c001298a45d",
-            "pin_config": {
-              "color": "#00a3ff",
-              "icon": "bus",
-              "icon_type": "fixed"
-            },
-            "variable": "location",
-            "alias": "Bus1",
-            "originName": "Bus #1"
-          }
-        ],
-        "initial_zoom": "72"
-      },
-      "label": "Map",
-      "realtime": null,
-      "type": "map",
+      "id": "60888a272bab760010876ec4",
+      "analysis_run": null,
+      "label": "Bus Speed ",
+      "realtime": "1",
+      "type": "area_chart",
       "data": [
         {
           "qty": 20,
-          "bucket": "60888a20ea380c001298a45d",
+          "bucket": "60888a20ea380c001298a45e",
           "origin": "60888a20ea380c001298a45d",
           "timezone": "America/Sao_Paulo",
           "variables": [
-            "location"
+            "speed"
           ],
           "start_date": "1 hour"
         }
       ],
-      "id": "60888a272bab760010876ec0",
-      "mock_data": [
-        {
-          "id": "67bd174ccaec190009352659",
-          "time": "2025-02-25T01:05:16.253Z",
-          "value": "41.877408,-87.624205",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.624205,
-              41.877408
-            ]
-          },
-          "group": "1740445516251",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740445516251"
-        },
-        {
-          "id": "67bd1745bf3e17000a207e1a",
-          "time": "2025-02-25T01:05:09.546Z",
-          "value": "41.877646,-87.624205",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.624205,
-              41.877646
-            ]
-          },
-          "group": "1740445509544",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740445509544"
-        },
-        {
-          "id": "67bd167f5ddef4000aae822f",
-          "time": "2025-02-25T01:01:51.467Z",
-          "value": "41.875697,-87.627224",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.627224,
-              41.875697
-            ]
-          },
-          "group": "1740445311465",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740445311465"
-        },
-        {
-          "id": "67bd166b576be9000a7b8d8b",
-          "time": "2025-02-25T01:01:31.988Z",
-          "value": "41.875697,-87.625975",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.625975,
-              41.875697
-            ]
-          },
-          "group": "1740445291983",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740445291983"
-        },
-        {
-          "id": "67bd15bbf52f96000a95aad7",
-          "time": "2025-02-25T00:58:35.939Z",
-          "value": "41.875569,-87.63955",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.63955,
-              41.875569
-            ]
-          },
-          "group": "1740445115936",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740445115936"
-        },
-        {
-          "id": "67bd1599f52f96000a95a6b5",
-          "time": "2025-02-25T00:58:01.437Z",
-          "value": "41.875569,-87.631188",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.631188,
-              41.875569
-            ]
-          },
-          "group": "1740445081435",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740445081435"
-        },
-        {
-          "id": "67bd14eb394a4d000a1b8493",
-          "time": "2025-02-25T00:55:07.780Z",
-          "value": "41.875501,-87.633624",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.633624,
-              41.875501
-            ]
-          },
-          "group": "1740444907778",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444907778"
-        },
-        {
-          "id": "67bd14d75e7119000a70e3ce",
-          "time": "2025-02-25T00:54:47.153Z",
-          "value": "41.875501,-87.633624",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.633624,
-              41.875501
-            ]
-          },
-          "group": "1740444887150",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444887150"
-        },
-        {
-          "id": "67bd140eef2ef6000a7e7963",
-          "time": "2025-02-25T00:51:26.112Z",
-          "value": "41.876452,-87.633713",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.633713,
-              41.876452
-            ]
-          },
-          "group": "1740444686109",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444686109"
-        },
-        {
-          "id": "67bd1409bf3e17000a20139e",
-          "time": "2025-02-25T00:51:21.200Z",
-          "value": "41.87616,-87.633713",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.633713,
-              41.87616
-            ]
-          },
-          "group": "1740444681197",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444681197"
-        },
-        {
-          "id": "67bd133ba04298000ad349bd",
-          "time": "2025-02-25T00:47:55.071Z",
-          "value": "41.876816,-87.636808",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.636808,
-              41.876816
-            ]
-          },
-          "group": "1740444475069",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444475069"
-        },
-        {
-          "id": "67bd133a63586e000b149300",
-          "time": "2025-02-25T00:47:54.463Z",
-          "value": "41.876816,-87.636808",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.636808,
-              41.876816
-            ]
-          },
-          "group": "1740444474460",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444474460"
-        },
-        {
-          "id": "67bd12771f2a61000aa20143",
-          "time": "2025-02-25T00:44:39.394Z",
-          "value": "41.878986,-87.637054",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.637054,
-              41.878986
-            ]
-          },
-          "group": "1740444279391",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444279391"
-        },
-        {
-          "id": "67bd1264d6423c000ae6cad5",
-          "time": "2025-02-25T00:44:20.701Z",
-          "value": "41.878925,-87.637054",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.637054,
-              41.878925
-            ]
-          },
-          "group": "1740444260699",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444260699"
-        },
-        {
-          "id": "67bd119aa04298000ad31b90",
-          "time": "2025-02-25T00:40:58.261Z",
-          "value": "41.884966,-87.637054",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.637054,
-              41.884966
-            ]
-          },
-          "group": "1740444058259",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444058259"
-        },
-        {
-          "id": "67bd11932aec62000a92fc50",
-          "time": "2025-02-25T00:40:51.784Z",
-          "value": "41.884168,-87.637054",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.637054,
-              41.884168
-            ]
-          },
-          "group": "1740444051781",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444051781"
-        },
-        {
-          "id": "67bd10d4394a4d000a1b1577",
-          "time": "2025-02-25T00:37:40.070Z",
-          "value": "41.88571,-87.636969",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.636969,
-              41.88571
-            ]
-          },
-          "group": "1740443860068",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740443860068"
-        },
-        {
-          "id": "67bd10c762751500092c44dd",
-          "time": "2025-02-25T00:37:27.912Z",
-          "value": "41.88571,-87.636969",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.636969,
-              41.88571
-            ]
-          },
-          "group": "1740443847910",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740443847910"
-        },
-        {
-          "id": "67bd100df40ba2000a5ef93d",
-          "time": "2025-02-25T00:34:21.417Z",
-          "value": "41.886437,-87.636303",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.636303,
-              41.886437
-            ]
-          },
-          "group": "1740443661415",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740443661415"
-        },
-        {
-          "id": "67bd0ffd394a4d000a1afe36",
-          "time": "2025-02-25T00:34:05.157Z",
-          "value": "41.886437,-87.636303",
-          "variable": "location",
-          "location": {
-            "type": "Point",
-            "coordinates": [
-              -87.636303,
-              41.886437
-            ]
-          },
-          "group": "1740443645155",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740443645155"
-        }
-      ]
-    },
-    {
       "display": {
-        "downsample": {
-          "enabled": false,
-          "factor": 10,
-          "threshold": 1000
-        },
         "group_by": "time",
         "header_buttons": [],
         "help": "",
@@ -522,8 +123,8 @@
         "line_curve": "smooth",
         "max_points": 20,
         "order_by": "time",
-        "show_legend": true,
         "show_point_values": false,
+        "stacked": false,
         "theme": {
           "color": {
             "background": null,
@@ -541,7 +142,25 @@
             "formula": {
               "formula_type": "fixed",
               "unit_type": "fixed"
-            }
+            },
+            "data_params": {
+              "interval": null,
+              "query": null,
+              "function": null,
+              "value": null,
+              "period": {
+                "start_date": "1 hour",
+                "end_date": null
+              }
+            },
+            "bucket": "60888a20ea380c001298a45e",
+            "variables": [
+              "speed",
+              "fuel_level"
+            ],
+            "qty": 20,
+            "timezone": "America/Sao_Paulo",
+            "id": "RmWwcesgtUx0nfQCBzILH"
           }
         ],
         "x_axis": {
@@ -553,522 +172,271 @@
             "type": "dynamic"
           },
           "show_metric_abbreviation": ""
-        }
+        },
+        "override_dashboard_presets": false,
+        "aggregate_intervals": []
       },
-      "label": "Bus Speed ",
-      "realtime": null,
-      "type": "area_chart",
-      "data": [
-        {
-          "qty": 20,
-          "bucket": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "timezone": "America/Sao_Paulo",
-          "variables": [
-            "speed"
-          ],
-          "start_date": "1 hour"
-        }
-      ],
-      "id": "60888a272bab760010876ec4",
+      "created_at": "2021-04-27T22:03:19.000Z",
+      "updated_at": "2025-02-26T17:59:58.517Z",
+      "resource": [],
+      "cache": null,
       "mock_data": [
         {
-          "id": "67bd174ccaec19000935265b",
-          "time": "2025-02-25T01:05:16.254Z",
-          "value": 3.77,
-          "variable": "speed",
-          "group": "1740445516251",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740445516251"
-        },
-        {
-          "id": "67bd1745bf3e17000a207e1c",
-          "time": "2025-02-25T01:05:09.547Z",
-          "value": 9.44,
-          "variable": "speed",
-          "group": "1740445509544",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740445509544"
-        },
-        {
-          "id": "67bd167f5ddef4000aae8231",
-          "time": "2025-02-25T01:01:51.468Z",
-          "value": 2.1,
-          "variable": "speed",
-          "group": "1740445311465",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740445311465"
-        },
-        {
-          "id": "67bd166b576be9000a7b8d8d",
-          "time": "2025-02-25T01:01:31.988Z",
-          "value": 0.19,
-          "variable": "speed",
-          "group": "1740445291983",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740445291983"
-        },
-        {
-          "id": "67bd15bbf52f96000a95aad9",
-          "time": "2025-02-25T00:58:35.939Z",
-          "value": 25.88,
-          "variable": "speed",
-          "group": "1740445115936",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740445115936"
-        },
-        {
-          "id": "67bd1599f52f96000a95a6b7",
-          "time": "2025-02-25T00:58:01.438Z",
-          "value": 10.89,
-          "variable": "speed",
-          "group": "1740445081435",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740445081435"
-        },
-        {
-          "id": "67bd14eb394a4d000a1b8495",
-          "time": "2025-02-25T00:55:07.781Z",
-          "value": 6.78,
-          "variable": "speed",
-          "group": "1740444907778",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444907778"
-        },
-        {
-          "id": "67bd14d75e7119000a70e3d0",
-          "time": "2025-02-25T00:54:47.153Z",
-          "value": 9.24,
-          "variable": "speed",
-          "group": "1740444887150",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444887150"
-        },
-        {
-          "id": "67bd140eef2ef6000a7e7965",
-          "time": "2025-02-25T00:51:26.112Z",
-          "value": 1.3,
-          "variable": "speed",
-          "group": "1740444686109",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444686109"
-        },
-        {
-          "id": "67bd1409bf3e17000a2013a0",
-          "time": "2025-02-25T00:51:21.200Z",
-          "value": 1.54,
-          "variable": "speed",
-          "group": "1740444681197",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444681197"
-        },
-        {
-          "id": "67bd133ba04298000ad349bf",
-          "time": "2025-02-25T00:47:55.073Z",
-          "value": 3.56,
-          "variable": "speed",
-          "group": "1740444475069",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444475069"
-        },
-        {
-          "id": "67bd133a63586e000b149302",
-          "time": "2025-02-25T00:47:54.463Z",
-          "value": 7.67,
-          "variable": "speed",
-          "group": "1740444474460",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444474460"
-        },
-        {
-          "id": "67bd12771f2a61000aa20145",
-          "time": "2025-02-25T00:44:39.394Z",
-          "value": 15.08,
-          "variable": "speed",
-          "group": "1740444279391",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444279391"
-        },
-        {
-          "id": "67bd1264d6423c000ae6cad7",
-          "time": "2025-02-25T00:44:20.702Z",
-          "value": 2.06,
-          "variable": "speed",
-          "group": "1740444260699",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444260699"
-        },
-        {
-          "id": "67bd119aa04298000ad31b92",
-          "time": "2025-02-25T00:40:58.262Z",
-          "value": 3.95,
-          "variable": "speed",
-          "group": "1740444058259",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444058259"
-        },
-        {
-          "id": "67bd11932aec62000a92fc52",
-          "time": "2025-02-25T00:40:51.784Z",
-          "value": 3.42,
-          "variable": "speed",
-          "group": "1740444051781",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740444051781"
-        },
-        {
-          "id": "67bd10d4394a4d000a1b1579",
-          "time": "2025-02-25T00:37:40.071Z",
-          "value": 0.92,
-          "variable": "speed",
-          "group": "1740443860068",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740443860068"
-        },
-        {
-          "id": "67bd10c762751500092c44df",
-          "time": "2025-02-25T00:37:27.913Z",
-          "value": 1.4,
-          "variable": "speed",
-          "group": "1740443847910",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740443847910"
-        },
-        {
-          "id": "67bd100df40ba2000a5ef93f",
-          "time": "2025-02-25T00:34:21.418Z",
-          "value": 15.23,
-          "variable": "speed",
-          "group": "1740443661415",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740443661415"
-        },
-        {
-          "id": "67bd0ffd394a4d000a1afe38",
-          "time": "2025-02-25T00:34:05.158Z",
-          "value": 12.02,
-          "variable": "speed",
-          "group": "1740443645155",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740443645155"
-        }
-      ]
-    },
-    {
-      "display": {
-        "alias": "",
-        "formula": {
-          "fixed_unit": "%",
-          "unit_type": "fixed"
-        },
-        "header_buttons": [],
-        "help": "",
-        "number_format": {
-          "decimals": 1,
-          "show_thousand": false
-        },
-        "range": {
-          "type": "minmax",
-          "minimum": 0,
-          "maximum": 100
-        },
-        "show_variables": false,
-        "theme": {
-          "color": {
-            "background": null,
-            "fill": null,
-            "outline": null,
-            "text": null,
-            "text_border": null
-          }
-        }
-      },
-      "label": "Fuel Bus #1",
-      "realtime": null,
-      "type": "solid",
-      "data": [
-        {
-          "query": "last_value",
-          "bucket": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "timezone": "America/Sao_Paulo",
-          "variables": [
-            "fuel_level"
-          ]
-        }
-      ],
-      "id": "60888a272bab760010876ec3",
-      "mock_data": [
-        {
-          "id": "67bd174ccaec19000935265a",
-          "time": "2025-02-25T01:05:16.254Z",
-          "unit": "%",
-          "value": 19,
-          "variable": "fuel_level",
-          "group": "1740445516251",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740445516251"
-        }
-      ]
-    },
-    {
-      "display": {
-        "alias": "",
-        "formula": {
-          "formula_type": "fixed",
-          "fixed_unit": "mph"
-        },
-        "header_buttons": [
-          {
-            "color": null,
-            "icon": "",
-            "text": "",
-            "trigger": "widget",
-            "widget": null
-          }
-        ],
-        "help": "",
-        "number_format": {
-          "decimals": "2"
-        },
-        "range": {
-          "type": "minmax",
-          "minimum": 0,
-          "maximum": 50
-        },
-        "show_variables": false,
-        "theme": {
-          "color": {
-            "background": null,
-            "fill": null,
-            "outline": null,
-            "text": null,
-            "text_border": null
-          }
-        }
-      },
-      "label": "Speed Bus #1",
-      "realtime": null,
-      "type": "angular",
-      "data": [
-        {
-          "query": "last_value",
-          "bucket": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "timezone": "America/Sao_Paulo",
-          "variables": [
-            "speed"
-          ]
-        }
-      ],
-      "id": "60888a272bab760010876ec2",
-      "mock_data": [
-        {
-          "id": "67bd174ccaec19000935265b",
-          "time": "2025-02-25T01:05:16.254Z",
-          "value": 3.77,
-          "variable": "speed",
-          "group": "1740445516251",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740445516251"
-        }
-      ]
-    },
-    {
-      "display": {
-        "header_buttons": [],
-        "help": "",
-        "theme": {
-          "color": {}
-        },
-        "variables": [
-          {
-            "allow_resize": true,
-            "data_type": "text",
-            "id": "Kz0Talz20t94qTmAK6ssS",
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "text_content": "",
-            "show_bold": true,
-            "size": "auto"
+          "data": {
+            "qty": 20,
+            "bucket": "60888a20ea380c001298a45d",
+            "origin": "60888a20ea380c001298a45d",
+            "timezone": "America/Sao_Paulo",
+            "variables": [
+              "speed"
+            ],
+            "start_date": "1 hour"
           },
-          {
-            "allow_resize": true,
-            "data_type": "text",
-            "id": "78lK2Eek9G7hL-Z_xZHZ1",
-            "position": {
-              "x": 1,
-              "y": 0
-            },
-            "text_content": "Bus #1",
-            "show_bold": true,
-            "size": "auto"
-          },
-          {
-            "allow_resize": true,
-            "data_type": "text",
-            "id": "2OC5C11nKHRbR6KMlYW5y",
-            "position": {
-              "x": 0,
-              "y": 1
-            },
-            "text_content": "Fuel Level",
-            "show_bold": true,
-            "size": "auto"
-          },
-          {
-            "content_type": "value",
-            "allow_resize": true,
-            "data": {
-              "origin": "60888a20ea380c001298a45d",
-              "variable": "fuel_level",
-              "query": "last_value"
-            },
-            "data_type": "variable",
-            "id": "NCRoGH3zyL9oIVannT841",
-            "position": {
-              "x": 1,
-              "y": 1
-            },
-            "size": "auto"
-          },
-          {
-            "allow_resize": true,
-            "data_type": "text",
-            "id": "L1ia1lVN2JLgQH1XJCimm",
-            "position": {
-              "x": 0,
-              "y": 2
-            },
-            "text_content": "Trip odometer",
-            "show_bold": true,
-            "size": "auto"
-          },
-          {
-            "content_type": "value",
-            "allow_resize": true,
-            "data": {
-              "origin": "60888a20ea380c001298a45d",
-              "variable": "trip_odometer",
-              "query": "last_value"
-            },
-            "data_type": "variable",
-            "id": "CTmwrNb9BD4psg0OWP86z",
-            "position": {
-              "x": 1,
-              "y": 2
-            },
-            "size": "auto"
-          },
-          {
-            "allow_resize": true,
-            "data_type": "text",
-            "id": "zu_krmUijMrgJbeOm0vYM",
-            "position": {
-              "x": 0,
-              "y": 3
-            },
-            "text_content": "Speed",
-            "show_bold": true,
-            "size": "auto"
-          },
-          {
-            "content_type": "value",
-            "allow_resize": true,
-            "data": {
-              "origin": "60888a20ea380c001298a45d",
+          "result": [
+            {
+              "id": "67bf57eb2aec62000ad8958e",
+              "time": "2025-02-26T18:05:31.386Z",
+              "value": 1.79,
               "variable": "speed",
-              "query": "last_value"
+              "group": "1740593131383",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740593131383"
             },
-            "data_type": "variable",
-            "id": "B9jtyLwUXAnkuNgsacKoD",
-            "position": {
-              "x": 1,
-              "y": 3
+            {
+              "id": "67bf57da2aec62000ad893d7",
+              "time": "2025-02-26T18:05:14.603Z",
+              "value": 5.65,
+              "variable": "speed",
+              "group": "1740593114595",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740593114595"
             },
-            "size": "auto"
-          },
-          {
-            "allow_resize": true,
-            "data_type": "text",
-            "id": "P9kI6T1nXFFIBS5m00-1p",
-            "position": {
-              "x": 0,
-              "y": 4
+            {
+              "id": "67bf570a576be9000ac070f1",
+              "time": "2025-02-26T18:01:46.455Z",
+              "value": 0.57,
+              "variable": "speed",
+              "group": "1740592906452",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592906452"
             },
-            "text_content": "Internal temperature",
-            "show_bold": true,
-            "size": "auto"
-          },
-          {
-            "allow_resize": true,
-            "data_type": "text",
-            "id": "cfpub6BB6Q1NzzhTD-nPz",
-            "position": {
-              "x": 1,
-              "y": 4
+            {
+              "id": "67bf5708d6423c000a2c8c01",
+              "time": "2025-02-26T18:01:44.678Z",
+              "value": 1.64,
+              "variable": "speed",
+              "group": "1740592904674",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592904674"
             },
-            "text_content": "N/A",
-            "show_bold": true,
-            "size": "auto"
-          },
-          {
-            "allow_resize": true,
-            "data_type": "text",
-            "id": "TuhBabwtokUtTaDByWCiT",
-            "position": {
-              "x": 0,
-              "y": 5
+            {
+              "id": "67bf56316275150009726a05",
+              "time": "2025-02-26T17:58:09.739Z",
+              "value": 9.44,
+              "variable": "speed",
+              "group": "1740592689735",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592689735"
             },
-            "text_content": "Air conditioning (ON/OFF)",
-            "show_bold": true,
-            "size": "auto"
-          },
-          {
-            "allow_resize": true,
-            "data_type": "text",
-            "id": "1ATc2tsIvStKTVH3Lz6KN",
-            "position": {
-              "x": 1,
-              "y": 5
+            {
+              "id": "67bf562b394a4d000a608ba8",
+              "time": "2025-02-26T17:58:03.423Z",
+              "value": 5.2,
+              "variable": "speed",
+              "group": "1740592683420",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592683420"
             },
-            "text_content": "OFF",
-            "show_bold": true,
-            "size": "auto"
-          }
-        ]
+            {
+              "id": "67bf55585e7119000ab620a2",
+              "time": "2025-02-26T17:54:32.967Z",
+              "value": 0,
+              "variable": "speed",
+              "group": "1740592472964",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592472964"
+            },
+            {
+              "id": "67bf5557020d2a000ae2d1c4",
+              "time": "2025-02-26T17:54:31.562Z",
+              "value": 0,
+              "variable": "speed",
+              "group": "1740592471557",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592471557"
+            },
+            {
+              "id": "67bf548b5e7119000ab60765",
+              "time": "2025-02-26T17:51:07.357Z",
+              "value": 7.63,
+              "variable": "speed",
+              "group": "1740592267351",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592267351"
+            },
+            {
+              "id": "67bf548bcaec190009794a0b",
+              "time": "2025-02-26T17:51:07.320Z",
+              "value": 0.41,
+              "variable": "speed",
+              "group": "1740592267317",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592267317"
+            },
+            {
+              "id": "67bf53c0d6423c000a2c2b17",
+              "time": "2025-02-26T17:47:44.963Z",
+              "value": 18.32,
+              "variable": "speed",
+              "group": "1740592064958",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592064958"
+            },
+            {
+              "id": "67bf53bb576be9000ac00578",
+              "time": "2025-02-26T17:47:39.451Z",
+              "value": 21.74,
+              "variable": "speed",
+              "group": "1740592059448",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592059448"
+            },
+            {
+              "id": "67bf52f1627515000972003f",
+              "time": "2025-02-26T17:44:17.504Z",
+              "value": 8.12,
+              "variable": "speed",
+              "group": "1740591857501",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740591857501"
+            },
+            {
+              "id": "67bf52eb63586e000b5a1e03",
+              "time": "2025-02-26T17:44:11.988Z",
+              "value": 8.63,
+              "variable": "speed",
+              "group": "1740591851985",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740591851985"
+            },
+            {
+              "id": "67bf5223627515000971e52b",
+              "time": "2025-02-26T17:40:51.259Z",
+              "value": 3.2,
+              "variable": "speed",
+              "group": "1740591651256",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740591651256"
+            },
+            {
+              "id": "67bf5221020d2a000ae26b7c",
+              "time": "2025-02-26T17:40:49.675Z",
+              "value": 2.2,
+              "variable": "speed",
+              "group": "1740591649672",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740591649672"
+            },
+            {
+              "id": "67bf5161d6423c000a2be313",
+              "time": "2025-02-26T17:37:37.117Z",
+              "value": 7.64,
+              "variable": "speed",
+              "group": "1740591457114",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740591457114"
+            },
+            {
+              "id": "67bf51512aec62000ad7bbd4",
+              "time": "2025-02-26T17:37:21.314Z",
+              "value": 4.27,
+              "variable": "speed",
+              "group": "1740591441311",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740591441311"
+            },
+            {
+              "id": "67bf509463586e000b59ce3d",
+              "time": "2025-02-26T17:34:12.270Z",
+              "value": 5.33,
+              "variable": "speed",
+              "group": "1740591252265",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740591252265"
+            },
+            {
+              "id": "67bf5081576be9000abf95c8",
+              "time": "2025-02-26T17:33:53.687Z",
+              "value": 5.03,
+              "variable": "speed",
+              "group": "1740591233683",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740591233683"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "60888a272bab760010876ebf",
+      "analysis_run": null,
+      "label": "Chicago Time",
+      "realtime": "1",
+      "type": "gauge",
+      "data": [
+        {
+          "timezone": "America/Sao_Paulo"
+        }
+      ],
+      "display": {
+        "no_bucket": true,
+        "gauge_type": "clock",
+        "header_buttons": []
       },
+      "created_at": "2021-04-27T22:03:19.000Z",
+      "updated_at": "2021-04-27T22:03:42.000Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "timezone": "America/Sao_Paulo"
+          },
+          "result": []
+        }
+      ]
+    },
+    {
+      "id": "60888a272bab760010876ec1",
+      "analysis_run": null,
       "label": "Tago Analysis (Status)",
-      "realtime": null,
-      "type": "static_table",
+      "realtime": "1",
+      "type": "table",
       "data": [
         {
           "query": "last_value",
-          "bucket": "60888a20ea380c001298a45d",
+          "bucket": "60888a20ea380c001298a45e",
           "origin": "60888a20ea380c001298a45d",
           "timezone": "America/Sao_Paulo",
           "variables": [
@@ -1078,84 +446,788 @@
           ]
         }
       ],
-      "id": "60888a272bab760010876ec1",
+      "display": {
+        "table_type": "table",
+        "max_points": 500,
+        "rows": "6",
+        "columns": "2",
+        "column_alignments": {},
+        "vars_that_have_conditions": {},
+        "conditions": {},
+        "cell": {
+          "0_0": {
+            "constant": "",
+            "variables": {},
+            "type": "constant"
+          },
+          "0_1": {
+            "constant": "Bus #1",
+            "variables": {},
+            "type": "constant"
+          },
+          "1_0": {
+            "constant": "Fuel Level",
+            "variables": {},
+            "type": "constant"
+          },
+          "1_1": {
+            "type": "variable",
+            "variables": {
+              "variable": "fuel_level",
+              "device": {
+                "id": "60888a20ea380c001298a45d",
+                "name": "Chicago EmulatorTest"
+              },
+              "bucket": {
+                "id": "60888a20ea380c001298a45e",
+                "name": "Chicago EmulatorTest",
+                "tags": [],
+                "profile": "5bbcb03b667d7a002e56664b"
+              }
+            }
+          },
+          "2_0": {
+            "constant": "Trip odometer",
+            "variables": {},
+            "type": "constant"
+          },
+          "2_1": {
+            "type": "variable",
+            "variables": {
+              "variable": "trip_odometer",
+              "device": {
+                "id": "60888a20ea380c001298a45d",
+                "name": "Chicago EmulatorTest"
+              },
+              "bucket": {
+                "id": "60888a20ea380c001298a45e",
+                "name": "Chicago EmulatorTest",
+                "tags": [],
+                "profile": "5bbcb03b667d7a002e56664b"
+              }
+            }
+          },
+          "3_0": {
+            "constant": "Speed",
+            "variables": {},
+            "type": "constant"
+          },
+          "3_1": {
+            "type": "variable",
+            "variables": {
+              "variable": "speed",
+              "device": {
+                "id": "60888a20ea380c001298a45d",
+                "name": "Chicago EmulatorTest"
+              },
+              "bucket": {
+                "id": "60888a20ea380c001298a45e",
+                "name": "Chicago EmulatorTest",
+                "tags": [],
+                "profile": "5bbcb03b667d7a002e56664b"
+              }
+            }
+          },
+          "4_0": {
+            "constant": "Internal temperature",
+            "variables": {},
+            "type": "constant"
+          },
+          "4_1": {
+            "constant": "N/A",
+            "variables": {},
+            "type": "constant"
+          },
+          "5_0": {
+            "constant": "Air conditioning (ON/OFF)",
+            "variables": {},
+            "type": "constant"
+          },
+          "5_1": {
+            "constant": "OFF",
+            "variables": {},
+            "type": "constant"
+          }
+        },
+        "header_buttons": []
+      },
+      "created_at": "2021-04-27T22:03:19.000Z",
+      "updated_at": "2021-04-27T22:03:42.000Z",
+      "resource": [],
+      "cache": null,
       "mock_data": [
         {
-          "id": "67bd174ccaec19000935265a",
-          "time": "2025-02-25T01:05:16.254Z",
-          "unit": "%",
-          "value": 19,
-          "variable": "fuel_level",
-          "group": "1740445516251",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740445516251"
-        },
-        {
-          "id": "67bd174ccaec19000935265c",
-          "time": "2025-02-25T01:05:16.254Z",
-          "value": 0.19,
-          "variable": "trip_odometer",
-          "group": "1740445516251",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740445516251"
-        },
-        {
-          "id": "67bd174ccaec19000935265b",
-          "time": "2025-02-25T01:05:16.254Z",
-          "value": 3.77,
-          "variable": "speed",
-          "group": "1740445516251",
-          "device": "60888a20ea380c001298a45d",
-          "origin": "60888a20ea380c001298a45d",
-          "serie": "1740445516251"
+          "data": {
+            "query": "last_value",
+            "bucket": "60888a20ea380c001298a45d",
+            "origin": "60888a20ea380c001298a45d",
+            "timezone": "America/Sao_Paulo",
+            "variables": [
+              "fuel_level",
+              "trip_odometer",
+              "speed"
+            ]
+          },
+          "result": [
+            {
+              "id": "67bf57eb2aec62000ad8958d",
+              "time": "2025-02-26T18:05:31.386Z",
+              "unit": "%",
+              "value": 99,
+              "variable": "fuel_level",
+              "group": "1740593131383",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740593131383"
+            },
+            {
+              "id": "67bf57eb2aec62000ad8958f",
+              "time": "2025-02-26T18:05:31.386Z",
+              "value": 0.19,
+              "variable": "trip_odometer",
+              "group": "1740593131383",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740593131383"
+            },
+            {
+              "id": "67bf57eb2aec62000ad8958e",
+              "time": "2025-02-26T18:05:31.386Z",
+              "value": 1.79,
+              "variable": "speed",
+              "group": "1740593131383",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740593131383"
+            }
+          ],
+          "cacheTime": null
         }
       ]
     },
     {
-      "display": {
-        "header_buttons": [],
-        "help": "",
-        "show_last_update": false,
-        "theme": {
-          "color": {
-            "background": null,
-            "fill": null,
-            "header": null,
-            "outline": null,
-            "text": null,
-            "text_border": null
-          }
-        }
-      },
-      "label": "Chicago Time",
-      "realtime": null,
-      "type": "clock",
+      "id": "60888a272bab760010876ec2",
+      "analysis_run": null,
+      "label": "Speed Bus #1",
+      "realtime": "1",
+      "type": "gauge",
       "data": [
         {
-          "timezone": "America/Sao_Paulo"
+          "query": "last_value",
+          "bucket": "60888a20ea380c001298a45e",
+          "origin": "60888a20ea380c001298a45d",
+          "timezone": "America/Sao_Paulo",
+          "variables": [
+            "speed"
+          ]
         }
       ],
-      "id": "60888a272bab760010876ebf",
-      "mock_data": []
+      "display": {
+        "gauge_type": "angular",
+        "vars_labels": {
+          "60888a20ea380c001298a45dspeed": "speed"
+        },
+        "vars_formula": {
+          "60888a20ea380c001298a45dspeed": {
+            "unit": "mph"
+          }
+        },
+        "vars_format": {
+          "60888a20ea380c001298a45dspeed": {
+            "decimals": "2"
+          }
+        },
+        "minimum": "0",
+        "maximum": "50",
+        "unit": "mph",
+        "numberformat": 0,
+        "hide_variables": true,
+        "header_buttons": [
+          {
+            "color": null,
+            "icon": "",
+            "text": "",
+            "trigger": "widget",
+            "widget": null
+          }
+        ],
+        "range_limit_metadata": "origin",
+        "range_limit_variable": {},
+        "range_limit": "fixed"
+      },
+      "created_at": "2021-04-27T22:03:19.000Z",
+      "updated_at": "2021-04-27T22:03:42.000Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "60888a20ea380c001298a45d",
+            "origin": "60888a20ea380c001298a45d",
+            "timezone": "America/Sao_Paulo",
+            "variables": [
+              "speed"
+            ]
+          },
+          "result": [
+            {
+              "id": "67bf57eb2aec62000ad8958e",
+              "time": "2025-02-26T18:05:31.386Z",
+              "value": 1.79,
+              "variable": "speed",
+              "group": "1740593131383",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740593131383"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
     },
     {
+      "id": "60888a272bab760010876ec3",
+      "analysis_run": null,
+      "label": "Fuel Bus #1",
+      "realtime": "1",
+      "type": "gauge",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "60888a20ea380c001298a45e",
+          "origin": "60888a20ea380c001298a45d",
+          "timezone": "America/Sao_Paulo",
+          "variables": [
+            "fuel_level"
+          ]
+        }
+      ],
+      "display": {
+        "gauge_type": "solid",
+        "vars_labels": {
+          "60888a20ea380c001298a45dfuel_level": "fuel_level"
+        },
+        "minimum": "0",
+        "maximum": "100",
+        "unit": "%",
+        "numberformat": "0.0",
+        "hide_variables": true
+      },
+      "created_at": "2021-04-27T22:03:19.000Z",
+      "updated_at": "2021-04-27T22:03:42.000Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "60888a20ea380c001298a45d",
+            "origin": "60888a20ea380c001298a45d",
+            "timezone": "America/Sao_Paulo",
+            "variables": [
+              "fuel_level"
+            ]
+          },
+          "result": [
+            {
+              "id": "67bf57eb2aec62000ad8958d",
+              "time": "2025-02-26T18:05:31.386Z",
+              "unit": "%",
+              "value": 99,
+              "variable": "fuel_level",
+              "group": "1740593131383",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740593131383"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "60888a272bab760010876ec5",
+      "analysis_run": null,
+      "label": "NOTE",
+      "realtime": null,
+      "type": "note",
       "data": [
         {
           "qty": 1000
         }
       ],
       "display": {
-        "header_buttons": [],
-        "help": "",
-        "value": "#### This dashboard uses simulated data that is generated by TagoIO scripts. You can see these scripts at TagoIO [Github](https://github.com/tago-io/analysis-chicagobus) page."
+        "text": "#### This dashboard uses simulated data that is generated by TagoIO scripts. You can see these scripts at TagoIO [Github](https://github.com/tago-io/analysis-chicagobus) page.",
+        "header_buttons": []
       },
-      "label": "NOTE",
-      "realtime": null,
-      "type": "note",
-      "id": "60888a272bab760010876ec5",
-      "mock_data": []
+      "created_at": "2021-04-27T22:03:19.000Z",
+      "updated_at": "2021-04-27T22:03:19.000Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "qty": 1000
+          },
+          "result": []
+        }
+      ]
+    },
+    {
+      "id": "60888a272bab760010876ec0",
+      "analysis_run": null,
+      "label": "Map",
+      "realtime": "1",
+      "type": "map",
+      "data": [
+        {
+          "qty": 20,
+          "bucket": "60888a20ea380c001298a45e",
+          "origin": "60888a20ea380c001298a45d",
+          "timezone": "America/Sao_Paulo",
+          "variables": [
+            "location"
+          ],
+          "start_date": "1 hour"
+        }
+      ],
+      "display": {
+        "initial_zoom": "72",
+        "connect_markers": true,
+        "max_points": 20,
+        "group_by": "date",
+        "ant_path": true,
+        "infowindow_closed": true,
+        "map_labels": {
+          "60888a20ea380c001298a45d": "Bus #1",
+          "608806809487160011374c1e": "Bus #2"
+        },
+        "map_icons": {
+          "60888a20ea380c001298a45d": {
+            "path": "M41.403,11.11c-0.371-3.627-0.962-6.451-1.897-7.561c-3.855-4.564-30.859-4.898-33.925,0c-0.75,1.2-1.276,4.014-1.629,7.567c-1.139,0.134-2.026,1.093-2.026,2.267v4.443c0,0.988,0.626,1.821,1.5,2.146c-0.207,6.998-0.039,14.299,0.271,17.93c0,2.803,1.883,2.338,1.883,2.338h1.765v3.026c0,1.2,1.237,2.171,2.761,2.171c1.526,0,2.763-0.971,2.763-2.171V40.24h20.534v3.026c0,1.2,1.236,2.171,2.762,2.171c1.524,0,2.761-0.971,2.761-2.171V40.24h0.58c0,0,2.216,0.304,2.358-1.016c0-3.621,0.228-11.646,0.04-19.221c0.929-0.291,1.607-1.147,1.607-2.177v-4.443C43.512,12.181,42.582,11.206,41.403,11.11z M12.176,4.2h20.735v3.137H12.176V4.2z M12.472,36.667c-1.628,0-2.947-1.32-2.947-2.948c0-1.627,1.319-2.946,2.947-2.946s2.948,1.319,2.948,2.946C15.42,35.347,14.101,36.667,12.472,36.667z M32.8,36.667c-1.627,0-2.949-1.32-2.949-2.948c0-1.627,1.321-2.946,2.949-2.946s2.947,1.319,2.947,2.946C35.748,35.347,34.428,36.667,32.8,36.667z M36.547,23.767H8.54V9.077h28.007V23.767z",
+            "css_class": "flaticon flaticon-vehicle12",
+            "color": "#00a3ff",
+            "anchor": [
+              22,
+              48
+            ],
+            "scale": 0.7,
+            "order": 4,
+            "label": "Bus #1"
+          },
+          "608806809487160011374c1e": {
+            "path": "M41.403,11.11c-0.371-3.627-0.962-6.451-1.897-7.561c-3.855-4.564-30.859-4.898-33.925,0c-0.75,1.2-1.276,4.014-1.629,7.567c-1.139,0.134-2.026,1.093-2.026,2.267v4.443c0,0.988,0.626,1.821,1.5,2.146c-0.207,6.998-0.039,14.299,0.271,17.93c0,2.803,1.883,2.338,1.883,2.338h1.765v3.026c0,1.2,1.237,2.171,2.761,2.171c1.526,0,2.763-0.971,2.763-2.171V40.24h20.534v3.026c0,1.2,1.236,2.171,2.762,2.171c1.524,0,2.761-0.971,2.761-2.171V40.24h0.58c0,0,2.216,0.304,2.358-1.016c0-3.621,0.228-11.646,0.04-19.221c0.929-0.291,1.607-1.147,1.607-2.177v-4.443C43.512,12.181,42.582,11.206,41.403,11.11z M12.176,4.2h20.735v3.137H12.176V4.2z M12.472,36.667c-1.628,0-2.947-1.32-2.947-2.948c0-1.627,1.319-2.946,2.947-2.946s2.948,1.319,2.948,2.946C15.42,35.347,14.101,36.667,12.472,36.667z M32.8,36.667c-1.627,0-2.949-1.32-2.949-2.948c0-1.627,1.321-2.946,2.949-2.946s2.947,1.319,2.947,2.946C35.748,35.347,34.428,36.667,32.8,36.667z M36.547,23.767H8.54V9.077h28.007V23.767z",
+            "css_class": "flaticon flaticon-vehicle12",
+            "color": "#000000",
+            "anchor": [
+              22,
+              48
+            ],
+            "scale": 0.7,
+            "order": 4,
+            "label": "Bus #2"
+          }
+        },
+        "vars_labels": {
+          "60888a20ea380c001298a45dlocation": "Bus1"
+        },
+        "vars_images": {
+          "60888a20ea380c001298a45dlocation": "https://api.tago.io/file/547e1bee7dbf3af122c02572/chigaco_bus_pin.jpg"
+        },
+        "vars_url": {
+          "60888a20ea380c001298a45dlocation": ""
+        },
+        "vars_formula": {
+          "60888a20ea380c001298a45dlocation": [],
+          "608806809487160011374c1elocation": {}
+        },
+        "intervals": [
+          "5 min",
+          "15 min",
+          "1 hra",
+          "6 hra"
+        ],
+        "watermark": true,
+        "geo_events": [
+          {}
+        ],
+        "show_filter": true,
+        "filter_by": "variables",
+        "filter_title": "Select one or more buses",
+        "filter_devices": [
+          {
+            "id": "60888a20ea380c001298a45d",
+            "name": "Bus #1"
+          }
+        ],
+        "vars_conditions": {
+          "60888a20ea380c001298a45d": [],
+          "608806809487160011374c1e": []
+        },
+        "header_buttons": []
+      },
+      "created_at": "2021-04-27T22:03:19.000Z",
+      "updated_at": "2021-08-18T19:47:02.422Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "qty": 20,
+            "bucket": "60888a20ea380c001298a45d",
+            "origin": "60888a20ea380c001298a45d",
+            "timezone": "America/Sao_Paulo",
+            "variables": [
+              "location"
+            ],
+            "start_date": "1 hour"
+          },
+          "result": [
+            {
+              "id": "67bf57eb2aec62000ad8958c",
+              "time": "2025-02-26T18:05:31.385Z",
+              "value": "41.888286,-87.625221",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.625221,
+                  41.888286
+                ]
+              },
+              "group": "1740593131383",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740593131383"
+            },
+            {
+              "id": "67bf57da2aec62000ad893d5",
+              "time": "2025-02-26T18:05:14.602Z",
+              "value": "41.888286,-87.625221",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.625221,
+                  41.888286
+                ]
+              },
+              "group": "1740593114595",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740593114595"
+            },
+            {
+              "id": "67bf570a576be9000ac070ef",
+              "time": "2025-02-26T18:01:46.454Z",
+              "value": "41.88833,-87.624792",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.624792,
+                  41.88833
+                ]
+              },
+              "group": "1740592906452",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592906452"
+            },
+            {
+              "id": "67bf5708d6423c000a2c8bff",
+              "time": "2025-02-26T18:01:44.677Z",
+              "value": "41.88833,-87.624792",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.624792,
+                  41.88833
+                ]
+              },
+              "group": "1740592904674",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592904674"
+            },
+            {
+              "id": "67bf56316275150009726a03",
+              "time": "2025-02-26T17:58:09.739Z",
+              "value": "41.885707,-87.624448",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.624448,
+                  41.885707
+                ]
+              },
+              "group": "1740592689735",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592689735"
+            },
+            {
+              "id": "67bf562b394a4d000a608ba6",
+              "time": "2025-02-26T17:58:03.422Z",
+              "value": "41.884811,-87.624448",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.624448,
+                  41.884811
+                ]
+              },
+              "group": "1740592683420",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592683420"
+            },
+            {
+              "id": "67bf55585e7119000ab620a0",
+              "time": "2025-02-26T17:54:32.966Z",
+              "value": "41.882654,-87.624205",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.624205,
+                  41.882654
+                ]
+              },
+              "group": "1740592472964",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592472964"
+            },
+            {
+              "id": "67bf5557020d2a000ae2d1c2",
+              "time": "2025-02-26T17:54:31.561Z",
+              "value": "41.881818,-87.624205",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.624205,
+                  41.881818
+                ]
+              },
+              "group": "1740592471557",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592471557"
+            },
+            {
+              "id": "67bf548b5e7119000ab60763",
+              "time": "2025-02-26T17:51:07.356Z",
+              "value": "41.878308,-87.624205",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.624205,
+                  41.878308
+                ]
+              },
+              "group": "1740592267351",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592267351"
+            },
+            {
+              "id": "67bf548bcaec190009794a09",
+              "time": "2025-02-26T17:51:07.319Z",
+              "value": "41.875697,-87.625435",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.625435,
+                  41.875697
+                ]
+              },
+              "group": "1740592267317",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592267317"
+            },
+            {
+              "id": "67bf53c0d6423c000a2c2b15",
+              "time": "2025-02-26T17:47:44.962Z",
+              "value": "41.875569,-87.631191",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.631191,
+                  41.875569
+                ]
+              },
+              "group": "1740592064958",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592064958"
+            },
+            {
+              "id": "67bf53bb576be9000ac00576",
+              "time": "2025-02-26T17:47:39.451Z",
+              "value": "41.875569,-87.631888",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.631888,
+                  41.875569
+                ]
+              },
+              "group": "1740592059448",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740592059448"
+            },
+            {
+              "id": "67bf52f1627515000972003d",
+              "time": "2025-02-26T17:44:17.503Z",
+              "value": "41.875501,-87.633624",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.633624,
+                  41.875501
+                ]
+              },
+              "group": "1740591857501",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740591857501"
+            },
+            {
+              "id": "67bf52eb63586e000b5a1e01",
+              "time": "2025-02-26T17:44:11.988Z",
+              "value": "41.875501,-87.633624",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.633624,
+                  41.875501
+                ]
+              },
+              "group": "1740591851985",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740591851985"
+            },
+            {
+              "id": "67bf5223627515000971e529",
+              "time": "2025-02-26T17:40:51.259Z",
+              "value": "41.87679,-87.633713",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.633713,
+                  41.87679
+                ]
+              },
+              "group": "1740591651256",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740591651256"
+            },
+            {
+              "id": "67bf5221020d2a000ae26b7a",
+              "time": "2025-02-26T17:40:49.675Z",
+              "value": "41.875573,-87.633713",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.633713,
+                  41.875573
+                ]
+              },
+              "group": "1740591649672",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740591649672"
+            },
+            {
+              "id": "67bf5161d6423c000a2be311",
+              "time": "2025-02-26T17:37:37.116Z",
+              "value": "41.876808,-87.634918",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.634918,
+                  41.876808
+                ]
+              },
+              "group": "1740591457114",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740591457114"
+            },
+            {
+              "id": "67bf51512aec62000ad7bbd2",
+              "time": "2025-02-26T17:37:21.313Z",
+              "value": "41.876808,-87.635764",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.635764,
+                  41.876808
+                ]
+              },
+              "group": "1740591441311",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740591441311"
+            },
+            {
+              "id": "67bf509463586e000b59ce3b",
+              "time": "2025-02-26T17:34:12.269Z",
+              "value": "41.876816,-87.636808",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.636808,
+                  41.876816
+                ]
+              },
+              "group": "1740591252265",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740591252265"
+            },
+            {
+              "id": "67bf5081576be9000abf95c6",
+              "time": "2025-02-26T17:33:53.686Z",
+              "value": "41.876816,-87.636808",
+              "variable": "location",
+              "location": {
+                "type": "Point",
+                "coordinates": [
+                  -87.636808,
+                  41.876816
+                ]
+              },
+              "group": "1740591233683",
+              "device": "60888a20ea380c001298a45d",
+              "origin": "60888a20ea380c001298a45d",
+              "serie": "1740591233683"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
     }
   ]
 }

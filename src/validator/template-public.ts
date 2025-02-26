@@ -4,20 +4,20 @@ import { zName, zResourceID } from "./utils/common";
 const zAnalysisField = z.object({
   id: zResourceID,
   name: z.string(),
-  description: z.string(),
+  description: z.string().nullish(),
 });
 
 const zDevicesField = z.object({
   id: zResourceID,
   name: z.string(),
-  description: z.string(),
+  description: z.string().nullish(),
 });
 
 const zBlueprintsField = z.object({
   id: zResourceID,
   type: z.enum(["device", "entity"]),
   name: z.string(),
-  description: z.string(),
+  description: z.string().nullish(),
   conditions: z.array(
     z.object({
       key: z.string(),

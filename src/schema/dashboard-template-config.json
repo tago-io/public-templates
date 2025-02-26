@@ -41,8 +41,7 @@
             },
             "required": [
               "id",
-              "name",
-              "description"
+              "name"
             ],
             "additionalProperties": false
           }
@@ -65,8 +64,7 @@
             },
             "required": [
               "id",
-              "name",
-              "description"
+              "name"
             ],
             "additionalProperties": false
           }
@@ -153,7 +151,6 @@
             "required": [
               "id",
               "name",
-              "description",
               "conditions"
             ],
             "additionalProperties": false
