@@ -7,7 +7,7 @@ import { generateAssetURL } from "./create-asset-url";
 import type { DashboardTemplateConfig, DashboardTemplateManifest } from "../schema/types";
 import { zTemplatePublic } from "../validator/template-public";
 
-async function createTemplate(knexClient: Knex, templateData: DashboardTemplateManifest, filePath: string) {
+async function createTemplate(knexClient: Knex, templateData: DashboardTemplateManifest, filePath: string, folderName: string): Promise<void> {
   const manifestKeys = Object.keys(templateData?.manifest || {});
 
   for (const element of manifestKeys) {
@@ -26,8 +26,8 @@ async function createTemplate(knexClient: Knex, templateData: DashboardTemplateM
       name: templateData.name,
       structure: await readFileFromPath(filePath, templateData.structure?.[validateType], true),
       description: await readFileFromPath(filePath, templateData.description),
-      logo: generateAssetURL(filePath, templateData?.images?.logo),
-      banner: generateAssetURL(filePath, templateData?.images?.banner),
+      logo: generateAssetURL(`/templates/dashboard/${folderName}`, templateData?.images?.logo),
+      banner: generateAssetURL(`/templates/dashboard/${folderName}`, templateData?.images?.banner),
       setup: configData.setup,
       type: `dashboard_${configData.type}`,
       use_mock: configData.use_mock,
@@ -52,7 +52,7 @@ async function createTemplates(knexClient: Knex, directoryPath: string): Promise
       throw `manifest.jsonc manifest file not found in ${filePath}`;
     }
     const templateData: DashboardTemplateManifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
-    await createTemplate(knexClient, templateData, filePath);
+    await createTemplate(knexClient, templateData, filePath, file);
   }
 }
 
