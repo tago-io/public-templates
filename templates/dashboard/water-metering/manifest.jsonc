@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../src/schema/dashboard-template.json",
+  "name": "Water Metering",
+  "images": {
+    "logo": "./assets/water_metering_template_thumbnail.webp"
+  },
+  "structure": {
+    "standard": "./standard/structure.json"
+  },
+  "manifest": {
+    "standard": "./standard/template-config.json"
+  },
+  "description": "./description.md",
+  "category": "energy"
+}

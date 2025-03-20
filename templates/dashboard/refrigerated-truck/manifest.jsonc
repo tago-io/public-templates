@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../src/schema/dashboard-template.json",
+  "name": "Refrigerated Truck",
+  "images": {
+    "logo": "./assets/refrigerated_truck_template_thumbnail.webp"
+  },
+  "structure": {
+    "standard": "./standard/structure.json"
+  },
+  "manifest": {
+    "standard": "./standard/template-config.json"
+  },
+  "description": "./description.md",
+  "category": "location"
+}

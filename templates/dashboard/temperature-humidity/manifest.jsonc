@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../src/schema/dashboard-template.json",
+  "name": "Temperature & Humidity",
+  "images": {
+    "logo": "./assets/temperature_humidity_template_thumbnail.webp"
+  },
+  "structure": {
+    "standard": "./standard/structure.json"
+  },
+  "manifest": {
+    "standard": "./standard/template-config.json"
+  },
+  "description": "./description.md",
+  "category": "control"
+}
