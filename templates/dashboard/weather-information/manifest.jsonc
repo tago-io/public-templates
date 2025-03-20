@@ -1,6 +1,6 @@
 {
   "$schema": "../../../src/schema/dashboard-template.json",
-  "name": "Apartment",
+  "name": "Weather",
   "images": {
     "logo": "./assets/weather_information_template_thumbnail.webp"
   },
