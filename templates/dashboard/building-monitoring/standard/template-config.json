@@ -1,1 +1,11 @@
-{"type":"standard","use_mock":true,"setup":{"devices":[{"id":"65b93825d1ae0b00091e10c8","name":"Smart Buildings"},{"id":"63bd5ff6b8f6c2000a6bdcd2","name":"Metering - Apartment 2A"}],"analysis":[]}}
+{
+  "type": "standard",
+  "use_mock": true,
+  "setup": {
+    "devices": [
+      { "id": "65b93825d1ae0b00091e10c8", "name": "Smart Buildings" },
+      { "id": "63bd5ff6b8f6c2000a6bdcd2", "name": "Metering - Apartment 2A" }
+    ],
+    "analysis": []
+  }
+}

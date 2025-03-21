@@ -56,6 +56,7 @@ const zTemplatePublic = z
     id: zResourceID,
     name: zName,
     type: z.enum(["dashboard_standard", "dashboard_blueprint"]),
+    category: z.enum(["default", "charts", "control", "energy", "location", "management"]),
     description: z.string(),
     logo: z.string().nullish(),
     banner: z.string().nullish(),
@@ -89,7 +90,8 @@ const zTemplatePublic = z
         path: ["setup"],
       });
     }
-  }).transform((data) => {
+  })
+  .transform((data) => {
     return {
       ...data,
       setup: JSON.stringify(data.setup),

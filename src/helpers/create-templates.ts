@@ -28,6 +28,7 @@ async function createTemplate(knexClient: Knex, templateData: DashboardTemplateM
       description: await readFileFromPath(filePath, templateData.description),
       logo: generateAssetURL(`/templates/dashboard/${folderName}`, templateData?.images?.logo),
       banner: generateAssetURL(`/templates/dashboard/${folderName}`, templateData?.images?.banner),
+      category: templateData.category,
       setup: configData.setup,
       type: `dashboard_${configData.type}`,
       use_mock: configData.use_mock,

@@ -6,6 +6,7 @@ export async function up(knex: Knex): Promise<void> {
       table.text("id").primary();
       table.text("name").notNullable();
       table.text("type").notNullable();
+      table.text("category").notNullable();
       table.text("description").defaultTo(null);
       table.boolean("use_mock").defaultTo(false);
       table.binary("structure").notNullable();
