@@ -1,1 +1,1265 @@
-{"dashboard":{"id":"67598946e55d6f0009587573","type":"dashboard","label":"Vehicle Telemetry","description":"","arrangement":[{"x":2,"y":0,"tab":"1619551481168","width":1,"height":2.5,"widget_id":"67598946e55d6f0009587575"},{"x":3,"y":0,"tab":"1619551481168","width":1,"height":2.5,"widget_id":"67598946e55d6f0009587574"},{"x":0,"y":14,"tab":"1619551481168","width":3,"height":3.5,"widget_id":"67598946e55d6f0009587578"},{"x":3,"y":14,"tab":"1619551481168","width":1,"height":3.5,"widget_id":"67598946e55d6f0009587577"},{"x":0,"y":0,"tab":"1619551481168","width":2,"height":7,"widget_id":"67a37461fff3b7000904506a"},{"x":2,"y":5,"tab":"1619551481168","width":2,"height":4.5,"widget_id":"67a3760cdb365d0008af5fee"}],"created_at":"2024-12-11T12:44:54.587Z","updated_at":"2025-03-20T15:18:32.831Z","tags":[{"key":"dashboard_type","value":"Dark Dashboards","metadata":{"run":false}}],"group_by":[],"tabs":[{"key":"1619551481168","link":"","value":"Main"}],"icon":{"url":"https://api.tago.io/file/547e1bee7dbf3af122c02572/chicago_bus.svg","color":"#0433ff"},"background":{"type":"color","color":"hsl(210, 13%, 16%)","isMigrate":true},"blueprint_devices":null,"blueprint_device_behavior":null,"blueprint_selector_behavior":null,"setup":{},"theme":{"color":{"tab_background":"hsla(206, 17%, 18%, 1)","tab_active":"hsla(206, 15%, 31%, 1)"}},"public_token_expire":null,"disable_blueprint_fallback":false,"filter":{"period":{"enabled":false,"presets":[],"show_calendar":true,"max_range":"3 day"}}},"widgets":[{"id":"67a3760cdb365d0008af5fee","analysis_run":null,"label":"Speed History","realtime":"true","type":"area_chart","data":[{"qty":50,"origin":"6759891f53301e0008a41052","timezone":"America/Sao_Paulo","variables":["speed"],"start_date":"99 years"}],"display":{"group_by":"time","header_buttons":[],"help":"","intervals":["1 day"],"line_curve":"smooth","max_points":"50","order_by":"time","show_point_values":false,"stacked":false,"theme":{"color":{"background":"hsla(206, 17%, 18%, 1)","background_blur":null,"header":null,"label":null,"tick":"hsla(250, 0%, 100%, 1)","grid":"hsla(250, 7%, 89%, 1)","text_border":null,"text":"hsla(250, 0%, 100%, 1)","tooltip_background":null,"tooltip_border":null,"tooltip_text":null}},"variables":[{"color":"hsl(210, 71%, 70%)","id":"6eIXhDq_9dJgTecoVxCOu","origin":"6759891f53301e0008a41052","variable":"speed","formula":{"unit_type":"origin"},"data_params":{"interval":null,"query":null,"function":null,"value":null,"period":{"start_date":"99 years","end_date":null}},"variables":["speed"],"qty":5000,"timezone":"America/Sao_Paulo"}],"x_axis":{"plot_by":"realtime","type":"time"},"y_axis":{"scale":{"type":"dynamic"},"show_metric_abbreviation":true},"override_dashboard_presets":false,"aggregate_intervals":[]},"created_at":"2025-02-05T14:30:36.457Z","updated_at":"2025-02-05T14:35:13.132Z","resource":[],"cache":null,"mock_data":[{"data":{"qty":50,"origin":"6759891f53301e0008a41052","timezone":"America/Sao_Paulo","variables":["speed"],"start_date":"99 years","bucket":"6759891f53301e0008a41052"},"result":[{"id":"6770f3a3cd6e6200090f6bbe","time":"2024-12-29T07:00:51.214Z","value":9.64,"variable":"speed","group":"1735455651211","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455651211"},{"id":"6770f351c5b98c0009300184","time":"2024-12-29T06:59:29.121Z","value":6.53,"variable":"speed","group":"1735455569118","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455569118"},{"id":"6770f2ebc5b98c00092ff5c6","time":"2024-12-29T06:57:47.277Z","value":0.98,"variable":"speed","group":"1735455467274","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455467274"},{"id":"6770f23af3765e0009150972","time":"2024-12-29T06:54:50.665Z","value":7.84,"variable":"speed","group":"1735455290662","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455290662"},{"id":"6770f2397b584e0009650878","time":"2024-12-29T06:54:49.903Z","value":7.61,"variable":"speed","group":"1735455289900","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455289900"},{"id":"6770f192ee077b0009362b10","time":"2024-12-29T06:52:02.676Z","value":2.72,"variable":"speed","group":"1735455122673","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455122673"},{"id":"6770f11ef3765e000914ed36","time":"2024-12-29T06:50:06.121Z","value":1.13,"variable":"speed","group":"1735455006118","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455006118"},{"id":"6770f0d0830401000926c8a3","time":"2024-12-29T06:48:48.108Z","value":14.81,"variable":"speed","group":"1735454928105","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735454928105"},{"id":"6770f00c5e5f2e00096b38b1","time":"2024-12-29T06:45:32.095Z","value":0,"variable":"speed","group":"1735454732092","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735454732092"},{"id":"6770efe1830401000926ae69","time":"2024-12-29T06:44:49.250Z","value":0.84,"variable":"speed","group":"1735454689247","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735454689247"},{"id":"6770ef5422502900099b203e","time":"2024-12-29T06:42:28.596Z","value":0.42,"variable":"speed","group":"1735454548593","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735454548593"},{"id":"6770eec67b584e000964b2c3","time":"2024-12-29T06:40:06.584Z","value":8.01,"variable":"speed","group":"1735454406578","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735454406578"},{"id":"6770ee959b359200092b6c97","time":"2024-12-29T06:39:17.389Z","value":8.04,"variable":"speed","group":"1735454357386","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735454357386"},{"id":"6770eddc5228b40009338d4d","time":"2024-12-29T06:36:12.077Z","value":14.84,"variable":"speed","group":"1735454172074","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735454172074"},{"id":"6770edab22502900099af53a","time":"2024-12-29T06:35:23.404Z","value":2.5,"variable":"speed","group":"1735454123402","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735454123402"},{"id":"6770ed1eee077b000935b812","time":"2024-12-29T06:33:02.685Z","value":4.27,"variable":"speed","group":"1735453982682","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735453982682"},{"id":"6770ec63ba8c4b000903a6a9","time":"2024-12-29T06:29:55.661Z","value":10.25,"variable":"speed","group":"1735453795658","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735453795658"},{"id":"6770ec61f3765e0009146059","time":"2024-12-29T06:29:53.433Z","value":8.53,"variable":"speed","group":"1735453793430","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735453793430"},{"id":"6770ebacc5b98c00092f2d3f","time":"2024-12-29T06:26:52.029Z","value":5.09,"variable":"speed","group":"1735453612026","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735453612026"},{"id":"6770eb326b084c000902c9cc","time":"2024-12-29T06:24:50.167Z","value":5.1,"variable":"speed","group":"1735453490164","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735453490164"},{"id":"6770ead47b584e0009644674","time":"2024-12-29T06:23:16.322Z","value":31.83,"variable":"speed","group":"1735453396319","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735453396319"},{"id":"6770ea166b084c000902aaa7","time":"2024-12-29T06:20:06.085Z","value":0.93,"variable":"speed","group":"1735453206082","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735453206082"},{"id":"6770ea125228b40009331ccf","time":"2024-12-29T06:20:02.426Z","value":27.57,"variable":"speed","group":"1735453202423","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735453202423"},{"id":"6770e954da0b190009a20c7f","time":"2024-12-29T06:16:52.252Z","value":1.62,"variable":"speed","group":"1735453012249","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735453012249"},{"id":"6770e8ecba8c4b000903432f","time":"2024-12-29T06:15:08.430Z","value":1.56,"variable":"speed","group":"1735452908428","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735452908428"},{"id":"6770e8925228b4000932f7c8","time":"2024-12-29T06:13:38.008Z","value":15.48,"variable":"speed","group":"1735452818001","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735452818001"},{"id":"6770e7d1830401000925dabd","time":"2024-12-29T06:10:25.493Z","value":11.74,"variable":"speed","group":"1735452625491","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735452625491"},{"id":"6770e7ccc5b98c00092ebd0b","time":"2024-12-29T06:10:20.919Z","value":6.47,"variable":"speed","group":"1735452620916","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735452620916"},{"id":"6770e7096b084c0009025382","time":"2024-12-29T06:07:05.256Z","value":2.14,"variable":"speed","group":"1735452425253","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735452425253"},{"id":"6770e6b3ba8c4b00090306e9","time":"2024-12-29T06:05:39.237Z","value":9.27,"variable":"speed","group":"1735452339235","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735452339235"},{"id":"6770e6447c82210009e4ec01","time":"2024-12-29T06:03:48.052Z","value":8.15,"variable":"speed","group":"1735452228049","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735452228049"},{"id":"6770e585c5b98c00092e7d13","time":"2024-12-29T06:00:37.243Z","value":1.91,"variable":"speed","group":"1735452037240","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735452037240"},{"id":"6770e57d7b584e000963ba70","time":"2024-12-29T06:00:29.983Z","value":1.64,"variable":"speed","group":"1735452029980","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735452029980"},{"id":"6770e4b77b584e000963a481","time":"2024-12-29T05:57:11.267Z","value":12.75,"variable":"speed","group":"1735451831265","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735451831265"},{"id":"6770e45b4213c3000a15d4c0","time":"2024-12-29T05:55:39.365Z","value":0,"variable":"speed","group":"1735451739362","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735451739362"},{"id":"6770e3ee805e8f00096df647","time":"2024-12-29T05:53:50.713Z","value":18.59,"variable":"speed","group":"1735451630710","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735451630710"},{"id":"6770e33d225029000999d574","time":"2024-12-29T05:50:53.629Z","value":6.72,"variable":"speed","group":"1735451453626","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735451453626"},{"id":"6770e33165271b0009005b55","time":"2024-12-29T05:50:41.026Z","value":2,"variable":"speed","group":"1735451441024","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735451441024"},{"id":"6770e272c7f4cd00094f892d","time":"2024-12-29T05:47:30.453Z","value":31.14,"variable":"speed","group":"1735451250450","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735451250450"},{"id":"6770e214225029000999b82c","time":"2024-12-29T05:45:56.557Z","value":32.94,"variable":"speed","group":"1735451156554","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735451156554"},{"id":"6770e1aa5228b40009323e54","time":"2024-12-29T05:44:10.416Z","value":8.19,"variable":"speed","group":"1735451050413","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735451050413"},{"id":"6770e0f35228b40009322adb","time":"2024-12-29T05:41:07.722Z","value":13.43,"variable":"speed","group":"1735450867720","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735450867720"},{"id":"6770e0ef9b3592000929fb0f","time":"2024-12-29T05:41:03.067Z","value":8.27,"variable":"speed","group":"1735450863064","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735450863064"},{"id":"6770e02c331f06000966e683","time":"2024-12-29T05:37:48.191Z","value":4.51,"variable":"speed","group":"1735450668188","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735450668188"},{"id":"6770dfdb9b3592000929e0f1","time":"2024-12-29T05:36:27.429Z","value":11.7,"variable":"speed","group":"1735450587426","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735450587426"},{"id":"6770df6fc7f4cd00094f3a13","time":"2024-12-29T05:34:39.857Z","value":2.73,"variable":"speed","group":"1735450479853","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735450479853"},{"id":"6770deaa7c82210009e42493","time":"2024-12-29T05:31:22.527Z","value":11.9,"variable":"speed","group":"1735450282524","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735450282524"},{"id":"6770dea27c82210009e42423","time":"2024-12-29T05:31:14.349Z","value":17.08,"variable":"speed","group":"1735450274347","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735450274347"},{"id":"6770dde36089ed0009bfd7fb","time":"2024-12-29T05:28:03.641Z","value":25.34,"variable":"speed","group":"1735450083638","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735450083638"},{"id":"6770dd8f6089ed0009bfced5","time":"2024-12-29T05:26:39.642Z","value":2.41,"variable":"speed","group":"1735449999640","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735449999640"}],"cacheTime":null}]},{"id":"67a37461fff3b7000904506a","analysis_run":null,"label":"Location","realtime":"true","type":"map","data":[{"qty":20,"bucket":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","timezone":"America/Sao_Paulo","variables":["location"]}],"display":{"center_options":{"center_all_variables":true,"show_only_last_values":false,"variables":[]},"geofence":{"enable_user":false,"events_type":"static","limit":100,"type_enable_user":"all","events_label":"Event"},"header_buttons":[],"help":"","infobox_config":{"date_format":"","image":{"behavior":"landscape","object_fit":"fill","position":"top"}},"initial_mode":"dark","max_points":"20","timezone":{"id":"America/Sao_Paulo","label":"(GMT-03:00) Sao Paulo"},"variables":[{"origin":"6759891f53301e0008a41052","variable":"location","bucket":"6759891f53301e0008a41052","pin_id":"Hl8PZUQoWN7zj31jlAnqR","data_params":{"interval":null,"query":null,"function":null,"value":null,"period":{"start_date":null,"end_date":null}}}],"show_last_update":false,"show_lines":true,"show_lines_animated":true,"group_markers":true,"initial_zoom":"70","frame_settings":{"header_visibility":"show_on_hover"}},"created_at":"2025-02-05T14:23:29.772Z","updated_at":"2025-02-05T14:35:55.095Z","resource":[],"cache":null,"mock_data":[{"data":{"qty":20,"bucket":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","timezone":"America/Sao_Paulo","variables":["location"]},"result":[{"id":"6770f3a3cd6e6200090f6bbc","time":"2024-12-29T07:00:51.214Z","value":"41.886912,-87.631934","variable":"location","location":{"type":"Point","coordinates":[-87.631934,41.886912]},"group":"1735455651211","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455651211"},{"id":"6770f351c5b98c0009300182","time":"2024-12-29T06:59:29.120Z","value":"41.887392,-87.626122","variable":"location","location":{"type":"Point","coordinates":[-87.626122,41.887392]},"group":"1735455569118","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455569118"},{"id":"6770f2ebc5b98c00092ff5c4","time":"2024-12-29T06:57:47.276Z","value":"41.887392,-87.626122","variable":"location","location":{"type":"Point","coordinates":[-87.626122,41.887392]},"group":"1735455467274","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455467274"},{"id":"6770f23af3765e0009150970","time":"2024-12-29T06:54:50.665Z","value":"41.888286,-87.625221","variable":"location","location":{"type":"Point","coordinates":[-87.625221,41.888286]},"group":"1735455290662","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455290662"},{"id":"6770f2397b584e0009650876","time":"2024-12-29T06:54:49.902Z","value":"41.888286,-87.625221","variable":"location","location":{"type":"Point","coordinates":[-87.625221,41.888286]},"group":"1735455289900","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455289900"},{"id":"6770f192ee077b0009362b0e","time":"2024-12-29T06:52:02.675Z","value":"41.88833,-87.624792","variable":"location","location":{"type":"Point","coordinates":[-87.624792,41.88833]},"group":"1735455122673","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455122673"},{"id":"6770f11ef3765e000914ed34","time":"2024-12-29T06:50:06.121Z","value":"41.88757,-87.624448","variable":"location","location":{"type":"Point","coordinates":[-87.624448,41.88757]},"group":"1735455006118","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455006118"},{"id":"6770f0d0830401000926c8a1","time":"2024-12-29T06:48:48.107Z","value":"41.884407,-87.624448","variable":"location","location":{"type":"Point","coordinates":[-87.624448,41.884407]},"group":"1735454928105","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735454928105"},{"id":"6770f00c5e5f2e00096b38af","time":"2024-12-29T06:45:32.095Z","value":"41.883297,-87.624205","variable":"location","location":{"type":"Point","coordinates":[-87.624205,41.883297]},"group":"1735454732092","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735454732092"},{"id":"6770efe1830401000926ae67","time":"2024-12-29T06:44:49.249Z","value":"41.877378,-87.624205","variable":"location","location":{"type":"Point","coordinates":[-87.624205,41.877378]},"group":"1735454689247","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735454689247"},{"id":"6770ef5422502900099b203c","time":"2024-12-29T06:42:28.596Z","value":"41.877175,-87.624205","variable":"location","location":{"type":"Point","coordinates":[-87.624205,41.877175]},"group":"1735454548593","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735454548593"},{"id":"6770eec67b584e000964b2c1","time":"2024-12-29T06:40:06.583Z","value":"41.875697,-87.625454","variable":"location","location":{"type":"Point","coordinates":[-87.625454,41.875697]},"group":"1735454406578","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735454406578"},{"id":"6770ee959b359200092b6c95","time":"2024-12-29T06:39:17.389Z","value":"41.875697,-87.626132","variable":"location","location":{"type":"Point","coordinates":[-87.626132,41.875697]},"group":"1735454357386","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735454357386"},{"id":"6770eddc5228b40009338d4b","time":"2024-12-29T06:36:12.077Z","value":"41.875569,-87.632495","variable":"location","location":{"type":"Point","coordinates":[-87.632495,41.875569]},"group":"1735454172074","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735454172074"},{"id":"6770edab22502900099af538","time":"2024-12-29T06:35:23.404Z","value":"41.875501,-87.633624","variable":"location","location":{"type":"Point","coordinates":[-87.633624,41.875501]},"group":"1735454123402","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735454123402"},{"id":"6770ed1eee077b000935b810","time":"2024-12-29T06:33:02.684Z","value":"41.876783,-87.633713","variable":"location","location":{"type":"Point","coordinates":[-87.633713,41.876783]},"group":"1735453982682","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735453982682"},{"id":"6770ec63ba8c4b000903a6a7","time":"2024-12-29T06:29:55.661Z","value":"41.876808,-87.634225","variable":"location","location":{"type":"Point","coordinates":[-87.634225,41.876808]},"group":"1735453795658","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735453795658"},{"id":"6770ec61f3765e0009146057","time":"2024-12-29T06:29:53.433Z","value":"41.876808,-87.634557","variable":"location","location":{"type":"Point","coordinates":[-87.634557,41.876808]},"group":"1735453793430","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735453793430"},{"id":"6770ebacc5b98c00092f2d3d","time":"2024-12-29T06:26:52.029Z","value":"41.876816,-87.636808","variable":"location","location":{"type":"Point","coordinates":[-87.636808,41.876816]},"group":"1735453612026","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735453612026"},{"id":"6770eb326b084c000902c9ca","time":"2024-12-29T06:24:50.166Z","value":"41.876816,-87.636808","variable":"location","location":{"type":"Point","coordinates":[-87.636808,41.876816]},"group":"1735453490164","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735453490164"}],"cacheTime":null}]},{"id":"67598946e55d6f0009587575","analysis_run":null,"label":"Fuel Level","realtime":"1","type":"solid","data":[{"query":"last_value","bucket":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","variables":["fuel_level"]}],"display":{"alias":"","formula":{"formula_type":"fixed"},"header_buttons":[],"help":"","number_format":{"decimals":1,"show_thousand":false},"range":{"type":"minmax","minimum":0,"maximum":100},"show_variables":false,"theme":{"color":{"background":"hsla(206, 17%, 18%, 1)","background_blur":null,"header":null,"fill":"hsla(24, 95%, 48%, 1)","text_border":null,"text":"hsla(250, 3%, 83%, 1)","outline":null}}},"created_at":"2024-12-11T12:44:54.587Z","updated_at":"2024-12-11T13:00:18.982Z","resource":[],"cache":null,"mock_data":[{"data":{"query":"last_value","bucket":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","variables":["fuel_level"]},"result":[{"id":"6770f3a3cd6e6200090f6bbd","time":"2024-12-29T07:00:51.214Z","unit":"%","value":20,"variable":"fuel_level","group":"1735455651211","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455651211"}],"cacheTime":null}]},{"id":"67598946e55d6f0009587577","analysis_run":null,"label":"Chicago Time","realtime":"1","type":"clock","data":[{"timezone":"America/Chicago"}],"display":{"header_buttons":[],"help":"","show_last_update":false,"theme":{"color":{"background":"hsla(206, 17%, 18%, 1)","background_blur":0,"header":null,"fill":"hsla(209, 62%, 73%, 1)","text_border":null,"text":"hsla(250, 3%, 83%, 1)","outline":null}}},"created_at":"2024-12-11T12:44:54.587Z","updated_at":"2024-12-11T13:04:40.511Z","resource":[],"cache":null,"mock_data":[{"data":{"timezone":"America/Chicago"},"result":[]}]},{"id":"67598946e55d6f0009587578","analysis_run":null,"label":"Table with Indicators (Status)","realtime":"1","type":"static_table","data":[{"query":"last_value","bucket":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","variables":["fuel_level","trip_odometer","speed"]}],"display":{"header_buttons":[],"help":"","theme":{"color":{"background":"hsla(206, 17%, 18%, 1)","background_blur":null,"header":null,"alternate":null}},"variables":[{"data_type":"text","id":"GV_XI3Low","position":{"x":0,"y":0},"text_content":""},{"data_type":"text","id":"TV1rICuYB7","position":{"x":1,"y":0},"text_content":"Bus #1","theme":{"color":{"background":"hsla(223, 11%, 13%, 1)","font":"hsla(250, 3%, 79%, 1)"}}},{"data_type":"text","id":"3KB1k5aUPR","position":{"x":0,"y":1},"text_content":"Fuel Level","theme":{"color":{"background":"hsla(223, 11%, 13%, 1)","font":"hsla(250, 6%, 78%, 1)"}}},{"content_type":"value","data":{"origin":"6759891f53301e0008a41052","variable":"fuel_level","bucket":"6759891f53301e0008a41052","query":"last_value"},"data_type":"variable","id":"K17DIvX7WL","position":{"x":1,"y":1},"override_color":true,"color_conditions":[{"condition":"*","background":"hsla(223, 11%, 13%, 1)","font":"hsla(250, 4%, 76%, 1)","apply_before_formula":false}]},{"data_type":"text","id":"p66gvI8wxY","position":{"x":0,"y":2},"text_content":"Trip odometer","theme":{"color":{"background":"hsla(223, 11%, 13%, 1)","font":"hsla(250, 4%, 73%, 1)"}}},{"content_type":"value","data":{"origin":"6759891f53301e0008a41052","variable":"trip_odometer","bucket":"6759891f53301e0008a41052","query":"last_value"},"data_type":"variable","id":"gPlY1ocqf4","position":{"x":1,"y":2},"override_color":true,"color_conditions":[{"condition":"*","background":"hsla(223, 11%, 13%, 1)","font":"hsla(250, 3%, 73%, 1)","apply_before_formula":false}]},{"data_type":"text","id":"95QypF5AVc","position":{"x":0,"y":3},"text_content":"Speed","theme":{"color":{"background":"hsla(223, 11%, 13%, 1)","font":"hsla(250, 3%, 68%, 1)"}}},{"content_type":"value","data":{"origin":"6759891f53301e0008a41052","variable":"speed","bucket":"6759891f53301e0008a41052","query":"last_value"},"data_type":"variable","id":"O0pGROHlMi","position":{"x":1,"y":3},"override_color":true,"color_conditions":[{"condition":"*","background":"hsla(223, 11%, 13%, 1)","font":"hsla(250, 2%, 71%, 1)","apply_before_formula":false}]},{"data_type":"text","id":"TzuSwSXyMU","position":{"x":0,"y":4},"text_content":"Internal temperature","theme":{"color":{"background":"hsla(223, 11%, 13%, 1)","font":"hsla(250, 4%, 70%, 1)"}}},{"data_type":"text","id":"mtuOtexmPW","position":{"x":1,"y":4},"text_content":"N/A","theme":{"color":{"background":"hsla(223, 11%, 13%, 1)","font":"hsla(250, 2%, 74%, 1)"}}},{"data_type":"text","id":"wn6x4PGlMJ","position":{"x":0,"y":5},"text_content":"Air conditioning (ON/OFF)","theme":{"color":{"background":"hsla(223, 11%, 13%, 1)","font":"hsla(250, 4%, 74%, 1)"}}},{"data_type":"text","id":"uYivoGlTwZ","position":{"x":1,"y":5},"text_content":"OFF","theme":{"color":{"background":"hsla(223, 11%, 13%, 1)","font":"hsla(250, 1%, 65%, 1)"}}}]},"created_at":"2024-12-11T12:44:54.587Z","updated_at":"2024-12-11T13:00:19.021Z","resource":[],"cache":null,"mock_data":[{"data":{"query":"last_value","bucket":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","variables":["fuel_level","trip_odometer","speed"]},"result":[{"id":"6770f3a3cd6e6200090f6bbd","time":"2024-12-29T07:00:51.214Z","unit":"%","value":20,"variable":"fuel_level","group":"1735455651211","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455651211"},{"id":"6770f3a3cd6e6200090f6bbf","time":"2024-12-29T07:00:51.214Z","value":0.19,"variable":"trip_odometer","group":"1735455651211","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455651211"},{"id":"6770f3a3cd6e6200090f6bbe","time":"2024-12-29T07:00:51.214Z","value":9.64,"variable":"speed","group":"1735455651211","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455651211"}],"cacheTime":null}]},{"id":"67598946e55d6f0009587574","analysis_run":null,"label":"Bus Speed","realtime":"1","type":"angular","data":[{"query":"last_value","bucket":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","variables":["speed"]}],"display":{"alias":"","formula":{"formula_type":"fixed","unit_type":"fixed","fixed_unit":"MPH"},"header_buttons":[{"color":null,"icon":"","text":"","trigger":"widget","widget":null}],"help":"","number_format":{"decimals":"2"},"range":{"type":"minmax","minimum":0,"maximum":50},"show_variables":false,"theme":{"color":{"background":"hsla(206, 17%, 18%, 1)","background_blur":0,"header":null,"fill":"hsla(54, 72%, 63%, 1)","text_border":null,"text":"hsla(250, 3%, 83%, 1)","outline":null,"needle":"hsla(250, 2%, 77%, 1)","tick":"hsla(250, 2%, 79%, 1)","hue":null}}},"created_at":"2024-12-11T12:44:54.587Z","updated_at":"2024-12-11T13:12:22.712Z","resource":[],"cache":null,"mock_data":[{"data":{"query":"last_value","bucket":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","variables":["speed"]},"result":[{"id":"6770f3a3cd6e6200090f6bbe","time":"2024-12-29T07:00:51.214Z","value":9.64,"variable":"speed","group":"1735455651211","device":"6759891f53301e0008a41052","origin":"6759891f53301e0008a41052","serie":"1735455651211"}],"cacheTime":null}]}]}
+{
+  "dashboard": {
+    "id": "67598946e55d6f0009587573",
+    "type": "dashboard",
+    "label": "Vehicle Telemetry",
+    "description": "",
+    "arrangement": [
+      { "x": 2, "y": 0, "tab": "1619551481168", "width": 1, "height": 2.5, "widget_id": "67598946e55d6f0009587575" },
+      { "x": 3, "y": 0, "tab": "1619551481168", "width": 1, "height": 2.5, "widget_id": "67598946e55d6f0009587574" },
+      { "x": 0, "y": 14, "tab": "1619551481168", "width": 3, "height": 3.5, "widget_id": "67598946e55d6f0009587578" },
+      { "x": 3, "y": 14, "tab": "1619551481168", "width": 1, "height": 3.5, "widget_id": "67598946e55d6f0009587577" },
+      { "x": 0, "y": 0, "tab": "1619551481168", "width": 2, "height": 7, "widget_id": "67a37461fff3b7000904506a" },
+      { "x": 2, "y": 5, "tab": "1619551481168", "width": 2, "height": 4.5, "widget_id": "67a3760cdb365d0008af5fee" }
+    ],
+    "created_at": "2024-12-11T12:44:54.587Z",
+    "updated_at": "2025-03-20T15:18:32.831Z",
+    "tags": [{ "key": "dashboard_type", "value": "Dark Dashboards", "metadata": { "run": false } }],
+    "group_by": [],
+    "tabs": [{ "key": "1619551481168", "link": "", "value": "Main" }],
+    "icon": { "url": "https://api.tago.io/file/547e1bee7dbf3af122c02572/chicago_bus.svg", "color": "#0433ff" },
+    "background": { "type": "color", "color": "hsl(210, 13%, 16%)", "isMigrate": true },
+    "blueprint_devices": null,
+    "blueprint_device_behavior": null,
+    "blueprint_selector_behavior": null,
+    "setup": {},
+    "theme": { "color": { "tab_background": "hsla(206, 17%, 18%, 1)", "tab_active": "hsla(206, 15%, 31%, 1)" } },
+    "public_token_expire": null,
+    "disable_blueprint_fallback": false,
+    "filter": { "period": { "enabled": false, "presets": [], "show_calendar": true, "max_range": "3 day" } }
+  },
+  "widgets": [
+    {
+      "id": "67a3760cdb365d0008af5fee",
+      "analysis_run": null,
+      "label": "Speed History",
+      "realtime": "true",
+      "type": "area_chart",
+      "data": [
+        {
+          "qty": 50,
+          "origin": "6759891f53301e0008a41052",
+          "timezone": "America/Sao_Paulo",
+          "variables": ["speed"],
+          "start_date": "99 years"
+        }
+      ],
+      "display": {
+        "group_by": "time",
+        "header_buttons": [],
+        "help": "",
+        "intervals": ["1 day"],
+        "line_curve": "smooth",
+        "max_points": "50",
+        "order_by": "time",
+        "show_point_values": false,
+        "stacked": false,
+        "theme": {
+          "color": {
+            "background": "hsla(206, 17%, 18%, 1)",
+            "background_blur": null,
+            "header": null,
+            "label": null,
+            "tick": "hsla(250, 0%, 100%, 1)",
+            "grid": "hsla(250, 7%, 89%, 1)",
+            "text_border": null,
+            "text": "hsla(250, 0%, 100%, 1)",
+            "tooltip_background": null,
+            "tooltip_border": null,
+            "tooltip_text": null
+          }
+        },
+        "variables": [
+          {
+            "color": "hsl(210, 71%, 70%)",
+            "id": "6eIXhDq_9dJgTecoVxCOu",
+            "origin": "6759891f53301e0008a41052",
+            "variable": "speed",
+            "formula": { "unit_type": "origin" },
+            "data_params": {
+              "interval": null,
+              "query": null,
+              "function": null,
+              "value": null,
+              "period": { "start_date": "99 years", "end_date": null }
+            },
+            "variables": ["speed"],
+            "qty": 5000,
+            "timezone": "America/Sao_Paulo"
+          }
+        ],
+        "x_axis": { "plot_by": "realtime", "type": "time" },
+        "y_axis": { "scale": { "type": "dynamic" }, "show_metric_abbreviation": true },
+        "override_dashboard_presets": false,
+        "aggregate_intervals": []
+      },
+      "created_at": "2025-02-05T14:30:36.457Z",
+      "updated_at": "2025-02-05T14:35:13.132Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "qty": 50,
+            "origin": "6759891f53301e0008a41052",
+            "timezone": "America/Sao_Paulo",
+            "variables": ["speed"],
+            "start_date": "99 years",
+            "bucket": "6759891f53301e0008a41052"
+          },
+          "result": [
+            {
+              "id": "6770f3a3cd6e6200090f6bbe",
+              "time": "2024-12-29T07:00:51.214Z",
+              "value": 9.64,
+              "variable": "speed",
+              "group": "1735455651211",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455651211"
+            },
+            {
+              "id": "6770f351c5b98c0009300184",
+              "time": "2024-12-29T06:59:29.121Z",
+              "value": 6.53,
+              "variable": "speed",
+              "group": "1735455569118",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455569118"
+            },
+            {
+              "id": "6770f2ebc5b98c00092ff5c6",
+              "time": "2024-12-29T06:57:47.277Z",
+              "value": 0.98,
+              "variable": "speed",
+              "group": "1735455467274",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455467274"
+            },
+            {
+              "id": "6770f23af3765e0009150972",
+              "time": "2024-12-29T06:54:50.665Z",
+              "value": 7.84,
+              "variable": "speed",
+              "group": "1735455290662",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455290662"
+            },
+            {
+              "id": "6770f2397b584e0009650878",
+              "time": "2024-12-29T06:54:49.903Z",
+              "value": 7.61,
+              "variable": "speed",
+              "group": "1735455289900",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455289900"
+            },
+            {
+              "id": "6770f192ee077b0009362b10",
+              "time": "2024-12-29T06:52:02.676Z",
+              "value": 2.72,
+              "variable": "speed",
+              "group": "1735455122673",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455122673"
+            },
+            {
+              "id": "6770f11ef3765e000914ed36",
+              "time": "2024-12-29T06:50:06.121Z",
+              "value": 1.13,
+              "variable": "speed",
+              "group": "1735455006118",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455006118"
+            },
+            {
+              "id": "6770f0d0830401000926c8a3",
+              "time": "2024-12-29T06:48:48.108Z",
+              "value": 14.81,
+              "variable": "speed",
+              "group": "1735454928105",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454928105"
+            },
+            {
+              "id": "6770f00c5e5f2e00096b38b1",
+              "time": "2024-12-29T06:45:32.095Z",
+              "value": 0,
+              "variable": "speed",
+              "group": "1735454732092",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454732092"
+            },
+            {
+              "id": "6770efe1830401000926ae69",
+              "time": "2024-12-29T06:44:49.250Z",
+              "value": 0.84,
+              "variable": "speed",
+              "group": "1735454689247",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454689247"
+            },
+            {
+              "id": "6770ef5422502900099b203e",
+              "time": "2024-12-29T06:42:28.596Z",
+              "value": 0.42,
+              "variable": "speed",
+              "group": "1735454548593",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454548593"
+            },
+            {
+              "id": "6770eec67b584e000964b2c3",
+              "time": "2024-12-29T06:40:06.584Z",
+              "value": 8.01,
+              "variable": "speed",
+              "group": "1735454406578",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454406578"
+            },
+            {
+              "id": "6770ee959b359200092b6c97",
+              "time": "2024-12-29T06:39:17.389Z",
+              "value": 8.04,
+              "variable": "speed",
+              "group": "1735454357386",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454357386"
+            },
+            {
+              "id": "6770eddc5228b40009338d4d",
+              "time": "2024-12-29T06:36:12.077Z",
+              "value": 14.84,
+              "variable": "speed",
+              "group": "1735454172074",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454172074"
+            },
+            {
+              "id": "6770edab22502900099af53a",
+              "time": "2024-12-29T06:35:23.404Z",
+              "value": 2.5,
+              "variable": "speed",
+              "group": "1735454123402",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454123402"
+            },
+            {
+              "id": "6770ed1eee077b000935b812",
+              "time": "2024-12-29T06:33:02.685Z",
+              "value": 4.27,
+              "variable": "speed",
+              "group": "1735453982682",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453982682"
+            },
+            {
+              "id": "6770ec63ba8c4b000903a6a9",
+              "time": "2024-12-29T06:29:55.661Z",
+              "value": 10.25,
+              "variable": "speed",
+              "group": "1735453795658",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453795658"
+            },
+            {
+              "id": "6770ec61f3765e0009146059",
+              "time": "2024-12-29T06:29:53.433Z",
+              "value": 8.53,
+              "variable": "speed",
+              "group": "1735453793430",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453793430"
+            },
+            {
+              "id": "6770ebacc5b98c00092f2d3f",
+              "time": "2024-12-29T06:26:52.029Z",
+              "value": 5.09,
+              "variable": "speed",
+              "group": "1735453612026",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453612026"
+            },
+            {
+              "id": "6770eb326b084c000902c9cc",
+              "time": "2024-12-29T06:24:50.167Z",
+              "value": 5.1,
+              "variable": "speed",
+              "group": "1735453490164",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453490164"
+            },
+            {
+              "id": "6770ead47b584e0009644674",
+              "time": "2024-12-29T06:23:16.322Z",
+              "value": 31.83,
+              "variable": "speed",
+              "group": "1735453396319",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453396319"
+            },
+            {
+              "id": "6770ea166b084c000902aaa7",
+              "time": "2024-12-29T06:20:06.085Z",
+              "value": 0.93,
+              "variable": "speed",
+              "group": "1735453206082",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453206082"
+            },
+            {
+              "id": "6770ea125228b40009331ccf",
+              "time": "2024-12-29T06:20:02.426Z",
+              "value": 27.57,
+              "variable": "speed",
+              "group": "1735453202423",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453202423"
+            },
+            {
+              "id": "6770e954da0b190009a20c7f",
+              "time": "2024-12-29T06:16:52.252Z",
+              "value": 1.62,
+              "variable": "speed",
+              "group": "1735453012249",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453012249"
+            },
+            {
+              "id": "6770e8ecba8c4b000903432f",
+              "time": "2024-12-29T06:15:08.430Z",
+              "value": 1.56,
+              "variable": "speed",
+              "group": "1735452908428",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735452908428"
+            },
+            {
+              "id": "6770e8925228b4000932f7c8",
+              "time": "2024-12-29T06:13:38.008Z",
+              "value": 15.48,
+              "variable": "speed",
+              "group": "1735452818001",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735452818001"
+            },
+            {
+              "id": "6770e7d1830401000925dabd",
+              "time": "2024-12-29T06:10:25.493Z",
+              "value": 11.74,
+              "variable": "speed",
+              "group": "1735452625491",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735452625491"
+            },
+            {
+              "id": "6770e7ccc5b98c00092ebd0b",
+              "time": "2024-12-29T06:10:20.919Z",
+              "value": 6.47,
+              "variable": "speed",
+              "group": "1735452620916",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735452620916"
+            },
+            {
+              "id": "6770e7096b084c0009025382",
+              "time": "2024-12-29T06:07:05.256Z",
+              "value": 2.14,
+              "variable": "speed",
+              "group": "1735452425253",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735452425253"
+            },
+            {
+              "id": "6770e6b3ba8c4b00090306e9",
+              "time": "2024-12-29T06:05:39.237Z",
+              "value": 9.27,
+              "variable": "speed",
+              "group": "1735452339235",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735452339235"
+            },
+            {
+              "id": "6770e6447c82210009e4ec01",
+              "time": "2024-12-29T06:03:48.052Z",
+              "value": 8.15,
+              "variable": "speed",
+              "group": "1735452228049",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735452228049"
+            },
+            {
+              "id": "6770e585c5b98c00092e7d13",
+              "time": "2024-12-29T06:00:37.243Z",
+              "value": 1.91,
+              "variable": "speed",
+              "group": "1735452037240",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735452037240"
+            },
+            {
+              "id": "6770e57d7b584e000963ba70",
+              "time": "2024-12-29T06:00:29.983Z",
+              "value": 1.64,
+              "variable": "speed",
+              "group": "1735452029980",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735452029980"
+            },
+            {
+              "id": "6770e4b77b584e000963a481",
+              "time": "2024-12-29T05:57:11.267Z",
+              "value": 12.75,
+              "variable": "speed",
+              "group": "1735451831265",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735451831265"
+            },
+            {
+              "id": "6770e45b4213c3000a15d4c0",
+              "time": "2024-12-29T05:55:39.365Z",
+              "value": 0,
+              "variable": "speed",
+              "group": "1735451739362",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735451739362"
+            },
+            {
+              "id": "6770e3ee805e8f00096df647",
+              "time": "2024-12-29T05:53:50.713Z",
+              "value": 18.59,
+              "variable": "speed",
+              "group": "1735451630710",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735451630710"
+            },
+            {
+              "id": "6770e33d225029000999d574",
+              "time": "2024-12-29T05:50:53.629Z",
+              "value": 6.72,
+              "variable": "speed",
+              "group": "1735451453626",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735451453626"
+            },
+            {
+              "id": "6770e33165271b0009005b55",
+              "time": "2024-12-29T05:50:41.026Z",
+              "value": 2,
+              "variable": "speed",
+              "group": "1735451441024",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735451441024"
+            },
+            {
+              "id": "6770e272c7f4cd00094f892d",
+              "time": "2024-12-29T05:47:30.453Z",
+              "value": 31.14,
+              "variable": "speed",
+              "group": "1735451250450",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735451250450"
+            },
+            {
+              "id": "6770e214225029000999b82c",
+              "time": "2024-12-29T05:45:56.557Z",
+              "value": 32.94,
+              "variable": "speed",
+              "group": "1735451156554",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735451156554"
+            },
+            {
+              "id": "6770e1aa5228b40009323e54",
+              "time": "2024-12-29T05:44:10.416Z",
+              "value": 8.19,
+              "variable": "speed",
+              "group": "1735451050413",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735451050413"
+            },
+            {
+              "id": "6770e0f35228b40009322adb",
+              "time": "2024-12-29T05:41:07.722Z",
+              "value": 13.43,
+              "variable": "speed",
+              "group": "1735450867720",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735450867720"
+            },
+            {
+              "id": "6770e0ef9b3592000929fb0f",
+              "time": "2024-12-29T05:41:03.067Z",
+              "value": 8.27,
+              "variable": "speed",
+              "group": "1735450863064",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735450863064"
+            },
+            {
+              "id": "6770e02c331f06000966e683",
+              "time": "2024-12-29T05:37:48.191Z",
+              "value": 4.51,
+              "variable": "speed",
+              "group": "1735450668188",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735450668188"
+            },
+            {
+              "id": "6770dfdb9b3592000929e0f1",
+              "time": "2024-12-29T05:36:27.429Z",
+              "value": 11.7,
+              "variable": "speed",
+              "group": "1735450587426",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735450587426"
+            },
+            {
+              "id": "6770df6fc7f4cd00094f3a13",
+              "time": "2024-12-29T05:34:39.857Z",
+              "value": 2.73,
+              "variable": "speed",
+              "group": "1735450479853",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735450479853"
+            },
+            {
+              "id": "6770deaa7c82210009e42493",
+              "time": "2024-12-29T05:31:22.527Z",
+              "value": 11.9,
+              "variable": "speed",
+              "group": "1735450282524",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735450282524"
+            },
+            {
+              "id": "6770dea27c82210009e42423",
+              "time": "2024-12-29T05:31:14.349Z",
+              "value": 17.08,
+              "variable": "speed",
+              "group": "1735450274347",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735450274347"
+            },
+            {
+              "id": "6770dde36089ed0009bfd7fb",
+              "time": "2024-12-29T05:28:03.641Z",
+              "value": 25.34,
+              "variable": "speed",
+              "group": "1735450083638",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735450083638"
+            },
+            {
+              "id": "6770dd8f6089ed0009bfced5",
+              "time": "2024-12-29T05:26:39.642Z",
+              "value": 2.41,
+              "variable": "speed",
+              "group": "1735449999640",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735449999640"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67a37461fff3b7000904506a",
+      "analysis_run": null,
+      "label": "Location",
+      "realtime": "true",
+      "type": "map",
+      "data": [
+        {
+          "qty": 20,
+          "bucket": "6759891f53301e0008a41052",
+          "origin": "6759891f53301e0008a41052",
+          "timezone": "America/Sao_Paulo",
+          "variables": ["location"]
+        }
+      ],
+      "display": {
+        "center_options": { "center_all_variables": true, "show_only_last_values": false, "variables": [] },
+        "geofence": {
+          "enable_user": false,
+          "events_type": "static",
+          "limit": 100,
+          "type_enable_user": "all",
+          "events_label": "Event"
+        },
+        "header_buttons": [],
+        "help": "",
+        "infobox_config": {
+          "date_format": "",
+          "image": { "behavior": "landscape", "object_fit": "fill", "position": "top" }
+        },
+        "initial_mode": "dark",
+        "max_points": "20",
+        "timezone": { "id": "America/Sao_Paulo", "label": "(GMT-03:00) Sao Paulo" },
+        "variables": [
+          {
+            "origin": "6759891f53301e0008a41052",
+            "variable": "location",
+            "bucket": "6759891f53301e0008a41052",
+            "pin_id": "Hl8PZUQoWN7zj31jlAnqR",
+            "data_params": {
+              "interval": null,
+              "query": null,
+              "function": null,
+              "value": null,
+              "period": { "start_date": null, "end_date": null }
+            }
+          }
+        ],
+        "show_last_update": false,
+        "show_lines": true,
+        "show_lines_animated": true,
+        "group_markers": true,
+        "initial_zoom": "70",
+        "frame_settings": { "header_visibility": "show_on_hover" }
+      },
+      "created_at": "2025-02-05T14:23:29.772Z",
+      "updated_at": "2025-02-05T14:35:55.095Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "qty": 20,
+            "bucket": "6759891f53301e0008a41052",
+            "origin": "6759891f53301e0008a41052",
+            "timezone": "America/Sao_Paulo",
+            "variables": ["location"]
+          },
+          "result": [
+            {
+              "id": "6770f3a3cd6e6200090f6bbc",
+              "time": "2024-12-29T07:00:51.214Z",
+              "value": "41.886912,-87.631934",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.631934, 41.886912] },
+              "group": "1735455651211",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455651211"
+            },
+            {
+              "id": "6770f351c5b98c0009300182",
+              "time": "2024-12-29T06:59:29.120Z",
+              "value": "41.887392,-87.626122",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.626122, 41.887392] },
+              "group": "1735455569118",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455569118"
+            },
+            {
+              "id": "6770f2ebc5b98c00092ff5c4",
+              "time": "2024-12-29T06:57:47.276Z",
+              "value": "41.887392,-87.626122",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.626122, 41.887392] },
+              "group": "1735455467274",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455467274"
+            },
+            {
+              "id": "6770f23af3765e0009150970",
+              "time": "2024-12-29T06:54:50.665Z",
+              "value": "41.888286,-87.625221",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.625221, 41.888286] },
+              "group": "1735455290662",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455290662"
+            },
+            {
+              "id": "6770f2397b584e0009650876",
+              "time": "2024-12-29T06:54:49.902Z",
+              "value": "41.888286,-87.625221",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.625221, 41.888286] },
+              "group": "1735455289900",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455289900"
+            },
+            {
+              "id": "6770f192ee077b0009362b0e",
+              "time": "2024-12-29T06:52:02.675Z",
+              "value": "41.88833,-87.624792",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.624792, 41.88833] },
+              "group": "1735455122673",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455122673"
+            },
+            {
+              "id": "6770f11ef3765e000914ed34",
+              "time": "2024-12-29T06:50:06.121Z",
+              "value": "41.88757,-87.624448",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.624448, 41.88757] },
+              "group": "1735455006118",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455006118"
+            },
+            {
+              "id": "6770f0d0830401000926c8a1",
+              "time": "2024-12-29T06:48:48.107Z",
+              "value": "41.884407,-87.624448",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.624448, 41.884407] },
+              "group": "1735454928105",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454928105"
+            },
+            {
+              "id": "6770f00c5e5f2e00096b38af",
+              "time": "2024-12-29T06:45:32.095Z",
+              "value": "41.883297,-87.624205",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.624205, 41.883297] },
+              "group": "1735454732092",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454732092"
+            },
+            {
+              "id": "6770efe1830401000926ae67",
+              "time": "2024-12-29T06:44:49.249Z",
+              "value": "41.877378,-87.624205",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.624205, 41.877378] },
+              "group": "1735454689247",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454689247"
+            },
+            {
+              "id": "6770ef5422502900099b203c",
+              "time": "2024-12-29T06:42:28.596Z",
+              "value": "41.877175,-87.624205",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.624205, 41.877175] },
+              "group": "1735454548593",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454548593"
+            },
+            {
+              "id": "6770eec67b584e000964b2c1",
+              "time": "2024-12-29T06:40:06.583Z",
+              "value": "41.875697,-87.625454",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.625454, 41.875697] },
+              "group": "1735454406578",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454406578"
+            },
+            {
+              "id": "6770ee959b359200092b6c95",
+              "time": "2024-12-29T06:39:17.389Z",
+              "value": "41.875697,-87.626132",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.626132, 41.875697] },
+              "group": "1735454357386",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454357386"
+            },
+            {
+              "id": "6770eddc5228b40009338d4b",
+              "time": "2024-12-29T06:36:12.077Z",
+              "value": "41.875569,-87.632495",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.632495, 41.875569] },
+              "group": "1735454172074",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454172074"
+            },
+            {
+              "id": "6770edab22502900099af538",
+              "time": "2024-12-29T06:35:23.404Z",
+              "value": "41.875501,-87.633624",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.633624, 41.875501] },
+              "group": "1735454123402",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454123402"
+            },
+            {
+              "id": "6770ed1eee077b000935b810",
+              "time": "2024-12-29T06:33:02.684Z",
+              "value": "41.876783,-87.633713",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.633713, 41.876783] },
+              "group": "1735453982682",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453982682"
+            },
+            {
+              "id": "6770ec63ba8c4b000903a6a7",
+              "time": "2024-12-29T06:29:55.661Z",
+              "value": "41.876808,-87.634225",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.634225, 41.876808] },
+              "group": "1735453795658",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453795658"
+            },
+            {
+              "id": "6770ec61f3765e0009146057",
+              "time": "2024-12-29T06:29:53.433Z",
+              "value": "41.876808,-87.634557",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.634557, 41.876808] },
+              "group": "1735453793430",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453793430"
+            },
+            {
+              "id": "6770ebacc5b98c00092f2d3d",
+              "time": "2024-12-29T06:26:52.029Z",
+              "value": "41.876816,-87.636808",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.636808, 41.876816] },
+              "group": "1735453612026",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453612026"
+            },
+            {
+              "id": "6770eb326b084c000902c9ca",
+              "time": "2024-12-29T06:24:50.166Z",
+              "value": "41.876816,-87.636808",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.636808, 41.876816] },
+              "group": "1735453490164",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453490164"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67598946e55d6f0009587575",
+      "analysis_run": null,
+      "label": "Fuel Level",
+      "realtime": "1",
+      "type": "solid",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "6759891f53301e0008a41052",
+          "origin": "6759891f53301e0008a41052",
+          "variables": ["fuel_level"]
+        }
+      ],
+      "display": {
+        "alias": "",
+        "formula": { "formula_type": "fixed" },
+        "header_buttons": [],
+        "help": "",
+        "number_format": { "decimals": 1, "show_thousand": false },
+        "range": { "type": "minmax", "minimum": 0, "maximum": 100 },
+        "show_variables": false,
+        "theme": {
+          "color": {
+            "background": "hsla(206, 17%, 18%, 1)",
+            "background_blur": null,
+            "header": null,
+            "fill": "hsla(24, 95%, 48%, 1)",
+            "text_border": null,
+            "text": "hsla(250, 3%, 83%, 1)",
+            "outline": null
+          }
+        }
+      },
+      "created_at": "2024-12-11T12:44:54.587Z",
+      "updated_at": "2024-12-11T13:00:18.982Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "6759891f53301e0008a41052",
+            "origin": "6759891f53301e0008a41052",
+            "variables": ["fuel_level"]
+          },
+          "result": [
+            {
+              "id": "6770f3a3cd6e6200090f6bbd",
+              "time": "2024-12-29T07:00:51.214Z",
+              "unit": "%",
+              "value": 20,
+              "variable": "fuel_level",
+              "group": "1735455651211",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455651211"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67598946e55d6f0009587577",
+      "analysis_run": null,
+      "label": "Chicago Time",
+      "realtime": "1",
+      "type": "clock",
+      "data": [{ "timezone": "America/Chicago" }],
+      "display": {
+        "header_buttons": [],
+        "help": "",
+        "show_last_update": false,
+        "theme": {
+          "color": {
+            "background": "hsla(206, 17%, 18%, 1)",
+            "background_blur": 0,
+            "header": null,
+            "fill": "hsla(209, 62%, 73%, 1)",
+            "text_border": null,
+            "text": "hsla(250, 3%, 83%, 1)",
+            "outline": null
+          }
+        }
+      },
+      "created_at": "2024-12-11T12:44:54.587Z",
+      "updated_at": "2024-12-11T13:04:40.511Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [{ "data": { "timezone": "America/Chicago" }, "result": [] }]
+    },
+    {
+      "id": "67598946e55d6f0009587578",
+      "analysis_run": null,
+      "label": "Table with Indicators (Status)",
+      "realtime": "1",
+      "type": "static_table",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "6759891f53301e0008a41052",
+          "origin": "6759891f53301e0008a41052",
+          "variables": ["fuel_level", "trip_odometer", "speed"]
+        }
+      ],
+      "display": {
+        "header_buttons": [],
+        "help": "",
+        "theme": {
+          "color": {
+            "background": "hsla(206, 17%, 18%, 1)",
+            "background_blur": null,
+            "header": null,
+            "alternate": null
+          }
+        },
+        "variables": [
+          { "data_type": "text", "id": "GV_XI3Low", "position": { "x": 0, "y": 0 }, "text_content": "" },
+          {
+            "data_type": "text",
+            "id": "TV1rICuYB7",
+            "position": { "x": 1, "y": 0 },
+            "text_content": "Bus #1",
+            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 3%, 79%, 1)" } }
+          },
+          {
+            "data_type": "text",
+            "id": "3KB1k5aUPR",
+            "position": { "x": 0, "y": 1 },
+            "text_content": "Fuel Level",
+            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 6%, 78%, 1)" } }
+          },
+          {
+            "content_type": "value",
+            "data": {
+              "origin": "6759891f53301e0008a41052",
+              "variable": "fuel_level",
+              "bucket": "6759891f53301e0008a41052",
+              "query": "last_value"
+            },
+            "data_type": "variable",
+            "id": "K17DIvX7WL",
+            "position": { "x": 1, "y": 1 },
+            "override_color": true,
+            "color_conditions": [
+              {
+                "condition": "*",
+                "background": "hsla(223, 11%, 13%, 1)",
+                "font": "hsla(250, 4%, 76%, 1)",
+                "apply_before_formula": false
+              }
+            ]
+          },
+          {
+            "data_type": "text",
+            "id": "p66gvI8wxY",
+            "position": { "x": 0, "y": 2 },
+            "text_content": "Trip odometer",
+            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 4%, 73%, 1)" } }
+          },
+          {
+            "content_type": "value",
+            "data": {
+              "origin": "6759891f53301e0008a41052",
+              "variable": "trip_odometer",
+              "bucket": "6759891f53301e0008a41052",
+              "query": "last_value"
+            },
+            "data_type": "variable",
+            "id": "gPlY1ocqf4",
+            "position": { "x": 1, "y": 2 },
+            "override_color": true,
+            "color_conditions": [
+              {
+                "condition": "*",
+                "background": "hsla(223, 11%, 13%, 1)",
+                "font": "hsla(250, 3%, 73%, 1)",
+                "apply_before_formula": false
+              }
+            ]
+          },
+          {
+            "data_type": "text",
+            "id": "95QypF5AVc",
+            "position": { "x": 0, "y": 3 },
+            "text_content": "Speed",
+            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 3%, 68%, 1)" } }
+          },
+          {
+            "content_type": "value",
+            "data": {
+              "origin": "6759891f53301e0008a41052",
+              "variable": "speed",
+              "bucket": "6759891f53301e0008a41052",
+              "query": "last_value"
+            },
+            "data_type": "variable",
+            "id": "O0pGROHlMi",
+            "position": { "x": 1, "y": 3 },
+            "override_color": true,
+            "color_conditions": [
+              {
+                "condition": "*",
+                "background": "hsla(223, 11%, 13%, 1)",
+                "font": "hsla(250, 2%, 71%, 1)",
+                "apply_before_formula": false
+              }
+            ]
+          },
+          {
+            "data_type": "text",
+            "id": "TzuSwSXyMU",
+            "position": { "x": 0, "y": 4 },
+            "text_content": "Internal temperature",
+            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 4%, 70%, 1)" } }
+          },
+          {
+            "data_type": "text",
+            "id": "mtuOtexmPW",
+            "position": { "x": 1, "y": 4 },
+            "text_content": "N/A",
+            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 2%, 74%, 1)" } }
+          },
+          {
+            "data_type": "text",
+            "id": "wn6x4PGlMJ",
+            "position": { "x": 0, "y": 5 },
+            "text_content": "Air conditioning (ON/OFF)",
+            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 4%, 74%, 1)" } }
+          },
+          {
+            "data_type": "text",
+            "id": "uYivoGlTwZ",
+            "position": { "x": 1, "y": 5 },
+            "text_content": "OFF",
+            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 1%, 65%, 1)" } }
+          }
+        ]
+      },
+      "created_at": "2024-12-11T12:44:54.587Z",
+      "updated_at": "2024-12-11T13:00:19.021Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "6759891f53301e0008a41052",
+            "origin": "6759891f53301e0008a41052",
+            "variables": ["fuel_level", "trip_odometer", "speed"]
+          },
+          "result": [
+            {
+              "id": "6770f3a3cd6e6200090f6bbd",
+              "time": "2024-12-29T07:00:51.214Z",
+              "unit": "%",
+              "value": 20,
+              "variable": "fuel_level",
+              "group": "1735455651211",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455651211"
+            },
+            {
+              "id": "6770f3a3cd6e6200090f6bbf",
+              "time": "2024-12-29T07:00:51.214Z",
+              "value": 0.19,
+              "variable": "trip_odometer",
+              "group": "1735455651211",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455651211"
+            },
+            {
+              "id": "6770f3a3cd6e6200090f6bbe",
+              "time": "2024-12-29T07:00:51.214Z",
+              "value": 9.64,
+              "variable": "speed",
+              "group": "1735455651211",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455651211"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67598946e55d6f0009587574",
+      "analysis_run": null,
+      "label": "Bus Speed",
+      "realtime": "1",
+      "type": "angular",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "6759891f53301e0008a41052",
+          "origin": "6759891f53301e0008a41052",
+          "variables": ["speed"]
+        }
+      ],
+      "display": {
+        "alias": "",
+        "formula": { "formula_type": "fixed", "unit_type": "fixed", "fixed_unit": "MPH" },
+        "header_buttons": [{ "color": null, "icon": "", "text": "", "trigger": "widget", "widget": null }],
+        "help": "",
+        "number_format": { "decimals": "2" },
+        "range": { "type": "minmax", "minimum": 0, "maximum": 50 },
+        "show_variables": false,
+        "theme": {
+          "color": {
+            "background": "hsla(206, 17%, 18%, 1)",
+            "background_blur": 0,
+            "header": null,
+            "fill": "hsla(54, 72%, 63%, 1)",
+            "text_border": null,
+            "text": "hsla(250, 3%, 83%, 1)",
+            "outline": null,
+            "needle": "hsla(250, 2%, 77%, 1)",
+            "tick": "hsla(250, 2%, 79%, 1)",
+            "hue": null
+          }
+        }
+      },
+      "created_at": "2024-12-11T12:44:54.587Z",
+      "updated_at": "2024-12-11T13:12:22.712Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "6759891f53301e0008a41052",
+            "origin": "6759891f53301e0008a41052",
+            "variables": ["speed"]
+          },
+          "result": [
+            {
+              "id": "6770f3a3cd6e6200090f6bbe",
+              "time": "2024-12-29T07:00:51.214Z",
+              "value": 9.64,
+              "variable": "speed",
+              "group": "1735455651211",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455651211"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    }
+  ]
+}
