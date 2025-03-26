@@ -1,0 +1,16 @@
+{
+  "type": "blueprint",
+  "use_mock": true,
+  "setup": {
+    "blueprints": [
+      {
+        "id": "67e442cb1336c7000a560b03",
+        "name": "temp",
+        "type": "device",
+        "conditions": [{ "key": "device_type", "value": "sensor" }],
+        "filter_conditions": []
+      }
+    ],
+    "analysis": []
+  }
+}
