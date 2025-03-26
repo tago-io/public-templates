@@ -61,11 +61,13 @@ Here's an example of a `template-config.jsonc` file for a dashboard template:
   "use_mock": true,
   "type": "standard",
   "setup": {
-    "devices": [{
-      "id": "60888a20ea380c001298a45d",
-      "name": "Chicago Bus",
-      "description": "Chicago Bus Device"
-    }]
+    "devices": [
+      {
+        "id": "60888a20ea380c001298a45d",
+        "name": "Chicago Bus",
+        "description": "Chicago Bus Device"
+      }
+    ]
   }
 }
 ```
@@ -82,13 +84,19 @@ Here's an example of a `template-config.jsonc` file for a dashboard template:
 
 3. **Create a standard folder:**
 
-   - Inside your template folder, create a `standard` folder.
+   - Inside your template folder, create a folder with dashboard type `standard` or `blueprint`.
 
 4. **Create template files:**
-   - Inside the standard folder, create a `structure.json` file containing the dashboard structure.
+
+   - Inside the standard/blueprint folder, create a `structure.json` file containing the dashboard structure.
    - Create a `template-config.jsonc` file following the structure defined in [`dashboard-template-config.json`](./src/schema/dashboard-template-config.json).
 
+     **NOTE:** The `template-config.jsonc` and `structure.json` files can be exported directly from an existing TagoIO dashboard.\
+     Navigate to `admin.tago.io` > select the `Dashboard` > `Settings` > `Distribute` > `Download the file`.
+     ![Dashboard Export Example](./assets/download-example.png)
+
 5. **Add a description:**
+
    - Create a `description.md` file in your template folder with a detailed description of the template.
 
 6. **Add assets:**
