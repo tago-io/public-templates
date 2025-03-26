@@ -1,1 +1,5 @@
-{"type":"standard","use_mock":true,"setup":{"devices":[{"id":"67599bcd999d25000a9c10bd","name":"Freezer"}],"analysis":[]}}
+{
+  "type": "standard",
+  "use_mock": true,
+  "setup": { "devices": [{ "id": "67599bcd999d25000a9c10bd", "name": "Freezer" }], "analysis": [] }
+}

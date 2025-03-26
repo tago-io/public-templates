@@ -1,1 +1,1016 @@
-{"dashboard":{"id":"67617cfbf3765e000951edce","type":"dashboard","label":"Temperature & Humidity","description":null,"arrangement":[{"x":0,"y":0,"tab":null,"width":1,"height":2.5,"widget_id":"67617cfbf3765e000951edd8"},{"x":1,"y":0,"tab":null,"width":1,"height":2.5,"widget_id":"67617cfbf3765e000951edd6"},{"x":2,"y":0,"tab":null,"width":1,"height":2.5,"widget_id":"67617cfbf3765e000951edd5"},{"x":3,"y":0,"tab":null,"width":1,"height":2.5,"widget_id":"67617cfbf3765e000951edd1"},{"x":0,"y":6,"tab":null,"width":4,"height":3,"widget_id":"67617cfbf3765e000951edd2"},{"x":0,"y":12,"tab":null,"width":1,"height":2.5,"widget_id":"67617cfbf3765e000951eddb"},{"x":1,"y":12,"tab":null,"width":1,"height":2.5,"widget_id":"67617cfbf3765e000951edd3"},{"x":2,"y":12,"tab":null,"width":1,"height":2.5,"widget_id":"67617cfbf3765e000951edd9"},{"x":3,"y":12,"tab":null,"width":1,"height":2.5,"widget_id":"67617cfbf3765e000951edd7"},{"x":0,"y":17,"tab":null,"width":4,"height":3.5,"widget_id":"67617cfbf3765e000951edda"}],"created_at":"2024-12-17T13:30:35.862Z","updated_at":"2025-03-20T15:03:03.270Z","tags":[{"key":"dashboard_type","value":"White Dashboards"}],"group_by":[],"tabs":[],"icon":{"url":"https://svg.internal.tago.io/dashboard.svg","color":"hsl(358, 0%, 20%)"},"background":{"isMigrate":true,"type":"image","media":"api.tago.io/file/649ad201754f600011c73f7e/embed_templates_images/temperature-humidity.jpeg","opacity":"21","color":"hsl(0, 1%, 12%)"},"blueprint_devices":null,"blueprint_device_behavior":null,"blueprint_selector_behavior":null,"setup":{},"theme":{"color":{"tab_active":"hsla(358, 0%, 20%, 1)","tab_background":"hsla(136, 3%, 17%, 1)"}},"public_token_expire":null,"disable_blueprint_fallback":false,"filter":{"period":{"enabled":false,"presets":[],"show_calendar":true,"max_range":"3 day"}}},"widgets":[{"id":"67617cfbf3765e000951edda","analysis_run":null,"label":"Humidity History","realtime":"1","type":"line_chart","data":[{"qty":5000,"bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","timezone":"America/New_York","variables":["humidity"],"start_date":"99 years"}],"display":{"frame_settings":{"radius":{"top_left":15,"top_right":15,"bottom_left":15,"bottom_right":15}},"group_by":"time","header_buttons":[{"color":null,"icon":"","text":"","trigger":"widget","widget":null}],"help":"","intervals":[""],"line_curve":"smooth","max_points":5000,"order_by":"time","show_point_values":false,"stacked":false,"theme":{"color":{"background":"hsla(0, 0%, 7%, 0.42)","background_blur":4,"header":null,"label":null,"tick":"hsla(250, 0%, 100%, 1)","grid":null,"text_border":null,"text":"hsla(250, 0%, 100%, 1)","tooltip_background":null,"tooltip_border":null,"tooltip_text":null}},"variables":[{"color":"hsl(210, 71%, 70%)","origin":"676179c32250290009dc5313","variable":"humidity","alias":"humidity","formula":{"formula_type":"fixed","unit_type":"fixed"},"data_params":{"interval":null,"query":null,"function":null,"value":null,"period":{"start_date":"99 years","end_date":null}},"bucket":"676179c32250290009dc5313","variables":["humidity"],"qty":5000,"timezone":"America/New_York","id":"TfVkl9SVqtAB-lqJhH7RB"}],"x_axis":{"plot_by":"realtime","type":"time"},"y_axis":{"scale":{"type":"dynamic"},"show_metric_abbreviation":true},"override_dashboard_presets":false,"aggregate_intervals":[]},"created_at":"2024-12-17T13:30:35.863Z","updated_at":"2024-12-17T13:57:11.366Z","resource":[],"cache":null,"mock_data":[{"data":{"qty":5000,"bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","timezone":"America/New_York","variables":["humidity"],"start_date":"99 years"},"result":[{"id":"67617dd16b084c0009471ee7","time":"2024-12-17T13:34:09.900Z","unit":"%","value":65,"variable":"humidity","group":"2ee1749000c480b61dd71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"2ee1749000c480b61dd71676"},{"id":"67617cee5e5f2e0009ad2bc1","time":"2024-12-17T13:30:22.639Z","unit":"%","value":64,"variable":"humidity","group":"cbb2da9000e2f5e5eec71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"cbb2da9000e2f5e5eec71676"},{"id":"67617ccdc7f4cd00098d7985","time":"2024-12-17T13:29:49.880Z","unit":"%","value":68,"variable":"humidity","group":"0897d89000dc4f7cdcc71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"0897d89000dc4f7cdcc71676"},{"id":"67617cae65271b000943e817","time":"2024-12-17T13:29:18.682Z","unit":"%","value":62,"variable":"humidity","group":"218e349000b17256eac71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"218e349000b17256eac71676"},{"id":"67617c8d830401000966b72c","time":"2024-12-17T13:28:45.530Z","unit":"%","value":70,"variable":"humidity","group":"727b669000104038d8c71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"727b669000104038d8c71676"},{"id":"67617c6e331f060009ad9d43","time":"2024-12-17T13:28:14.753Z","unit":"%","value":65,"variable":"humidity","group":"e3d9da900060f133e6c71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"e3d9da900060f133e6c71676"}],"cacheTime":null}]},{"id":"67617cfbf3765e000951edd9","analysis_run":null,"label":"Minimum Humidity","realtime":null,"type":"icon","data":[{"query":"last_value","bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","variables":["min_humidity"]}],"display":{"aggregate_intervals":[],"header_buttons":[{"color":null,"icon":"","text":"","trigger":"widget","widget":null}],"help":"","show_units":true,"show_values":true,"show_variables":false,"variables":[{"origin":"676179c32250290009dc5313","variable":"min_humidity","alias":"min_humidity","formula":{"formula_type":"fixed","unit_type":"origin"},"icon_conditions":[{"condition":"*","url":"https://svg.internal.tago.io/sort-down.svg","color":"#347ab7"}],"color_conditions":[{"color":"#347ab7","condition":"*"}],"data_params":{"interval":null,"query":"last_value","function":null,"value":null,"period":{"start_date":null,"end_date":null}},"bucket":"676179c32250290009dc5313"}],"frame_settings":{"radius":{"top_left":15,"top_right":15,"bottom_left":15,"bottom_right":15}},"theme":{"color":{"background":"hsla(0, 0%, 7%, 0.42)","background_blur":4,"header":null,"dot":null,"button":null}}},"created_at":"2024-12-17T13:30:35.863Z","updated_at":"2024-12-17T13:55:48.404Z","resource":[],"cache":null,"mock_data":[{"data":{"query":"last_value","bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","variables":["min_humidity"]},"result":[{"id":"67617dd16b084c0009471ee9","time":"2024-12-17T13:34:09.901Z","unit":"%","value":55,"variable":"min_humidity","group":"2ee1749000c480b61dd71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"2ee1749000c480b61dd71676"}],"cacheTime":null}]},{"id":"67617cfbf3765e000951edd3","analysis_run":null,"label":"Maximum Humidity","realtime":null,"type":"icon","data":[{"query":"last_value","bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","variables":["max_humidity"]}],"display":{"aggregate_intervals":[],"header_buttons":[{"color":null,"icon":"","text":"","trigger":"widget","widget":null}],"help":"","show_units":true,"show_values":true,"show_variables":false,"variables":[{"origin":"676179c32250290009dc5313","variable":"max_humidity","alias":"max_humidity","formula":{"formula_type":"fixed","unit_type":"origin"},"icon_conditions":[{"condition":"*","url":"https://svg.internal.tago.io/caret-arrow-up.svg","color":"#347ab7"}],"color_conditions":[{"color":"#347ab7","condition":"*"}],"data_params":{"interval":null,"query":"last_value","function":null,"value":null,"period":{"start_date":null,"end_date":null}},"bucket":"676179c32250290009dc5313"}],"frame_settings":{"radius":{"top_left":15,"top_right":15,"bottom_left":15,"bottom_right":15}},"theme":{"color":{"background":"hsla(0, 0%, 7%, 0.42)","background_blur":4,"header":null,"dot":null,"button":null}}},"created_at":"2024-12-17T13:30:35.863Z","updated_at":"2024-12-17T13:55:48.404Z","resource":[],"cache":null,"mock_data":[{"data":{"query":"last_value","bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","variables":["max_humidity"]},"result":[{"id":"67617dd16b084c0009471ee8","time":"2024-12-17T13:34:09.900Z","unit":"%","value":75,"variable":"max_humidity","group":"2ee1749000c480b61dd71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"2ee1749000c480b61dd71676"}],"cacheTime":null}]},{"id":"67617cfbf3765e000951edd2","analysis_run":null,"label":"Temperature History","realtime":"1","type":"line_chart","data":[{"qty":5000,"bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","timezone":"America/New_York","variables":["temperature"],"start_date":"99 years"}],"display":{"frame_settings":{"radius":{"top_left":15,"top_right":15,"bottom_left":15,"bottom_right":15}},"group_by":"time","header_buttons":[{"color":null,"icon":"","text":"","trigger":"widget","widget":null}],"help":"","intervals":[""],"line_curve":"smooth","max_points":5000,"order_by":"time","show_point_values":false,"stacked":false,"theme":{"color":{"background":"hsla(0, 0%, 7%, 0.42)","background_blur":4,"header":null,"label":null,"tick":"hsla(250, 0%, 100%, 1)","grid":null,"text_border":null,"text":"hsla(250, 0%, 100%, 1)","tooltip_background":null,"tooltip_border":null,"tooltip_text":null}},"variables":[{"color":"hsl(210, 71%, 70%)","origin":"676179c32250290009dc5313","variable":"temperature","alias":"temperature","formula":{"formula_type":"fixed","unit_type":"fixed"},"data_params":{"interval":null,"query":null,"function":null,"value":null,"period":{"start_date":"99 years","end_date":null}},"bucket":"676179c32250290009dc5313","variables":["temperature"],"qty":5000,"timezone":"America/New_York","id":"qurtAHei-Gm1dzkZRoK8n"}],"x_axis":{"plot_by":"realtime","type":"time"},"y_axis":{"scale":{"type":"dynamic"},"show_metric_abbreviation":true},"override_dashboard_presets":false,"aggregate_intervals":[]},"created_at":"2024-12-17T13:30:35.863Z","updated_at":"2024-12-17T13:56:52.213Z","resource":[],"cache":null,"mock_data":[{"data":{"qty":5000,"bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","timezone":"America/New_York","variables":["temperature"],"start_date":"99 years"},"result":[{"id":"67617dd16b084c0009471ee3","time":"2024-12-17T13:34:09.900Z","unit":"ºF","value":69,"variable":"temperature","group":"2ee1749000c480b61dd71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"2ee1749000c480b61dd71676"},{"id":"67617cee5e5f2e0009ad2bbd","time":"2024-12-17T13:30:22.639Z","unit":"ºF","value":70,"variable":"temperature","group":"cbb2da9000e2f5e5eec71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"cbb2da9000e2f5e5eec71676"},{"id":"67617ccdc7f4cd00098d7981","time":"2024-12-17T13:29:49.880Z","unit":"ºF","value":73,"variable":"temperature","group":"0897d89000dc4f7cdcc71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"0897d89000dc4f7cdcc71676"},{"id":"67617cae65271b000943e813","time":"2024-12-17T13:29:18.682Z","unit":"ºF","value":68,"variable":"temperature","group":"218e349000b17256eac71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"218e349000b17256eac71676"},{"id":"67617c8d830401000966b728","time":"2024-12-17T13:28:45.530Z","unit":"ºF","value":74,"variable":"temperature","group":"727b669000104038d8c71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"727b669000104038d8c71676"},{"id":"67617c6e331f060009ad9d3f","time":"2024-12-17T13:28:14.752Z","unit":"ºF","value":69,"variable":"temperature","group":"e3d9da900060f133e6c71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"e3d9da900060f133e6c71676"}],"cacheTime":null}]},{"id":"67617cfbf3765e000951edd8","analysis_run":null,"label":"Real Time Temperature","realtime":null,"type":"icon","data":[{"query":"last_value","bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","variables":["temperature"]}],"display":{"aggregate_intervals":[],"header_buttons":[{"color":null,"icon":"","text":"","trigger":"widget","widget":null}],"help":"","show_units":true,"show_values":true,"show_variables":false,"variables":[{"origin":"676179c32250290009dc5313","variable":"temperature","alias":"temperature","formula":{"formula_type":"fixed","unit_type":"origin"},"icon_conditions":[{"condition":"*","url":"https://svg.internal.tago.io/thermometer.svg","color":"hsl(34, 94%, 61%)"}],"color_conditions":[{"color":"hsl(34, 94%, 61%)","condition":"*"}],"data_params":{"interval":null,"query":"last_value","function":null,"value":null,"period":{"start_date":null,"end_date":null}},"bucket":"676179c32250290009dc5313"}],"frame_settings":{"radius":{"top_left":15,"top_right":15,"bottom_left":15,"bottom_right":15},"header_visibility":"show_always"},"theme":{"color":{"background":"hsla(0, 0%, 7%, 0.42)","background_blur":4,"header":null,"dot":null,"button":null}}},"created_at":"2024-12-17T13:30:35.863Z","updated_at":"2024-12-17T13:58:26.940Z","resource":[],"cache":null,"mock_data":[{"data":{"query":"last_value","bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","variables":["temperature"]},"result":[{"id":"67617dd16b084c0009471ee3","time":"2024-12-17T13:34:09.900Z","unit":"ºF","value":69,"variable":"temperature","group":"2ee1749000c480b61dd71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"2ee1749000c480b61dd71676"}],"cacheTime":null}]},{"id":"67617cfbf3765e000951edd1","analysis_run":null,"label":"Average Temperature","realtime":null,"type":"icon","data":[{"query":"last_value","bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","variables":["temperature_average"]}],"display":{"aggregate_intervals":[],"header_buttons":[{"color":null,"icon":"","text":"","trigger":"widget","widget":null}],"help":"","show_units":true,"show_values":true,"show_variables":false,"variables":[{"origin":"676179c32250290009dc5313","variable":"temperature_average","alias":"temperature_average","icon_conditions":[{"condition":"*","url":"https://svg.internal.tago.io/couple-of-arrows-changing-places.svg","color":"hsl(34, 94%, 61%)"}],"color_conditions":[{"color":"hsl(34, 94%, 61%)","condition":"*"}],"data_params":{"interval":null,"query":"last_value","function":null,"value":null,"period":{"start_date":null,"end_date":null}},"bucket":"676179c32250290009dc5313"}],"frame_settings":{"radius":{"top_left":15,"top_right":15,"bottom_left":15,"bottom_right":15},"header_visibility":"show_always"},"theme":{"color":{"background":"hsla(0, 0%, 7%, 0.42)","background_blur":4,"header":null,"dot":null,"button":null}}},"created_at":"2024-12-17T13:30:35.863Z","updated_at":"2024-12-17T13:55:48.383Z","resource":[],"cache":null,"mock_data":[{"data":{"query":"last_value","bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","variables":["temperature_average"]},"result":[{"id":"67617dd16b084c0009471ee6","time":"2024-12-17T13:34:09.900Z","unit":"ºF","value":69.33,"variable":"temperature_average","group":"2ee1749000c480b61dd71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"2ee1749000c480b61dd71676"}],"cacheTime":null}]},{"id":"67617cfbf3765e000951edd5","analysis_run":null,"label":"Minimum Temperature","realtime":null,"type":"icon","data":[{"query":"last_value","bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","variables":["temperature_minimum"]}],"display":{"aggregate_intervals":[],"header_buttons":[{"color":null,"icon":"","text":"","trigger":"widget","widget":null}],"help":"","show_units":true,"show_values":true,"show_variables":false,"variables":[{"origin":"676179c32250290009dc5313","variable":"temperature_minimum","alias":"temperature_minimum","icon_conditions":[{"condition":"*","url":"https://svg.internal.tago.io/sort-down.svg","color":"hsl(34, 94%, 61%)"}],"color_conditions":[{"color":"hsl(34, 94%, 61%)","condition":"*"}],"data_params":{"interval":null,"query":"last_value","function":null,"value":null,"period":{"start_date":null,"end_date":null}},"bucket":"676179c32250290009dc5313"}],"frame_settings":{"radius":{"top_left":15,"top_right":15,"bottom_left":15,"bottom_right":15},"header_visibility":"show_always"},"theme":{"color":{"background":"hsla(0, 0%, 7%, 0.42)","background_blur":4,"header":null,"dot":null,"button":null}}},"created_at":"2024-12-17T13:30:35.863Z","updated_at":"2024-12-17T13:55:48.378Z","resource":[],"cache":null,"mock_data":[{"data":{"query":"last_value","bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","variables":["temperature_minimum"]},"result":[{"id":"67617dd16b084c0009471ee4","time":"2024-12-17T13:34:09.900Z","unit":"ºF","value":59,"variable":"temperature_minimum","group":"2ee1749000c480b61dd71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"2ee1749000c480b61dd71676"}],"cacheTime":null}]},{"id":"67617cfbf3765e000951edd6","analysis_run":null,"label":"Maximum Temperature","realtime":null,"type":"icon","data":[{"query":"last_value","bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","variables":["temperature_maximum"]}],"display":{"aggregate_intervals":[],"header_buttons":[{"color":null,"icon":"","text":"","trigger":"widget","widget":null}],"help":"","show_units":true,"show_values":true,"show_variables":false,"variables":[{"origin":"676179c32250290009dc5313","variable":"temperature_maximum","alias":"temperature_maximum","icon_conditions":[{"condition":"*","url":"https://svg.internal.tago.io/sort-up.svg","color":"hsl(34, 94%, 61%)"}],"color_conditions":[{"color":"hsl(34, 94%, 61%)","condition":"*"}],"data_params":{"interval":null,"query":"last_value","function":null,"value":null,"period":{"start_date":null,"end_date":null}},"bucket":"676179c32250290009dc5313"}],"frame_settings":{"radius":{"top_left":15,"top_right":15,"bottom_left":15,"bottom_right":15},"header_visibility":"show_always"},"theme":{"color":{"background":"hsla(0, 0%, 7%, 0.42)","background_blur":4,"header":null,"dot":null,"button":null}}},"created_at":"2024-12-17T13:30:35.863Z","updated_at":"2024-12-17T13:55:48.374Z","resource":[],"cache":null,"mock_data":[{"data":{"query":"last_value","bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","variables":["temperature_maximum"]},"result":[{"id":"67617dd16b084c0009471ee5","time":"2024-12-17T13:34:09.900Z","unit":"ºF","value":80,"variable":"temperature_maximum","group":"2ee1749000c480b61dd71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"2ee1749000c480b61dd71676"}],"cacheTime":null}]},{"id":"67617cfbf3765e000951eddb","analysis_run":null,"label":"Real Time Humidity","realtime":null,"type":"icon","data":[{"query":"last_value","bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","variables":["humidity"]}],"display":{"aggregate_intervals":[],"header_buttons":[{"color":null,"icon":"","text":"","trigger":"widget","widget":null}],"help":"","show_units":true,"show_values":true,"show_variables":false,"variables":[{"origin":"676179c32250290009dc5313","variable":"humidity","alias":"humidity","formula":{"formula_type":"fixed","unit_type":"origin"},"icon_conditions":[{"condition":"*","url":"https://svg.internal.tago.io/tint-drop.svg","color":"#347ab7"}],"color_conditions":[{"color":"#347ab7","condition":"*"}],"data_params":{"interval":null,"query":"last_value","function":null,"value":null,"period":{"start_date":null,"end_date":null}},"bucket":"676179c32250290009dc5313"}],"frame_settings":{"radius":{"top_left":15,"top_right":15,"bottom_left":15,"bottom_right":15}},"theme":{"color":{"background":"hsla(0, 0%, 7%, 0.42)","background_blur":4,"header":null,"dot":null,"button":null}}},"created_at":"2024-12-17T13:30:35.863Z","updated_at":"2024-12-17T13:55:48.382Z","resource":[],"cache":null,"mock_data":[{"data":{"query":"last_value","bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","variables":["humidity"]},"result":[{"id":"67617dd16b084c0009471ee7","time":"2024-12-17T13:34:09.900Z","unit":"%","value":65,"variable":"humidity","group":"2ee1749000c480b61dd71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"2ee1749000c480b61dd71676"}],"cacheTime":null}]},{"id":"67617cfbf3765e000951edd7","analysis_run":null,"label":"Average Humidity","realtime":null,"type":"icon","data":[{"query":"last_value","bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","variables":["avg_humidity"]}],"display":{"aggregate_intervals":[],"header_buttons":[{"color":null,"icon":"","text":"","trigger":"widget","widget":null}],"help":"","show_units":true,"show_values":true,"show_variables":false,"variables":[{"origin":"676179c32250290009dc5313","variable":"avg_humidity","alias":"avg_humidity","formula":{"formula_type":"fixed","unit_type":"origin"},"icon_conditions":[{"condition":"*","url":"https://svg.internal.tago.io/couple-of-arrows-changing-places.svg","color":"#347ab7"}],"color_conditions":[{"color":"#347ab7","condition":"*"}],"data_params":{"interval":null,"query":"last_value","function":null,"value":null,"period":{"start_date":null,"end_date":null}},"bucket":"676179c32250290009dc5313"}],"frame_settings":{"radius":{"top_left":15,"top_right":15,"bottom_left":15,"bottom_right":15}},"theme":{"color":{"background":"hsla(0, 0%, 7%, 0.42)","background_blur":4,"header":null,"dot":null,"button":null}}},"created_at":"2024-12-17T13:30:35.863Z","updated_at":"2024-12-17T13:55:48.403Z","resource":[],"cache":null,"mock_data":[{"data":{"query":"last_value","bucket":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","variables":["avg_humidity"]},"result":[{"id":"67617dd16b084c0009471eea","time":"2024-12-17T13:34:09.901Z","unit":"%","value":65.67,"variable":"avg_humidity","group":"2ee1749000c480b61dd71676","device":"676179c32250290009dc5313","origin":"676179c32250290009dc5313","serie":"2ee1749000c480b61dd71676"}],"cacheTime":null}]}]}
+{
+  "dashboard": {
+    "id": "67617cfbf3765e000951edce",
+    "type": "dashboard",
+    "label": "Temperature & Humidity",
+    "description": null,
+    "arrangement": [
+      { "x": 0, "y": 0, "tab": null, "width": 1, "height": 2.5, "widget_id": "67617cfbf3765e000951edd8" },
+      { "x": 1, "y": 0, "tab": null, "width": 1, "height": 2.5, "widget_id": "67617cfbf3765e000951edd6" },
+      { "x": 2, "y": 0, "tab": null, "width": 1, "height": 2.5, "widget_id": "67617cfbf3765e000951edd5" },
+      { "x": 3, "y": 0, "tab": null, "width": 1, "height": 2.5, "widget_id": "67617cfbf3765e000951edd1" },
+      { "x": 0, "y": 6, "tab": null, "width": 4, "height": 3, "widget_id": "67617cfbf3765e000951edd2" },
+      { "x": 0, "y": 12, "tab": null, "width": 1, "height": 2.5, "widget_id": "67617cfbf3765e000951eddb" },
+      { "x": 1, "y": 12, "tab": null, "width": 1, "height": 2.5, "widget_id": "67617cfbf3765e000951edd3" },
+      { "x": 2, "y": 12, "tab": null, "width": 1, "height": 2.5, "widget_id": "67617cfbf3765e000951edd9" },
+      { "x": 3, "y": 12, "tab": null, "width": 1, "height": 2.5, "widget_id": "67617cfbf3765e000951edd7" },
+      { "x": 0, "y": 17, "tab": null, "width": 4, "height": 3.5, "widget_id": "67617cfbf3765e000951edda" }
+    ],
+    "created_at": "2024-12-17T13:30:35.862Z",
+    "updated_at": "2025-03-20T15:03:03.270Z",
+    "tags": [{ "key": "dashboard_type", "value": "White Dashboards" }],
+    "group_by": [],
+    "tabs": [],
+    "icon": { "url": "https://svg.internal.tago.io/dashboard.svg", "color": "hsl(358, 0%, 20%)" },
+    "background": {
+      "isMigrate": true,
+      "type": "image",
+      "media": "api.tago.io/file/649ad201754f600011c73f7e/embed_templates_images/temperature-humidity.jpeg",
+      "opacity": "21",
+      "color": "hsl(0, 1%, 12%)"
+    },
+    "blueprint_devices": null,
+    "blueprint_device_behavior": null,
+    "blueprint_selector_behavior": null,
+    "setup": {},
+    "theme": { "color": { "tab_active": "hsla(358, 0%, 20%, 1)", "tab_background": "hsla(136, 3%, 17%, 1)" } },
+    "public_token_expire": null,
+    "disable_blueprint_fallback": false,
+    "filter": { "period": { "enabled": false, "presets": [], "show_calendar": true, "max_range": "3 day" } }
+  },
+  "widgets": [
+    {
+      "id": "67617cfbf3765e000951edda",
+      "analysis_run": null,
+      "label": "Humidity History",
+      "realtime": "1",
+      "type": "line_chart",
+      "data": [
+        {
+          "qty": 5000,
+          "bucket": "676179c32250290009dc5313",
+          "origin": "676179c32250290009dc5313",
+          "timezone": "America/New_York",
+          "variables": ["humidity"],
+          "start_date": "99 years"
+        }
+      ],
+      "display": {
+        "frame_settings": { "radius": { "top_left": 15, "top_right": 15, "bottom_left": 15, "bottom_right": 15 } },
+        "group_by": "time",
+        "header_buttons": [{ "color": null, "icon": "", "text": "", "trigger": "widget", "widget": null }],
+        "help": "",
+        "intervals": [""],
+        "line_curve": "smooth",
+        "max_points": 5000,
+        "order_by": "time",
+        "show_point_values": false,
+        "stacked": false,
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 7%, 0.42)",
+            "background_blur": 4,
+            "header": null,
+            "label": null,
+            "tick": "hsla(250, 0%, 100%, 1)",
+            "grid": null,
+            "text_border": null,
+            "text": "hsla(250, 0%, 100%, 1)",
+            "tooltip_background": null,
+            "tooltip_border": null,
+            "tooltip_text": null
+          }
+        },
+        "variables": [
+          {
+            "color": "hsl(210, 71%, 70%)",
+            "origin": "676179c32250290009dc5313",
+            "variable": "humidity",
+            "alias": "humidity",
+            "formula": { "formula_type": "fixed", "unit_type": "fixed" },
+            "data_params": {
+              "interval": null,
+              "query": null,
+              "function": null,
+              "value": null,
+              "period": { "start_date": "99 years", "end_date": null }
+            },
+            "bucket": "676179c32250290009dc5313",
+            "variables": ["humidity"],
+            "qty": 5000,
+            "timezone": "America/New_York",
+            "id": "TfVkl9SVqtAB-lqJhH7RB"
+          }
+        ],
+        "x_axis": { "plot_by": "realtime", "type": "time" },
+        "y_axis": { "scale": { "type": "dynamic" }, "show_metric_abbreviation": true },
+        "override_dashboard_presets": false,
+        "aggregate_intervals": []
+      },
+      "created_at": "2024-12-17T13:30:35.863Z",
+      "updated_at": "2024-12-17T13:57:11.366Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "qty": 5000,
+            "bucket": "676179c32250290009dc5313",
+            "origin": "676179c32250290009dc5313",
+            "timezone": "America/New_York",
+            "variables": ["humidity"],
+            "start_date": "99 years"
+          },
+          "result": [
+            {
+              "id": "67617dd16b084c0009471ee7",
+              "time": "2024-12-17T13:34:09.900Z",
+              "unit": "%",
+              "value": 65,
+              "variable": "humidity",
+              "group": "2ee1749000c480b61dd71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "2ee1749000c480b61dd71676"
+            },
+            {
+              "id": "67617cee5e5f2e0009ad2bc1",
+              "time": "2024-12-17T13:30:22.639Z",
+              "unit": "%",
+              "value": 64,
+              "variable": "humidity",
+              "group": "cbb2da9000e2f5e5eec71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "cbb2da9000e2f5e5eec71676"
+            },
+            {
+              "id": "67617ccdc7f4cd00098d7985",
+              "time": "2024-12-17T13:29:49.880Z",
+              "unit": "%",
+              "value": 68,
+              "variable": "humidity",
+              "group": "0897d89000dc4f7cdcc71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "0897d89000dc4f7cdcc71676"
+            },
+            {
+              "id": "67617cae65271b000943e817",
+              "time": "2024-12-17T13:29:18.682Z",
+              "unit": "%",
+              "value": 62,
+              "variable": "humidity",
+              "group": "218e349000b17256eac71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "218e349000b17256eac71676"
+            },
+            {
+              "id": "67617c8d830401000966b72c",
+              "time": "2024-12-17T13:28:45.530Z",
+              "unit": "%",
+              "value": 70,
+              "variable": "humidity",
+              "group": "727b669000104038d8c71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "727b669000104038d8c71676"
+            },
+            {
+              "id": "67617c6e331f060009ad9d43",
+              "time": "2024-12-17T13:28:14.753Z",
+              "unit": "%",
+              "value": 65,
+              "variable": "humidity",
+              "group": "e3d9da900060f133e6c71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "e3d9da900060f133e6c71676"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67617cfbf3765e000951edd9",
+      "analysis_run": null,
+      "label": "Minimum Humidity",
+      "realtime": null,
+      "type": "icon",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "676179c32250290009dc5313",
+          "origin": "676179c32250290009dc5313",
+          "variables": ["min_humidity"]
+        }
+      ],
+      "display": {
+        "aggregate_intervals": [],
+        "header_buttons": [{ "color": null, "icon": "", "text": "", "trigger": "widget", "widget": null }],
+        "help": "",
+        "show_units": true,
+        "show_values": true,
+        "show_variables": false,
+        "variables": [
+          {
+            "origin": "676179c32250290009dc5313",
+            "variable": "min_humidity",
+            "alias": "min_humidity",
+            "formula": { "formula_type": "fixed", "unit_type": "origin" },
+            "icon_conditions": [
+              { "condition": "*", "url": "https://svg.internal.tago.io/sort-down.svg", "color": "#347ab7" }
+            ],
+            "color_conditions": [{ "color": "#347ab7", "condition": "*" }],
+            "data_params": {
+              "interval": null,
+              "query": "last_value",
+              "function": null,
+              "value": null,
+              "period": { "start_date": null, "end_date": null }
+            },
+            "bucket": "676179c32250290009dc5313"
+          }
+        ],
+        "frame_settings": { "radius": { "top_left": 15, "top_right": 15, "bottom_left": 15, "bottom_right": 15 } },
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 7%, 0.42)",
+            "background_blur": 4,
+            "header": null,
+            "dot": null,
+            "button": null
+          }
+        }
+      },
+      "created_at": "2024-12-17T13:30:35.863Z",
+      "updated_at": "2024-12-17T13:55:48.404Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "676179c32250290009dc5313",
+            "origin": "676179c32250290009dc5313",
+            "variables": ["min_humidity"]
+          },
+          "result": [
+            {
+              "id": "67617dd16b084c0009471ee9",
+              "time": "2024-12-17T13:34:09.901Z",
+              "unit": "%",
+              "value": 55,
+              "variable": "min_humidity",
+              "group": "2ee1749000c480b61dd71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "2ee1749000c480b61dd71676"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67617cfbf3765e000951edd3",
+      "analysis_run": null,
+      "label": "Maximum Humidity",
+      "realtime": null,
+      "type": "icon",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "676179c32250290009dc5313",
+          "origin": "676179c32250290009dc5313",
+          "variables": ["max_humidity"]
+        }
+      ],
+      "display": {
+        "aggregate_intervals": [],
+        "header_buttons": [{ "color": null, "icon": "", "text": "", "trigger": "widget", "widget": null }],
+        "help": "",
+        "show_units": true,
+        "show_values": true,
+        "show_variables": false,
+        "variables": [
+          {
+            "origin": "676179c32250290009dc5313",
+            "variable": "max_humidity",
+            "alias": "max_humidity",
+            "formula": { "formula_type": "fixed", "unit_type": "origin" },
+            "icon_conditions": [
+              { "condition": "*", "url": "https://svg.internal.tago.io/caret-arrow-up.svg", "color": "#347ab7" }
+            ],
+            "color_conditions": [{ "color": "#347ab7", "condition": "*" }],
+            "data_params": {
+              "interval": null,
+              "query": "last_value",
+              "function": null,
+              "value": null,
+              "period": { "start_date": null, "end_date": null }
+            },
+            "bucket": "676179c32250290009dc5313"
+          }
+        ],
+        "frame_settings": { "radius": { "top_left": 15, "top_right": 15, "bottom_left": 15, "bottom_right": 15 } },
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 7%, 0.42)",
+            "background_blur": 4,
+            "header": null,
+            "dot": null,
+            "button": null
+          }
+        }
+      },
+      "created_at": "2024-12-17T13:30:35.863Z",
+      "updated_at": "2024-12-17T13:55:48.404Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "676179c32250290009dc5313",
+            "origin": "676179c32250290009dc5313",
+            "variables": ["max_humidity"]
+          },
+          "result": [
+            {
+              "id": "67617dd16b084c0009471ee8",
+              "time": "2024-12-17T13:34:09.900Z",
+              "unit": "%",
+              "value": 75,
+              "variable": "max_humidity",
+              "group": "2ee1749000c480b61dd71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "2ee1749000c480b61dd71676"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67617cfbf3765e000951edd2",
+      "analysis_run": null,
+      "label": "Temperature History",
+      "realtime": "1",
+      "type": "line_chart",
+      "data": [
+        {
+          "qty": 5000,
+          "bucket": "676179c32250290009dc5313",
+          "origin": "676179c32250290009dc5313",
+          "timezone": "America/New_York",
+          "variables": ["temperature"],
+          "start_date": "99 years"
+        }
+      ],
+      "display": {
+        "frame_settings": { "radius": { "top_left": 15, "top_right": 15, "bottom_left": 15, "bottom_right": 15 } },
+        "group_by": "time",
+        "header_buttons": [{ "color": null, "icon": "", "text": "", "trigger": "widget", "widget": null }],
+        "help": "",
+        "intervals": [""],
+        "line_curve": "smooth",
+        "max_points": 5000,
+        "order_by": "time",
+        "show_point_values": false,
+        "stacked": false,
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 7%, 0.42)",
+            "background_blur": 4,
+            "header": null,
+            "label": null,
+            "tick": "hsla(250, 0%, 100%, 1)",
+            "grid": null,
+            "text_border": null,
+            "text": "hsla(250, 0%, 100%, 1)",
+            "tooltip_background": null,
+            "tooltip_border": null,
+            "tooltip_text": null
+          }
+        },
+        "variables": [
+          {
+            "color": "hsl(210, 71%, 70%)",
+            "origin": "676179c32250290009dc5313",
+            "variable": "temperature",
+            "alias": "temperature",
+            "formula": { "formula_type": "fixed", "unit_type": "fixed" },
+            "data_params": {
+              "interval": null,
+              "query": null,
+              "function": null,
+              "value": null,
+              "period": { "start_date": "99 years", "end_date": null }
+            },
+            "bucket": "676179c32250290009dc5313",
+            "variables": ["temperature"],
+            "qty": 5000,
+            "timezone": "America/New_York",
+            "id": "qurtAHei-Gm1dzkZRoK8n"
+          }
+        ],
+        "x_axis": { "plot_by": "realtime", "type": "time" },
+        "y_axis": { "scale": { "type": "dynamic" }, "show_metric_abbreviation": true },
+        "override_dashboard_presets": false,
+        "aggregate_intervals": []
+      },
+      "created_at": "2024-12-17T13:30:35.863Z",
+      "updated_at": "2024-12-17T13:56:52.213Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "qty": 5000,
+            "bucket": "676179c32250290009dc5313",
+            "origin": "676179c32250290009dc5313",
+            "timezone": "America/New_York",
+            "variables": ["temperature"],
+            "start_date": "99 years"
+          },
+          "result": [
+            {
+              "id": "67617dd16b084c0009471ee3",
+              "time": "2024-12-17T13:34:09.900Z",
+              "unit": "ºF",
+              "value": 69,
+              "variable": "temperature",
+              "group": "2ee1749000c480b61dd71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "2ee1749000c480b61dd71676"
+            },
+            {
+              "id": "67617cee5e5f2e0009ad2bbd",
+              "time": "2024-12-17T13:30:22.639Z",
+              "unit": "ºF",
+              "value": 70,
+              "variable": "temperature",
+              "group": "cbb2da9000e2f5e5eec71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "cbb2da9000e2f5e5eec71676"
+            },
+            {
+              "id": "67617ccdc7f4cd00098d7981",
+              "time": "2024-12-17T13:29:49.880Z",
+              "unit": "ºF",
+              "value": 73,
+              "variable": "temperature",
+              "group": "0897d89000dc4f7cdcc71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "0897d89000dc4f7cdcc71676"
+            },
+            {
+              "id": "67617cae65271b000943e813",
+              "time": "2024-12-17T13:29:18.682Z",
+              "unit": "ºF",
+              "value": 68,
+              "variable": "temperature",
+              "group": "218e349000b17256eac71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "218e349000b17256eac71676"
+            },
+            {
+              "id": "67617c8d830401000966b728",
+              "time": "2024-12-17T13:28:45.530Z",
+              "unit": "ºF",
+              "value": 74,
+              "variable": "temperature",
+              "group": "727b669000104038d8c71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "727b669000104038d8c71676"
+            },
+            {
+              "id": "67617c6e331f060009ad9d3f",
+              "time": "2024-12-17T13:28:14.752Z",
+              "unit": "ºF",
+              "value": 69,
+              "variable": "temperature",
+              "group": "e3d9da900060f133e6c71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "e3d9da900060f133e6c71676"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67617cfbf3765e000951edd8",
+      "analysis_run": null,
+      "label": "Real Time Temperature",
+      "realtime": null,
+      "type": "icon",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "676179c32250290009dc5313",
+          "origin": "676179c32250290009dc5313",
+          "variables": ["temperature"]
+        }
+      ],
+      "display": {
+        "aggregate_intervals": [],
+        "header_buttons": [{ "color": null, "icon": "", "text": "", "trigger": "widget", "widget": null }],
+        "help": "",
+        "show_units": true,
+        "show_values": true,
+        "show_variables": false,
+        "variables": [
+          {
+            "origin": "676179c32250290009dc5313",
+            "variable": "temperature",
+            "alias": "temperature",
+            "formula": { "formula_type": "fixed", "unit_type": "origin" },
+            "icon_conditions": [
+              { "condition": "*", "url": "https://svg.internal.tago.io/thermometer.svg", "color": "hsl(34, 94%, 61%)" }
+            ],
+            "color_conditions": [{ "color": "hsl(34, 94%, 61%)", "condition": "*" }],
+            "data_params": {
+              "interval": null,
+              "query": "last_value",
+              "function": null,
+              "value": null,
+              "period": { "start_date": null, "end_date": null }
+            },
+            "bucket": "676179c32250290009dc5313"
+          }
+        ],
+        "frame_settings": {
+          "radius": { "top_left": 15, "top_right": 15, "bottom_left": 15, "bottom_right": 15 },
+          "header_visibility": "show_always"
+        },
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 7%, 0.42)",
+            "background_blur": 4,
+            "header": null,
+            "dot": null,
+            "button": null
+          }
+        }
+      },
+      "created_at": "2024-12-17T13:30:35.863Z",
+      "updated_at": "2024-12-17T13:58:26.940Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "676179c32250290009dc5313",
+            "origin": "676179c32250290009dc5313",
+            "variables": ["temperature"]
+          },
+          "result": [
+            {
+              "id": "67617dd16b084c0009471ee3",
+              "time": "2024-12-17T13:34:09.900Z",
+              "unit": "ºF",
+              "value": 69,
+              "variable": "temperature",
+              "group": "2ee1749000c480b61dd71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "2ee1749000c480b61dd71676"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67617cfbf3765e000951edd1",
+      "analysis_run": null,
+      "label": "Average Temperature",
+      "realtime": null,
+      "type": "icon",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "676179c32250290009dc5313",
+          "origin": "676179c32250290009dc5313",
+          "variables": ["temperature_average"]
+        }
+      ],
+      "display": {
+        "aggregate_intervals": [],
+        "header_buttons": [{ "color": null, "icon": "", "text": "", "trigger": "widget", "widget": null }],
+        "help": "",
+        "show_units": true,
+        "show_values": true,
+        "show_variables": false,
+        "variables": [
+          {
+            "origin": "676179c32250290009dc5313",
+            "variable": "temperature_average",
+            "alias": "temperature_average",
+            "icon_conditions": [
+              {
+                "condition": "*",
+                "url": "https://svg.internal.tago.io/couple-of-arrows-changing-places.svg",
+                "color": "hsl(34, 94%, 61%)"
+              }
+            ],
+            "color_conditions": [{ "color": "hsl(34, 94%, 61%)", "condition": "*" }],
+            "data_params": {
+              "interval": null,
+              "query": "last_value",
+              "function": null,
+              "value": null,
+              "period": { "start_date": null, "end_date": null }
+            },
+            "bucket": "676179c32250290009dc5313"
+          }
+        ],
+        "frame_settings": {
+          "radius": { "top_left": 15, "top_right": 15, "bottom_left": 15, "bottom_right": 15 },
+          "header_visibility": "show_always"
+        },
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 7%, 0.42)",
+            "background_blur": 4,
+            "header": null,
+            "dot": null,
+            "button": null
+          }
+        }
+      },
+      "created_at": "2024-12-17T13:30:35.863Z",
+      "updated_at": "2024-12-17T13:55:48.383Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "676179c32250290009dc5313",
+            "origin": "676179c32250290009dc5313",
+            "variables": ["temperature_average"]
+          },
+          "result": [
+            {
+              "id": "67617dd16b084c0009471ee6",
+              "time": "2024-12-17T13:34:09.900Z",
+              "unit": "ºF",
+              "value": 69.33,
+              "variable": "temperature_average",
+              "group": "2ee1749000c480b61dd71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "2ee1749000c480b61dd71676"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67617cfbf3765e000951edd5",
+      "analysis_run": null,
+      "label": "Minimum Temperature",
+      "realtime": null,
+      "type": "icon",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "676179c32250290009dc5313",
+          "origin": "676179c32250290009dc5313",
+          "variables": ["temperature_minimum"]
+        }
+      ],
+      "display": {
+        "aggregate_intervals": [],
+        "header_buttons": [{ "color": null, "icon": "", "text": "", "trigger": "widget", "widget": null }],
+        "help": "",
+        "show_units": true,
+        "show_values": true,
+        "show_variables": false,
+        "variables": [
+          {
+            "origin": "676179c32250290009dc5313",
+            "variable": "temperature_minimum",
+            "alias": "temperature_minimum",
+            "icon_conditions": [
+              { "condition": "*", "url": "https://svg.internal.tago.io/sort-down.svg", "color": "hsl(34, 94%, 61%)" }
+            ],
+            "color_conditions": [{ "color": "hsl(34, 94%, 61%)", "condition": "*" }],
+            "data_params": {
+              "interval": null,
+              "query": "last_value",
+              "function": null,
+              "value": null,
+              "period": { "start_date": null, "end_date": null }
+            },
+            "bucket": "676179c32250290009dc5313"
+          }
+        ],
+        "frame_settings": {
+          "radius": { "top_left": 15, "top_right": 15, "bottom_left": 15, "bottom_right": 15 },
+          "header_visibility": "show_always"
+        },
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 7%, 0.42)",
+            "background_blur": 4,
+            "header": null,
+            "dot": null,
+            "button": null
+          }
+        }
+      },
+      "created_at": "2024-12-17T13:30:35.863Z",
+      "updated_at": "2024-12-17T13:55:48.378Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "676179c32250290009dc5313",
+            "origin": "676179c32250290009dc5313",
+            "variables": ["temperature_minimum"]
+          },
+          "result": [
+            {
+              "id": "67617dd16b084c0009471ee4",
+              "time": "2024-12-17T13:34:09.900Z",
+              "unit": "ºF",
+              "value": 59,
+              "variable": "temperature_minimum",
+              "group": "2ee1749000c480b61dd71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "2ee1749000c480b61dd71676"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67617cfbf3765e000951edd6",
+      "analysis_run": null,
+      "label": "Maximum Temperature",
+      "realtime": null,
+      "type": "icon",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "676179c32250290009dc5313",
+          "origin": "676179c32250290009dc5313",
+          "variables": ["temperature_maximum"]
+        }
+      ],
+      "display": {
+        "aggregate_intervals": [],
+        "header_buttons": [{ "color": null, "icon": "", "text": "", "trigger": "widget", "widget": null }],
+        "help": "",
+        "show_units": true,
+        "show_values": true,
+        "show_variables": false,
+        "variables": [
+          {
+            "origin": "676179c32250290009dc5313",
+            "variable": "temperature_maximum",
+            "alias": "temperature_maximum",
+            "icon_conditions": [
+              { "condition": "*", "url": "https://svg.internal.tago.io/sort-up.svg", "color": "hsl(34, 94%, 61%)" }
+            ],
+            "color_conditions": [{ "color": "hsl(34, 94%, 61%)", "condition": "*" }],
+            "data_params": {
+              "interval": null,
+              "query": "last_value",
+              "function": null,
+              "value": null,
+              "period": { "start_date": null, "end_date": null }
+            },
+            "bucket": "676179c32250290009dc5313"
+          }
+        ],
+        "frame_settings": {
+          "radius": { "top_left": 15, "top_right": 15, "bottom_left": 15, "bottom_right": 15 },
+          "header_visibility": "show_always"
+        },
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 7%, 0.42)",
+            "background_blur": 4,
+            "header": null,
+            "dot": null,
+            "button": null
+          }
+        }
+      },
+      "created_at": "2024-12-17T13:30:35.863Z",
+      "updated_at": "2024-12-17T13:55:48.374Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "676179c32250290009dc5313",
+            "origin": "676179c32250290009dc5313",
+            "variables": ["temperature_maximum"]
+          },
+          "result": [
+            {
+              "id": "67617dd16b084c0009471ee5",
+              "time": "2024-12-17T13:34:09.900Z",
+              "unit": "ºF",
+              "value": 80,
+              "variable": "temperature_maximum",
+              "group": "2ee1749000c480b61dd71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "2ee1749000c480b61dd71676"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67617cfbf3765e000951eddb",
+      "analysis_run": null,
+      "label": "Real Time Humidity",
+      "realtime": null,
+      "type": "icon",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "676179c32250290009dc5313",
+          "origin": "676179c32250290009dc5313",
+          "variables": ["humidity"]
+        }
+      ],
+      "display": {
+        "aggregate_intervals": [],
+        "header_buttons": [{ "color": null, "icon": "", "text": "", "trigger": "widget", "widget": null }],
+        "help": "",
+        "show_units": true,
+        "show_values": true,
+        "show_variables": false,
+        "variables": [
+          {
+            "origin": "676179c32250290009dc5313",
+            "variable": "humidity",
+            "alias": "humidity",
+            "formula": { "formula_type": "fixed", "unit_type": "origin" },
+            "icon_conditions": [
+              { "condition": "*", "url": "https://svg.internal.tago.io/tint-drop.svg", "color": "#347ab7" }
+            ],
+            "color_conditions": [{ "color": "#347ab7", "condition": "*" }],
+            "data_params": {
+              "interval": null,
+              "query": "last_value",
+              "function": null,
+              "value": null,
+              "period": { "start_date": null, "end_date": null }
+            },
+            "bucket": "676179c32250290009dc5313"
+          }
+        ],
+        "frame_settings": { "radius": { "top_left": 15, "top_right": 15, "bottom_left": 15, "bottom_right": 15 } },
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 7%, 0.42)",
+            "background_blur": 4,
+            "header": null,
+            "dot": null,
+            "button": null
+          }
+        }
+      },
+      "created_at": "2024-12-17T13:30:35.863Z",
+      "updated_at": "2024-12-17T13:55:48.382Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "676179c32250290009dc5313",
+            "origin": "676179c32250290009dc5313",
+            "variables": ["humidity"]
+          },
+          "result": [
+            {
+              "id": "67617dd16b084c0009471ee7",
+              "time": "2024-12-17T13:34:09.900Z",
+              "unit": "%",
+              "value": 65,
+              "variable": "humidity",
+              "group": "2ee1749000c480b61dd71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "2ee1749000c480b61dd71676"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67617cfbf3765e000951edd7",
+      "analysis_run": null,
+      "label": "Average Humidity",
+      "realtime": null,
+      "type": "icon",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "676179c32250290009dc5313",
+          "origin": "676179c32250290009dc5313",
+          "variables": ["avg_humidity"]
+        }
+      ],
+      "display": {
+        "aggregate_intervals": [],
+        "header_buttons": [{ "color": null, "icon": "", "text": "", "trigger": "widget", "widget": null }],
+        "help": "",
+        "show_units": true,
+        "show_values": true,
+        "show_variables": false,
+        "variables": [
+          {
+            "origin": "676179c32250290009dc5313",
+            "variable": "avg_humidity",
+            "alias": "avg_humidity",
+            "formula": { "formula_type": "fixed", "unit_type": "origin" },
+            "icon_conditions": [
+              {
+                "condition": "*",
+                "url": "https://svg.internal.tago.io/couple-of-arrows-changing-places.svg",
+                "color": "#347ab7"
+              }
+            ],
+            "color_conditions": [{ "color": "#347ab7", "condition": "*" }],
+            "data_params": {
+              "interval": null,
+              "query": "last_value",
+              "function": null,
+              "value": null,
+              "period": { "start_date": null, "end_date": null }
+            },
+            "bucket": "676179c32250290009dc5313"
+          }
+        ],
+        "frame_settings": { "radius": { "top_left": 15, "top_right": 15, "bottom_left": 15, "bottom_right": 15 } },
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 7%, 0.42)",
+            "background_blur": 4,
+            "header": null,
+            "dot": null,
+            "button": null
+          }
+        }
+      },
+      "created_at": "2024-12-17T13:30:35.863Z",
+      "updated_at": "2024-12-17T13:55:48.403Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "676179c32250290009dc5313",
+            "origin": "676179c32250290009dc5313",
+            "variables": ["avg_humidity"]
+          },
+          "result": [
+            {
+              "id": "67617dd16b084c0009471eea",
+              "time": "2024-12-17T13:34:09.901Z",
+              "unit": "%",
+              "value": 65.67,
+              "variable": "avg_humidity",
+              "group": "2ee1749000c480b61dd71676",
+              "device": "676179c32250290009dc5313",
+              "origin": "676179c32250290009dc5313",
+              "serie": "2ee1749000c480b61dd71676"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    }
+  ]
+}

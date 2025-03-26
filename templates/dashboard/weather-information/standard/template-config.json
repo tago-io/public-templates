@@ -1,1 +1,5 @@
-{"type":"standard","use_mock":true,"setup":{"devices":[{"id":"65d8e6edddf4f9000984f151","name":"Weather"}],"analysis":[]}}
+{
+  "type": "standard",
+  "use_mock": true,
+  "setup": { "devices": [{ "id": "65d8e6edddf4f9000984f151", "name": "Weather" }], "analysis": [] }
+}

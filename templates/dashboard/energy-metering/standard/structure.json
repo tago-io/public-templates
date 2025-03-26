@@ -1,1 +1,1119 @@
-{"dashboard":{"id":"67589276b4bda80009031e9c","type":"dashboard","label":"Energy Metering","description":null,"arrangement":[{"x":2,"y":0,"tab":"1678704631196","width":1,"height":4,"widget_id":"67589276b4bda80009031e9f"},{"x":3,"y":0,"tab":"1678704631196","width":1,"height":2,"widget_id":"67589276b4bda80009031ea4"},{"x":0,"y":0,"tab":"1678704631196","width":1,"height":4,"widget_id":"67589276b4bda80009031ea2"},{"x":0,"y":8,"tab":"1678704631196","width":1.3333333333333333,"height":3.5,"widget_id":"67589276b4bda80009031ea6"},{"x":1,"y":0,"tab":"1678704631196","width":1,"height":4,"widget_id":"67589276b4bda80009031ea3"},{"x":1.3333333333333333,"y":8,"tab":"1678704631196","width":1.6666666666666667,"height":3.5,"widget_id":"67589276b4bda80009031ea8"},{"x":3,"y":13,"tab":"1678704631196","width":1,"height":4.5,"widget_id":"67589276b4bda80009031e9d"},{"x":3,"y":8,"tab":"1678704631196","width":1,"height":2.5,"widget_id":"67589276b4bda80009031ea5"},{"x":0,"y":15,"tab":"1678704631196","width":3,"height":3.5,"widget_id":"67589276b4bda80009031e9e"},{"x":3,"y":4,"tab":"1678704631196","width":1,"height":2,"widget_id":"67589276b4bda80009031ea0"}],"created_at":"2024-12-10T19:11:50.113Z","updated_at":"2025-03-20T12:46:47.816Z","tags":[],"group_by":[],"tabs":[{"key":"1678704631196","link":"","value":"Main"}],"icon":{"url":"https://svg.internal.tago.io/bolt.svg","color":null},"background":{"color":"hsl(40, 0%, 17%)","type":"image","media":"api.tago.io/file/649ad201754f600011c73f7e/embed_templates_images/energy-metering.jpeg","opacity":"77"},"blueprint_devices":null,"blueprint_device_behavior":null,"blueprint_selector_behavior":null,"setup":{},"theme":{"color":{"tab_active":null,"tab_background":null,"tab_inactive":null}},"public_token_expire":null,"disable_blueprint_fallback":false,"filter":{"period":{"enabled":false,"presets":[],"show_calendar":true,"max_range":"3 day"}}},"widgets":[{"id":"67589276b4bda80009031e9f","analysis_run":null,"label":"Voltage","realtime":"true","type":"vu-meter","data":[{"query":"last_value","bucket":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","variables":["voltage"]}],"display":{"alias":"Voltage","formula":{"enable":false,"formula_type":"fixed","unit_type":"origin","value":""},"frame_settings":{"radius":{"top_left":6,"top_right":6,"bottom_left":6,"bottom_right":6}},"header_buttons":[{"color":"hsla(207, 58%, 49%, 1)","icon":null,"text":"Voltage Variation","trigger":"widget","widget":"67589276b4bda80009031ea1","layout":"fill"}],"help":"","number_format":{"decimals":-1,"show_thousand":false},"range":{"maximum":225,"minimum":0,"type":"minmax"},"show_variables":false,"theme":{"color":{"background":"hsla(0, 0%, 99%, 0.56)","background_blur":7,"header":null,"fill":"hsla(13, 67%, 62%, 1)","text_border":"hsla(250, 0%, 0%, 1)","text":"hsla(150, 0%, 0%, 1)","outline":null,"danger":null,"needle":"hsla(13, 67%, 62%, 1)","tick":"hsla(150, 0%, 0%, 1)"}}},"created_at":"2024-12-10T19:11:50.113Z","updated_at":"2025-02-05T16:44:20.193Z","resource":[],"cache":null,"mock_data":[{"data":{"query":"last_value","bucket":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","variables":["voltage"]},"result":[{"id":"67a39540c804650008f8eb60","time":"2025-02-05T16:43:44.910Z","unit":"V","value":136.5,"variable":"voltage","group":"f5be8f800056408c04593a76","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"f5be8f800056408c04593a76"}],"cacheTime":null}]},{"id":"67589276b4bda80009031ea2","analysis_run":null,"label":"Current","realtime":"true","type":"angular","data":[{"query":"last_value","bucket":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","variables":["current"]}],"display":{"alias":"Current","formula":{"enable":false,"formula_type":"fixed","unit_type":"fixed","value":"","fixed_unit":"A"},"frame_settings":{"radius":{"top_left":6,"top_right":6,"bottom_left":6,"bottom_right":6}},"header_buttons":[],"help":"","number_format":{"decimals":-1,"show_thousand":false},"range":{"maximum":0.6,"minimum":0,"type":"minmax"},"show_variables":false,"theme":{"color":{"background":"hsla(0, 0%, 99%, 0.56)","background_blur":7,"header":null,"fill":"hsla(45, 69%, 57%, 1)","text_border":"hsla(0, 0%, 0%, 1)","text":"hsla(150, 0%, 0%, 1)","outline":null,"needle":"hsla(45, 69%, 57%, 1)","tick":"hsla(150, 0%, 0%, 1)","hue":null}}},"created_at":"2024-12-10T19:11:50.113Z","updated_at":"2025-02-05T15:16:41.473Z","resource":[],"cache":null,"mock_data":[{"data":{"query":"last_value","bucket":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","variables":["current"]},"result":[{"id":"675892c0a327570009e71c39","time":"2024-12-10T19:13:04.724Z","unit":"A","value":0.33,"variable":"current","group":"83c17e900075723a0c298576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"83c17e900075723a0c298576"}],"cacheTime":null}]},{"id":"67589276b4bda80009031e9d","analysis_run":null,"label":"Clock","realtime":"true","type":"clock","data":[{"timezone":"America/New_York"}],"display":{"header_buttons":[],"frame_settings":{"radius":{"top_left":6,"top_right":6,"bottom_left":6,"bottom_right":6}},"help":"","show_last_update":false,"theme":{"color":{"background":"hsla(0, 0%, 99%, 0.56)","background_blur":7,"header":null,"fill":"hsla(13, 67%, 62%, 1)","text_border":"hsla(0, 0%, 0%, 1)","text":"hsla(150, 0%, 0%, 1)","outline":null}}},"created_at":"2024-12-10T19:11:50.113Z","updated_at":"2024-12-10T19:41:35.967Z","resource":[],"cache":null,"mock_data":[{"data":{"timezone":"America/New_York"},"result":[]}]},{"id":"67589276b4bda80009031ea4","analysis_run":null,"label":"Relay Status","realtime":"true","type":"icon","data":[{"query":"last_value","bucket":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","variables":["staterelay"]}],"display":{"aggregate_intervals":[],"header_buttons":[],"help":"","show_units":false,"show_values":false,"show_variables":false,"variables":[{"icon_conditions":[{"url":"https://svg.internal.tago.io/power-button-off.svg","color":"hsl(171, 48%, 26%)","condition":"=","value":"ON"},{"url":"https://svg.internal.tago.io/power-button-off.svg","color":"hsl(5, 86%, 49%)","condition":"=","value":"OFF"}],"origin":"67589242cab9ce0009eae41d","variable":"staterelay","bucket":"67589242cab9ce0009eae41d","alias":"St. Relay","data_params":{"interval":null,"query":"last_value","function":null,"value":null,"period":{"start_date":null,"end_date":null}}}],"theme":{"color":{"background":"hsla(0, 0%, 99%, 0.56)","background_blur":7,"header":null,"dot":null,"button":null}},"font_size":{"type":"manual","value":"large"},"frame_settings":{"radius":{"top_left":6,"top_right":6,"bottom_left":6,"bottom_right":6}}},"created_at":"2024-12-10T19:11:50.113Z","updated_at":"2024-12-10T19:44:59.834Z","resource":[],"cache":null,"mock_data":[{"data":{"query":"last_value","bucket":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","variables":["staterelay"]},"result":[{"id":"67dc0aa870f95d000a31a0b3","time":"2025-03-20T12:31:36.476Z","value":"ON","variable":"staterelay","group":"2b0a13a000d59f078aa0cd76","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"2b0a13a000d59f078aa0cd76"}],"cacheTime":null}]},{"id":"67589276b4bda80009031ea3","analysis_run":null,"label":"Load","realtime":"true","type":"angular","data":[{"query":"last_value","bucket":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","variables":["percentualload"]}],"display":{"alias":"Current","formula":{"enable":true,"formula_type":"fixed","unit_type":"fixed","value":"$METADATA.percentualload$","fixed_unit":"%"},"frame_settings":{"radius":{"top_left":6,"top_right":6,"bottom_left":6,"bottom_right":6}},"header_buttons":[],"help":"","number_format":{"decimals":-1,"show_thousand":false},"range":{"maximum":100,"minimum":0,"type":"minmax"},"show_variables":false,"theme":{"color":{"background":"hsla(0, 0%, 99%, 0.56)","background_blur":7,"header":null,"fill":"hsla(199, 54%, 53%, 1)","text_border":"hsla(0, 0%, 0%, 1)","text":"hsla(150, 0%, 0%, 1)","outline":null,"needle":"hsla(199, 54%, 53%, 1)","tick":"hsla(150, 0%, 0%, 1)","hue":null}}},"created_at":"2024-12-10T19:11:50.113Z","updated_at":"2024-12-10T19:49:00.555Z","resource":[],"cache":null,"mock_data":[{"data":{"query":"last_value","bucket":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","variables":["percentualload"]},"result":[{"id":"675892e1a327570009e71f6e","time":"2024-12-10T19:13:37.693Z","unit":"%","value":50,"variable":"percentualload","group":"d6f17e900075723a1e298576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"d6f17e900075723a1e298576"}],"cacheTime":null}]},{"id":"67589276b4bda80009031ea0","analysis_run":null,"label":"RSSI","realtime":"true","type":"icon","data":[{"query":"last_value","bucket":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","variables":["rssi"]}],"display":{"aggregate_intervals":[],"header_buttons":[],"help":"","show_units":false,"show_values":false,"show_variables":false,"variables":[{"icon_conditions":[{"url":"https://svg.internal.tago.io/wifi.svg","color":"hsl(359, 89%, 48%)","condition":"<","value":"20"},{"url":"https://svg.internal.tago.io/wifi.svg","color":"hsl(28, 86%, 49%)","condition":"><","value":"21","valueTwo":"49"},{"url":"https://svg.internal.tago.io/wifi.svg","color":"hsl(58, 92%, 51%)","condition":"><","value":"50","valueTwo":"79"},{"url":"https://svg.internal.tago.io/wifi.svg","color":"hsl(172, 48%, 26%)","condition":"><","value":"80","valueTwo":"100"}],"origin":"67589242cab9ce0009eae41d","variable":"rssi","bucket":"67589242cab9ce0009eae41d","alias":"RSSI","data_params":{"interval":null,"query":"last_value","function":null,"value":null,"period":{"start_date":null,"end_date":null}}}],"theme":{"color":{"background":"hsla(0, 0%, 99%, 0.56)","background_blur":7,"header":null,"dot":null,"button":null}},"font_size":{"type":"manual","value":"large"},"frame_settings":{"radius":{"top_left":6,"top_right":6,"bottom_left":6,"bottom_right":6}}},"created_at":"2024-12-10T19:11:50.113Z","updated_at":"2024-12-10T19:45:14.299Z","resource":[],"cache":null,"mock_data":[{"data":{"query":"last_value","bucket":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","variables":["rssi"]},"result":[{"id":"67589792a327570009e79d83","time":"2024-12-10T19:33:38.348Z","value":85,"variable":"rssi","group":"28d97e900075723a29798576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"28d97e900075723a29798576"}],"cacheTime":null}]},{"id":"67589276b4bda80009031ea5","analysis_run":null,"label":"Turn your energy ON or OFF","realtime":"true","type":"push_button","data":[{"bucket":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","variables":["staterelay"]}],"display":{"alias":"","frame_settings":{"radius":{"top_left":6,"top_right":6,"bottom_left":6,"bottom_right":6}},"header_buttons":[],"help":"","show_variables":false,"state_one":{"button_color":null,"color":"hsla(48, 90%, 50%, 1)","label":"Activate","type":"icon","unit":"","url":"https://svg.internal.tago.io/power-button-off.svg","value":"OFF"},"state_two":{"button_color":"hsla(207, 58%, 49%, 1)","color":"hsla(240, 0%, 100%, 1)","label":"Deactivate","type":"icon","unit":"","url":"https://svg.internal.tago.io/power-button-off.svg","value":"ON"},"theme":{"color":{"background":"hsla(0, 0%, 99%, 0.56)","background_blur":7,"header":null,"text":"hsla(150, 0%, 0%, 1)"}},"type":"bistable"},"created_at":"2024-12-10T19:11:50.113Z","updated_at":"2024-12-10T19:41:35.972Z","resource":[],"cache":null,"mock_data":[{"data":{"bucket":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","variables":["staterelay"]},"result":[{"id":"67dc0aa870f95d000a31a0b3","time":"2025-03-20T12:31:36.476Z","value":"ON","variable":"staterelay","group":"2b0a13a000d59f078aa0cd76","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"2b0a13a000d59f078aa0cd76"},{"id":"67dc0aa770f95d000a31a0b1","time":"2025-03-20T12:31:35.801Z","value":"OFF","variable":"staterelay","group":"0b0a13a000d59f077aa0cd76","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"0b0a13a000d59f077aa0cd76"},{"id":"67a37dc6718f8c000997d2de","time":"2025-02-05T15:03:34.676Z","value":"ON","variable":"staterelay","group":"dd2d799000c8f8176cd73a76","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"dd2d799000c8f8176cd73a76"},{"id":"67a37dc3f3d41900092b1bbe","time":"2025-02-05T15:03:31.662Z","value":"OFF","variable":"staterelay","group":"dbb1b29000914d3f3cd73a76","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"dbb1b29000914d3f3cd73a76"},{"id":"67a2573fd603160009bb1eb1","time":"2025-02-04T18:06:55.280Z","value":"ON","variable":"staterelay","group":"0be1bb900061306df3752a76","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"0be1bb900061306df3752a76"},{"id":"67a2573b93ec09000845a640","time":"2025-02-04T18:06:51.417Z","value":"OFF","variable":"staterelay","group":"f36a54800090ce39b3752a76","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"f36a54800090ce39b3752a76"},{"id":"675893acf5b23700097922d3","time":"2024-12-10T19:17:00.295Z","value":"ON","variable":"staterelay","group":"2d22979000732b5fca398576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"2d22979000732b5fca398576"},{"id":"67589392f5b2370009792073","time":"2024-12-10T19:16:34.531Z","value":true,"variable":"staterelay","group":"2702979000732b5f29398576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"2702979000732b5f29398576"}],"cacheTime":null}]},{"id":"67589276b4bda80009031e9e","analysis_run":null,"label":"Logs","realtime":"true","type":"dynamic_table","data":[{"qty":5000,"bucket":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","timezone":"America/Sao_Paulo","variables":["voltage"]}],"display":{"frame_settings":{"radius":{"top_left":6,"top_right":6,"bottom_left":6,"bottom_right":6}},"header_buttons":[],"help":"","intervals":["1 year"],"max_rows":5000,"show_control":true,"show_time":true,"theme":{"color":{"background":"hsla(0, 0%, 99%, 0.56)","background_blur":7,"header":null,"alternate":null,"column_header":null,"footer":null}},"variables":[{"allow_resize":true,"data":{"origin":"67589242cab9ce0009eae41d","variable":"voltage","bucket":"67589242cab9ce0009eae41d"},"id":"b9_YnK2xWi2NfII69YVMB","alias":"Voltage"},{"alias":"Date and Time","allow_resize":true,"fixed_width":100,"id":"date","is_date":true,"overflow_behavior":"stretch","size":"auto","data":null},{"alias":"Controls","alignment":"center","delete_cancel_text":"Cancel","delete_confirm_text":"Yes, delete row","delete_message":"Do you really want to delete this row?","delete_title":"Delete row","fixed_width":33,"id":"control","is_control":true,"overflow_behavior":"stretch","show_delete":true,"show_edit":true,"size":"fixed","data":null}]},"created_at":"2024-12-10T19:11:50.113Z","updated_at":"2025-02-19T13:32:00.608Z","resource":[],"cache":null,"mock_data":[{"data":{"qty":5000,"bucket":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","timezone":"America/Sao_Paulo","variables":["voltage"]},"result":[{"id":"67a39540c804650008f8eb60","time":"2025-02-05T16:43:44.910Z","unit":"V","value":136.5,"variable":"voltage","group":"f5be8f800056408c04593a76","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"f5be8f800056408c04593a76"},{"id":"67a39528fdb7740009d44759","time":"2025-02-05T16:43:20.155Z","unit":"V","value":120,"variable":"voltage","group":"85744d9000477bdf82593a76","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"85744d9000477bdf82593a76"},{"id":"67a3951117f126000907ff4a","time":"2025-02-05T16:42:57.233Z","unit":"V","value":240,"variable":"voltage","group":"94ff709000621f7111593a76","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"94ff709000621f7111593a76"},{"id":"67a3950032d4ab0009d9c8a7","time":"2025-02-05T16:42:40.537Z","unit":"V","value":135.5,"variable":"voltage","group":"6a8c9d9000ba4d2300593a76","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"6a8c9d9000ba4d2300593a76"},{"id":"67a394f509a53f0009403d49","time":"2025-02-05T16:42:29.018Z","unit":"V","value":202.5,"variable":"voltage","group":"84d3049000f35a905f493a76","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"84d3049000f35a905f493a76"},{"id":"67a394e8f3d41900092de192","time":"2025-02-05T16:42:16.108Z","unit":"V","value":67.5,"variable":"voltage","group":"191ed29000914d3f8e493a76","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"191ed29000914d3f8e493a76"},{"id":"6758933ca327570009e72879","time":"2024-12-10T19:15:08.173Z","unit":"V","value":126.2,"variable":"voltage","group":"87827e900075723ac3398576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"87827e900075723ac3398576"}],"cacheTime":null}]},{"id":"67589276b4bda80009031ea6","analysis_run":null,"label":"Current Energy Spent","realtime":"true","type":"line_chart","data":[{"qty":25,"origin":"67589242cab9ce0009eae41d","timezone":"America/Sao_Paulo","variables":["energyspent"],"start_date":"99 years"}],"display":{"frame_settings":{"radius":{"top_left":6,"top_right":6,"bottom_left":6,"bottom_right":6}},"group_by":"time","header_buttons":[],"help":"","intervals":["1 month","1 year","forever"],"line_curve":"smooth","max_points":25,"order_by":"time","show_point_values":false,"stacked":false,"theme":{"color":{"background":"hsla(0, 0%, 99%, 0.56)","background_blur":7,"header":null,"label":null,"tick":"hsla(150, 0%, 0%, 1)","grid":null,"text_border":"hsla(0, 0%, 0%, 1)","text":"hsla(150, 0%, 0%, 1)","tooltip_background":null,"tooltip_border":null,"tooltip_text":null}},"variables":[{"color":"hsla(13, 67%, 62%, 1)","id":"2Im3ozkA_4cACSxVMsPYo","origin":"67589242cab9ce0009eae41d","variable":"energyspent","formula":{"unit_type":"origin","enable":false,"kind":"simple","value":"$METADATA.energyspent$"},"qty":25,"timezone":"America/Sao_Paulo","alias":"Energy Spent","variables":["energyspent"]}],"x_axis":{"plot_by":"realtime","type":"time"},"y_axis":{"scale":{"type":"dynamic"},"show_metric_abbreviation":true,"step":""}},"created_at":"2024-12-10T19:11:50.113Z","updated_at":"2024-12-10T19:41:35.953Z","resource":[],"cache":null,"mock_data":[{"data":{"qty":25,"origin":"67589242cab9ce0009eae41d","timezone":"America/Sao_Paulo","variables":["energyspent"],"start_date":"99 years","bucket":"67589242cab9ce0009eae41d"},"result":[{"id":"6758940f8f09df00098e6e9a","time":"2024-12-10T19:18:39.554Z","value":40,"variable":"energyspent","group":"99e6e89000fd90f8f0498576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"99e6e89000fd90f8f0498576"},{"id":"6758940bf5b2370009792c44","time":"2024-12-10T19:18:35.281Z","value":30,"variable":"energyspent","group":"34c2979000732b5fb0498576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"34c2979000732b5fb0498576"},{"id":"6758940266b0070009b15125","time":"2024-12-10T19:18:26.179Z","value":20,"variable":"energyspent","group":"42151b9000700b6620498576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"42151b9000700b6620498576"},{"id":"675893f7fe1f7e0009b7d94c","time":"2024-12-10T19:18:15.406Z","value":15,"variable":"energyspent","group":"b49d7b9000e7f1ef7f398576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"b49d7b9000e7f1ef7f398576"},{"id":"675893f13036b00009ce692b","time":"2024-12-10T19:18:09.067Z","value":10,"variable":"energyspent","group":"a296ec90000b63031f398576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"a296ec90000b63031f398576"}],"cacheTime":null}]},{"id":"67589276b4bda80009031ea8","analysis_run":null,"label":"Current Power Consumed","realtime":"true","type":"line_chart","data":[{"qty":25,"origin":"67589242cab9ce0009eae41d","timezone":"America/Sao_Paulo","variables":["powerconsumed"],"start_date":"99 years"}],"display":{"frame_settings":{"radius":{"top_left":6,"top_right":6,"bottom_left":6,"bottom_right":6}},"group_by":"time","header_buttons":[],"help":"","intervals":["1 hour","1 day","1 week","1 week"],"line_curve":"smooth","max_points":25,"order_by":"time","show_point_values":false,"stacked":false,"theme":{"color":{"background":"hsla(0, 0%, 99%, 0.56)","background_blur":7,"header":null,"label":null,"tick":"hsla(150, 0%, 0%, 1)","grid":null,"text_border":"hsla(0, 0%, 0%, 1)","text":"hsla(150, 0%, 0%, 1)","tooltip_background":null,"tooltip_border":null,"tooltip_text":null}},"variables":[{"color":"hsla(13, 67%, 62%, 1)","id":"2Im3ozkA_4cACSxVMsPYo","origin":"67589242cab9ce0009eae41d","variable":"powerconsumed","formula":{"unit_type":"origin"},"qty":25,"timezone":"America/Sao_Paulo","alias":"Power Consumed","variables":["powerconsumed"]}],"x_axis":{"plot_by":"realtime","type":"time"},"y_axis":{"scale":{"type":"dynamic"},"show_metric_abbreviation":true}},"created_at":"2024-12-10T19:11:50.113Z","updated_at":"2024-12-10T19:41:35.955Z","resource":[],"cache":null,"mock_data":[{"data":{"qty":25,"origin":"67589242cab9ce0009eae41d","timezone":"America/Sao_Paulo","variables":["powerconsumed"],"start_date":"99 years","bucket":"67589242cab9ce0009eae41d"},"result":[{"id":"67589668fe1f7e0009b82177","time":"2024-12-10T19:28:40.740Z","value":45,"variable":"powerconsumed","group":"67128b9000e7f1ef86698576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"67128b9000e7f1ef86698576"},{"id":"67589665e55d6f00093d342e","time":"2024-12-10T19:28:37.454Z","value":40,"variable":"powerconsumed","group":"d243d39000f6d55e56698576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"d243d39000f6d55e56698576"},{"id":"67589661e55d6f00093d33c5","time":"2024-12-10T19:28:33.613Z","value":80,"variable":"powerconsumed","group":"4c33d39000f6d55e16698576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"4c33d39000f6d55e16698576"},{"id":"67589657f5b23700097973fc","time":"2024-12-10T19:28:23.469Z","value":50,"variable":"powerconsumed","group":"bf37979000732b5f75698576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"bf37979000732b5f75698576"},{"id":"675895c08c3960000911a489","time":"2024-12-10T19:25:52.320Z","value":90,"variable":"powerconsumed","group":"884a1190000693c80c598576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"884a1190000693c80c598576"},{"id":"675895bc3229a300084b0f00","time":"2024-12-10T19:25:48.353Z","value":15,"variable":"powerconsumed","group":"ffe0b480003a9223cb598576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"ffe0b480003a9223cb598576"},{"id":"675895b83036b00009ce98b2","time":"2024-12-10T19:25:44.418Z","value":70,"variable":"powerconsumed","group":"1b89ec90000b63038b598576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"1b89ec90000b63038b598576"},{"id":"675895b21dded50009eac36f","time":"2024-12-10T19:25:38.046Z","value":30,"variable":"powerconsumed","group":"e63cae90005dedd12b598576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"e63cae90005dedd12b598576"},{"id":"675895ad527bde00096dd307","time":"2024-12-10T19:25:33.600Z","value":70,"variable":"powerconsumed","group":"603dd69000edb725da598576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"603dd69000edb725da598576"},{"id":"675895aa53301e000888a492","time":"2024-12-10T19:25:30.022Z","value":100,"variable":"powerconsumed","group":"194a888000e10335aa598576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"194a888000e10335aa598576"},{"id":"675895a653301e000888a3d7","time":"2024-12-10T19:25:26.299Z","value":80,"variable":"powerconsumed","group":"6d3a888000e103356a598576","device":"67589242cab9ce0009eae41d","origin":"67589242cab9ce0009eae41d","serie":"6d3a888000e103356a598576"}],"cacheTime":null}]}]}
+{
+  "dashboard": {
+    "id": "67589276b4bda80009031e9c",
+    "type": "dashboard",
+    "label": "Energy Metering",
+    "description": null,
+    "arrangement": [
+      { "x": 2, "y": 0, "tab": "1678704631196", "width": 1, "height": 4, "widget_id": "67589276b4bda80009031e9f" },
+      { "x": 3, "y": 0, "tab": "1678704631196", "width": 1, "height": 2, "widget_id": "67589276b4bda80009031ea4" },
+      { "x": 0, "y": 0, "tab": "1678704631196", "width": 1, "height": 4, "widget_id": "67589276b4bda80009031ea2" },
+      {
+        "x": 0,
+        "y": 8,
+        "tab": "1678704631196",
+        "width": 1.3333333333333333,
+        "height": 3.5,
+        "widget_id": "67589276b4bda80009031ea6"
+      },
+      { "x": 1, "y": 0, "tab": "1678704631196", "width": 1, "height": 4, "widget_id": "67589276b4bda80009031ea3" },
+      {
+        "x": 1.3333333333333333,
+        "y": 8,
+        "tab": "1678704631196",
+        "width": 1.6666666666666667,
+        "height": 3.5,
+        "widget_id": "67589276b4bda80009031ea8"
+      },
+      { "x": 3, "y": 13, "tab": "1678704631196", "width": 1, "height": 4.5, "widget_id": "67589276b4bda80009031e9d" },
+      { "x": 3, "y": 8, "tab": "1678704631196", "width": 1, "height": 2.5, "widget_id": "67589276b4bda80009031ea5" },
+      { "x": 0, "y": 15, "tab": "1678704631196", "width": 3, "height": 3.5, "widget_id": "67589276b4bda80009031e9e" },
+      { "x": 3, "y": 4, "tab": "1678704631196", "width": 1, "height": 2, "widget_id": "67589276b4bda80009031ea0" }
+    ],
+    "created_at": "2024-12-10T19:11:50.113Z",
+    "updated_at": "2025-03-20T12:46:47.816Z",
+    "tags": [],
+    "group_by": [],
+    "tabs": [{ "key": "1678704631196", "link": "", "value": "Main" }],
+    "icon": { "url": "https://svg.internal.tago.io/bolt.svg", "color": null },
+    "background": {
+      "color": "hsl(40, 0%, 17%)",
+      "type": "image",
+      "media": "api.tago.io/file/649ad201754f600011c73f7e/embed_templates_images/energy-metering.jpeg",
+      "opacity": "77"
+    },
+    "blueprint_devices": null,
+    "blueprint_device_behavior": null,
+    "blueprint_selector_behavior": null,
+    "setup": {},
+    "theme": { "color": { "tab_active": null, "tab_background": null, "tab_inactive": null } },
+    "public_token_expire": null,
+    "disable_blueprint_fallback": false,
+    "filter": { "period": { "enabled": false, "presets": [], "show_calendar": true, "max_range": "3 day" } }
+  },
+  "widgets": [
+    {
+      "id": "67589276b4bda80009031e9f",
+      "analysis_run": null,
+      "label": "Voltage",
+      "realtime": "true",
+      "type": "vu-meter",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "67589242cab9ce0009eae41d",
+          "origin": "67589242cab9ce0009eae41d",
+          "variables": ["voltage"]
+        }
+      ],
+      "display": {
+        "alias": "Voltage",
+        "formula": { "enable": false, "formula_type": "fixed", "unit_type": "origin", "value": "" },
+        "frame_settings": { "radius": { "top_left": 6, "top_right": 6, "bottom_left": 6, "bottom_right": 6 } },
+        "header_buttons": [
+          {
+            "color": "hsla(207, 58%, 49%, 1)",
+            "icon": null,
+            "text": "Voltage Variation",
+            "trigger": "widget",
+            "widget": "67589276b4bda80009031ea1",
+            "layout": "fill"
+          }
+        ],
+        "help": "",
+        "number_format": { "decimals": -1, "show_thousand": false },
+        "range": { "maximum": 225, "minimum": 0, "type": "minmax" },
+        "show_variables": false,
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 99%, 0.56)",
+            "background_blur": 7,
+            "header": null,
+            "fill": "hsla(13, 67%, 62%, 1)",
+            "text_border": "hsla(250, 0%, 0%, 1)",
+            "text": "hsla(150, 0%, 0%, 1)",
+            "outline": null,
+            "danger": null,
+            "needle": "hsla(13, 67%, 62%, 1)",
+            "tick": "hsla(150, 0%, 0%, 1)"
+          }
+        }
+      },
+      "created_at": "2024-12-10T19:11:50.113Z",
+      "updated_at": "2025-02-05T16:44:20.193Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "67589242cab9ce0009eae41d",
+            "origin": "67589242cab9ce0009eae41d",
+            "variables": ["voltage"]
+          },
+          "result": [
+            {
+              "id": "67a39540c804650008f8eb60",
+              "time": "2025-02-05T16:43:44.910Z",
+              "unit": "V",
+              "value": 136.5,
+              "variable": "voltage",
+              "group": "f5be8f800056408c04593a76",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "f5be8f800056408c04593a76"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67589276b4bda80009031ea2",
+      "analysis_run": null,
+      "label": "Current",
+      "realtime": "true",
+      "type": "angular",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "67589242cab9ce0009eae41d",
+          "origin": "67589242cab9ce0009eae41d",
+          "variables": ["current"]
+        }
+      ],
+      "display": {
+        "alias": "Current",
+        "formula": { "enable": false, "formula_type": "fixed", "unit_type": "fixed", "value": "", "fixed_unit": "A" },
+        "frame_settings": { "radius": { "top_left": 6, "top_right": 6, "bottom_left": 6, "bottom_right": 6 } },
+        "header_buttons": [],
+        "help": "",
+        "number_format": { "decimals": -1, "show_thousand": false },
+        "range": { "maximum": 0.6, "minimum": 0, "type": "minmax" },
+        "show_variables": false,
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 99%, 0.56)",
+            "background_blur": 7,
+            "header": null,
+            "fill": "hsla(45, 69%, 57%, 1)",
+            "text_border": "hsla(0, 0%, 0%, 1)",
+            "text": "hsla(150, 0%, 0%, 1)",
+            "outline": null,
+            "needle": "hsla(45, 69%, 57%, 1)",
+            "tick": "hsla(150, 0%, 0%, 1)",
+            "hue": null
+          }
+        }
+      },
+      "created_at": "2024-12-10T19:11:50.113Z",
+      "updated_at": "2025-02-05T15:16:41.473Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "67589242cab9ce0009eae41d",
+            "origin": "67589242cab9ce0009eae41d",
+            "variables": ["current"]
+          },
+          "result": [
+            {
+              "id": "675892c0a327570009e71c39",
+              "time": "2024-12-10T19:13:04.724Z",
+              "unit": "A",
+              "value": 0.33,
+              "variable": "current",
+              "group": "83c17e900075723a0c298576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "83c17e900075723a0c298576"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67589276b4bda80009031e9d",
+      "analysis_run": null,
+      "label": "Clock",
+      "realtime": "true",
+      "type": "clock",
+      "data": [{ "timezone": "America/New_York" }],
+      "display": {
+        "header_buttons": [],
+        "frame_settings": { "radius": { "top_left": 6, "top_right": 6, "bottom_left": 6, "bottom_right": 6 } },
+        "help": "",
+        "show_last_update": false,
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 99%, 0.56)",
+            "background_blur": 7,
+            "header": null,
+            "fill": "hsla(13, 67%, 62%, 1)",
+            "text_border": "hsla(0, 0%, 0%, 1)",
+            "text": "hsla(150, 0%, 0%, 1)",
+            "outline": null
+          }
+        }
+      },
+      "created_at": "2024-12-10T19:11:50.113Z",
+      "updated_at": "2024-12-10T19:41:35.967Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [{ "data": { "timezone": "America/New_York" }, "result": [] }]
+    },
+    {
+      "id": "67589276b4bda80009031ea4",
+      "analysis_run": null,
+      "label": "Relay Status",
+      "realtime": "true",
+      "type": "icon",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "67589242cab9ce0009eae41d",
+          "origin": "67589242cab9ce0009eae41d",
+          "variables": ["staterelay"]
+        }
+      ],
+      "display": {
+        "aggregate_intervals": [],
+        "header_buttons": [],
+        "help": "",
+        "show_units": false,
+        "show_values": false,
+        "show_variables": false,
+        "variables": [
+          {
+            "icon_conditions": [
+              {
+                "url": "https://svg.internal.tago.io/power-button-off.svg",
+                "color": "hsl(171, 48%, 26%)",
+                "condition": "=",
+                "value": "ON"
+              },
+              {
+                "url": "https://svg.internal.tago.io/power-button-off.svg",
+                "color": "hsl(5, 86%, 49%)",
+                "condition": "=",
+                "value": "OFF"
+              }
+            ],
+            "origin": "67589242cab9ce0009eae41d",
+            "variable": "staterelay",
+            "bucket": "67589242cab9ce0009eae41d",
+            "alias": "St. Relay",
+            "data_params": {
+              "interval": null,
+              "query": "last_value",
+              "function": null,
+              "value": null,
+              "period": { "start_date": null, "end_date": null }
+            }
+          }
+        ],
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 99%, 0.56)",
+            "background_blur": 7,
+            "header": null,
+            "dot": null,
+            "button": null
+          }
+        },
+        "font_size": { "type": "manual", "value": "large" },
+        "frame_settings": { "radius": { "top_left": 6, "top_right": 6, "bottom_left": 6, "bottom_right": 6 } }
+      },
+      "created_at": "2024-12-10T19:11:50.113Z",
+      "updated_at": "2024-12-10T19:44:59.834Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "67589242cab9ce0009eae41d",
+            "origin": "67589242cab9ce0009eae41d",
+            "variables": ["staterelay"]
+          },
+          "result": [
+            {
+              "id": "67dc0aa870f95d000a31a0b3",
+              "time": "2025-03-20T12:31:36.476Z",
+              "value": "ON",
+              "variable": "staterelay",
+              "group": "2b0a13a000d59f078aa0cd76",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "2b0a13a000d59f078aa0cd76"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67589276b4bda80009031ea3",
+      "analysis_run": null,
+      "label": "Load",
+      "realtime": "true",
+      "type": "angular",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "67589242cab9ce0009eae41d",
+          "origin": "67589242cab9ce0009eae41d",
+          "variables": ["percentualload"]
+        }
+      ],
+      "display": {
+        "alias": "Current",
+        "formula": {
+          "enable": true,
+          "formula_type": "fixed",
+          "unit_type": "fixed",
+          "value": "$METADATA.percentualload$",
+          "fixed_unit": "%"
+        },
+        "frame_settings": { "radius": { "top_left": 6, "top_right": 6, "bottom_left": 6, "bottom_right": 6 } },
+        "header_buttons": [],
+        "help": "",
+        "number_format": { "decimals": -1, "show_thousand": false },
+        "range": { "maximum": 100, "minimum": 0, "type": "minmax" },
+        "show_variables": false,
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 99%, 0.56)",
+            "background_blur": 7,
+            "header": null,
+            "fill": "hsla(199, 54%, 53%, 1)",
+            "text_border": "hsla(0, 0%, 0%, 1)",
+            "text": "hsla(150, 0%, 0%, 1)",
+            "outline": null,
+            "needle": "hsla(199, 54%, 53%, 1)",
+            "tick": "hsla(150, 0%, 0%, 1)",
+            "hue": null
+          }
+        }
+      },
+      "created_at": "2024-12-10T19:11:50.113Z",
+      "updated_at": "2024-12-10T19:49:00.555Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "67589242cab9ce0009eae41d",
+            "origin": "67589242cab9ce0009eae41d",
+            "variables": ["percentualload"]
+          },
+          "result": [
+            {
+              "id": "675892e1a327570009e71f6e",
+              "time": "2024-12-10T19:13:37.693Z",
+              "unit": "%",
+              "value": 50,
+              "variable": "percentualload",
+              "group": "d6f17e900075723a1e298576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "d6f17e900075723a1e298576"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67589276b4bda80009031ea0",
+      "analysis_run": null,
+      "label": "RSSI",
+      "realtime": "true",
+      "type": "icon",
+      "data": [
+        {
+          "query": "last_value",
+          "bucket": "67589242cab9ce0009eae41d",
+          "origin": "67589242cab9ce0009eae41d",
+          "variables": ["rssi"]
+        }
+      ],
+      "display": {
+        "aggregate_intervals": [],
+        "header_buttons": [],
+        "help": "",
+        "show_units": false,
+        "show_values": false,
+        "show_variables": false,
+        "variables": [
+          {
+            "icon_conditions": [
+              {
+                "url": "https://svg.internal.tago.io/wifi.svg",
+                "color": "hsl(359, 89%, 48%)",
+                "condition": "<",
+                "value": "20"
+              },
+              {
+                "url": "https://svg.internal.tago.io/wifi.svg",
+                "color": "hsl(28, 86%, 49%)",
+                "condition": "><",
+                "value": "21",
+                "valueTwo": "49"
+              },
+              {
+                "url": "https://svg.internal.tago.io/wifi.svg",
+                "color": "hsl(58, 92%, 51%)",
+                "condition": "><",
+                "value": "50",
+                "valueTwo": "79"
+              },
+              {
+                "url": "https://svg.internal.tago.io/wifi.svg",
+                "color": "hsl(172, 48%, 26%)",
+                "condition": "><",
+                "value": "80",
+                "valueTwo": "100"
+              }
+            ],
+            "origin": "67589242cab9ce0009eae41d",
+            "variable": "rssi",
+            "bucket": "67589242cab9ce0009eae41d",
+            "alias": "RSSI",
+            "data_params": {
+              "interval": null,
+              "query": "last_value",
+              "function": null,
+              "value": null,
+              "period": { "start_date": null, "end_date": null }
+            }
+          }
+        ],
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 99%, 0.56)",
+            "background_blur": 7,
+            "header": null,
+            "dot": null,
+            "button": null
+          }
+        },
+        "font_size": { "type": "manual", "value": "large" },
+        "frame_settings": { "radius": { "top_left": 6, "top_right": 6, "bottom_left": 6, "bottom_right": 6 } }
+      },
+      "created_at": "2024-12-10T19:11:50.113Z",
+      "updated_at": "2024-12-10T19:45:14.299Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "query": "last_value",
+            "bucket": "67589242cab9ce0009eae41d",
+            "origin": "67589242cab9ce0009eae41d",
+            "variables": ["rssi"]
+          },
+          "result": [
+            {
+              "id": "67589792a327570009e79d83",
+              "time": "2024-12-10T19:33:38.348Z",
+              "value": 85,
+              "variable": "rssi",
+              "group": "28d97e900075723a29798576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "28d97e900075723a29798576"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67589276b4bda80009031ea5",
+      "analysis_run": null,
+      "label": "Turn your energy ON or OFF",
+      "realtime": "true",
+      "type": "push_button",
+      "data": [
+        { "bucket": "67589242cab9ce0009eae41d", "origin": "67589242cab9ce0009eae41d", "variables": ["staterelay"] }
+      ],
+      "display": {
+        "alias": "",
+        "frame_settings": { "radius": { "top_left": 6, "top_right": 6, "bottom_left": 6, "bottom_right": 6 } },
+        "header_buttons": [],
+        "help": "",
+        "show_variables": false,
+        "state_one": {
+          "button_color": null,
+          "color": "hsla(48, 90%, 50%, 1)",
+          "label": "Activate",
+          "type": "icon",
+          "unit": "",
+          "url": "https://svg.internal.tago.io/power-button-off.svg",
+          "value": "OFF"
+        },
+        "state_two": {
+          "button_color": "hsla(207, 58%, 49%, 1)",
+          "color": "hsla(240, 0%, 100%, 1)",
+          "label": "Deactivate",
+          "type": "icon",
+          "unit": "",
+          "url": "https://svg.internal.tago.io/power-button-off.svg",
+          "value": "ON"
+        },
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 99%, 0.56)",
+            "background_blur": 7,
+            "header": null,
+            "text": "hsla(150, 0%, 0%, 1)"
+          }
+        },
+        "type": "bistable"
+      },
+      "created_at": "2024-12-10T19:11:50.113Z",
+      "updated_at": "2024-12-10T19:41:35.972Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "bucket": "67589242cab9ce0009eae41d",
+            "origin": "67589242cab9ce0009eae41d",
+            "variables": ["staterelay"]
+          },
+          "result": [
+            {
+              "id": "67dc0aa870f95d000a31a0b3",
+              "time": "2025-03-20T12:31:36.476Z",
+              "value": "ON",
+              "variable": "staterelay",
+              "group": "2b0a13a000d59f078aa0cd76",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "2b0a13a000d59f078aa0cd76"
+            },
+            {
+              "id": "67dc0aa770f95d000a31a0b1",
+              "time": "2025-03-20T12:31:35.801Z",
+              "value": "OFF",
+              "variable": "staterelay",
+              "group": "0b0a13a000d59f077aa0cd76",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "0b0a13a000d59f077aa0cd76"
+            },
+            {
+              "id": "67a37dc6718f8c000997d2de",
+              "time": "2025-02-05T15:03:34.676Z",
+              "value": "ON",
+              "variable": "staterelay",
+              "group": "dd2d799000c8f8176cd73a76",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "dd2d799000c8f8176cd73a76"
+            },
+            {
+              "id": "67a37dc3f3d41900092b1bbe",
+              "time": "2025-02-05T15:03:31.662Z",
+              "value": "OFF",
+              "variable": "staterelay",
+              "group": "dbb1b29000914d3f3cd73a76",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "dbb1b29000914d3f3cd73a76"
+            },
+            {
+              "id": "67a2573fd603160009bb1eb1",
+              "time": "2025-02-04T18:06:55.280Z",
+              "value": "ON",
+              "variable": "staterelay",
+              "group": "0be1bb900061306df3752a76",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "0be1bb900061306df3752a76"
+            },
+            {
+              "id": "67a2573b93ec09000845a640",
+              "time": "2025-02-04T18:06:51.417Z",
+              "value": "OFF",
+              "variable": "staterelay",
+              "group": "f36a54800090ce39b3752a76",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "f36a54800090ce39b3752a76"
+            },
+            {
+              "id": "675893acf5b23700097922d3",
+              "time": "2024-12-10T19:17:00.295Z",
+              "value": "ON",
+              "variable": "staterelay",
+              "group": "2d22979000732b5fca398576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "2d22979000732b5fca398576"
+            },
+            {
+              "id": "67589392f5b2370009792073",
+              "time": "2024-12-10T19:16:34.531Z",
+              "value": true,
+              "variable": "staterelay",
+              "group": "2702979000732b5f29398576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "2702979000732b5f29398576"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67589276b4bda80009031e9e",
+      "analysis_run": null,
+      "label": "Logs",
+      "realtime": "true",
+      "type": "dynamic_table",
+      "data": [
+        {
+          "qty": 5000,
+          "bucket": "67589242cab9ce0009eae41d",
+          "origin": "67589242cab9ce0009eae41d",
+          "timezone": "America/Sao_Paulo",
+          "variables": ["voltage"]
+        }
+      ],
+      "display": {
+        "frame_settings": { "radius": { "top_left": 6, "top_right": 6, "bottom_left": 6, "bottom_right": 6 } },
+        "header_buttons": [],
+        "help": "",
+        "intervals": ["1 year"],
+        "max_rows": 5000,
+        "show_control": true,
+        "show_time": true,
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 99%, 0.56)",
+            "background_blur": 7,
+            "header": null,
+            "alternate": null,
+            "column_header": null,
+            "footer": null
+          }
+        },
+        "variables": [
+          {
+            "allow_resize": true,
+            "data": {
+              "origin": "67589242cab9ce0009eae41d",
+              "variable": "voltage",
+              "bucket": "67589242cab9ce0009eae41d"
+            },
+            "id": "b9_YnK2xWi2NfII69YVMB",
+            "alias": "Voltage"
+          },
+          {
+            "alias": "Date and Time",
+            "allow_resize": true,
+            "fixed_width": 100,
+            "id": "date",
+            "is_date": true,
+            "overflow_behavior": "stretch",
+            "size": "auto",
+            "data": null
+          },
+          {
+            "alias": "Controls",
+            "alignment": "center",
+            "delete_cancel_text": "Cancel",
+            "delete_confirm_text": "Yes, delete row",
+            "delete_message": "Do you really want to delete this row?",
+            "delete_title": "Delete row",
+            "fixed_width": 33,
+            "id": "control",
+            "is_control": true,
+            "overflow_behavior": "stretch",
+            "show_delete": true,
+            "show_edit": true,
+            "size": "fixed",
+            "data": null
+          }
+        ]
+      },
+      "created_at": "2024-12-10T19:11:50.113Z",
+      "updated_at": "2025-02-19T13:32:00.608Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "qty": 5000,
+            "bucket": "67589242cab9ce0009eae41d",
+            "origin": "67589242cab9ce0009eae41d",
+            "timezone": "America/Sao_Paulo",
+            "variables": ["voltage"]
+          },
+          "result": [
+            {
+              "id": "67a39540c804650008f8eb60",
+              "time": "2025-02-05T16:43:44.910Z",
+              "unit": "V",
+              "value": 136.5,
+              "variable": "voltage",
+              "group": "f5be8f800056408c04593a76",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "f5be8f800056408c04593a76"
+            },
+            {
+              "id": "67a39528fdb7740009d44759",
+              "time": "2025-02-05T16:43:20.155Z",
+              "unit": "V",
+              "value": 120,
+              "variable": "voltage",
+              "group": "85744d9000477bdf82593a76",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "85744d9000477bdf82593a76"
+            },
+            {
+              "id": "67a3951117f126000907ff4a",
+              "time": "2025-02-05T16:42:57.233Z",
+              "unit": "V",
+              "value": 240,
+              "variable": "voltage",
+              "group": "94ff709000621f7111593a76",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "94ff709000621f7111593a76"
+            },
+            {
+              "id": "67a3950032d4ab0009d9c8a7",
+              "time": "2025-02-05T16:42:40.537Z",
+              "unit": "V",
+              "value": 135.5,
+              "variable": "voltage",
+              "group": "6a8c9d9000ba4d2300593a76",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "6a8c9d9000ba4d2300593a76"
+            },
+            {
+              "id": "67a394f509a53f0009403d49",
+              "time": "2025-02-05T16:42:29.018Z",
+              "unit": "V",
+              "value": 202.5,
+              "variable": "voltage",
+              "group": "84d3049000f35a905f493a76",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "84d3049000f35a905f493a76"
+            },
+            {
+              "id": "67a394e8f3d41900092de192",
+              "time": "2025-02-05T16:42:16.108Z",
+              "unit": "V",
+              "value": 67.5,
+              "variable": "voltage",
+              "group": "191ed29000914d3f8e493a76",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "191ed29000914d3f8e493a76"
+            },
+            {
+              "id": "6758933ca327570009e72879",
+              "time": "2024-12-10T19:15:08.173Z",
+              "unit": "V",
+              "value": 126.2,
+              "variable": "voltage",
+              "group": "87827e900075723ac3398576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "87827e900075723ac3398576"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67589276b4bda80009031ea6",
+      "analysis_run": null,
+      "label": "Current Energy Spent",
+      "realtime": "true",
+      "type": "line_chart",
+      "data": [
+        {
+          "qty": 25,
+          "origin": "67589242cab9ce0009eae41d",
+          "timezone": "America/Sao_Paulo",
+          "variables": ["energyspent"],
+          "start_date": "99 years"
+        }
+      ],
+      "display": {
+        "frame_settings": { "radius": { "top_left": 6, "top_right": 6, "bottom_left": 6, "bottom_right": 6 } },
+        "group_by": "time",
+        "header_buttons": [],
+        "help": "",
+        "intervals": ["1 month", "1 year", "forever"],
+        "line_curve": "smooth",
+        "max_points": 25,
+        "order_by": "time",
+        "show_point_values": false,
+        "stacked": false,
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 99%, 0.56)",
+            "background_blur": 7,
+            "header": null,
+            "label": null,
+            "tick": "hsla(150, 0%, 0%, 1)",
+            "grid": null,
+            "text_border": "hsla(0, 0%, 0%, 1)",
+            "text": "hsla(150, 0%, 0%, 1)",
+            "tooltip_background": null,
+            "tooltip_border": null,
+            "tooltip_text": null
+          }
+        },
+        "variables": [
+          {
+            "color": "hsla(13, 67%, 62%, 1)",
+            "id": "2Im3ozkA_4cACSxVMsPYo",
+            "origin": "67589242cab9ce0009eae41d",
+            "variable": "energyspent",
+            "formula": { "unit_type": "origin", "enable": false, "kind": "simple", "value": "$METADATA.energyspent$" },
+            "qty": 25,
+            "timezone": "America/Sao_Paulo",
+            "alias": "Energy Spent",
+            "variables": ["energyspent"]
+          }
+        ],
+        "x_axis": { "plot_by": "realtime", "type": "time" },
+        "y_axis": { "scale": { "type": "dynamic" }, "show_metric_abbreviation": true, "step": "" }
+      },
+      "created_at": "2024-12-10T19:11:50.113Z",
+      "updated_at": "2024-12-10T19:41:35.953Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "qty": 25,
+            "origin": "67589242cab9ce0009eae41d",
+            "timezone": "America/Sao_Paulo",
+            "variables": ["energyspent"],
+            "start_date": "99 years",
+            "bucket": "67589242cab9ce0009eae41d"
+          },
+          "result": [
+            {
+              "id": "6758940f8f09df00098e6e9a",
+              "time": "2024-12-10T19:18:39.554Z",
+              "value": 40,
+              "variable": "energyspent",
+              "group": "99e6e89000fd90f8f0498576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "99e6e89000fd90f8f0498576"
+            },
+            {
+              "id": "6758940bf5b2370009792c44",
+              "time": "2024-12-10T19:18:35.281Z",
+              "value": 30,
+              "variable": "energyspent",
+              "group": "34c2979000732b5fb0498576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "34c2979000732b5fb0498576"
+            },
+            {
+              "id": "6758940266b0070009b15125",
+              "time": "2024-12-10T19:18:26.179Z",
+              "value": 20,
+              "variable": "energyspent",
+              "group": "42151b9000700b6620498576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "42151b9000700b6620498576"
+            },
+            {
+              "id": "675893f7fe1f7e0009b7d94c",
+              "time": "2024-12-10T19:18:15.406Z",
+              "value": 15,
+              "variable": "energyspent",
+              "group": "b49d7b9000e7f1ef7f398576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "b49d7b9000e7f1ef7f398576"
+            },
+            {
+              "id": "675893f13036b00009ce692b",
+              "time": "2024-12-10T19:18:09.067Z",
+              "value": 10,
+              "variable": "energyspent",
+              "group": "a296ec90000b63031f398576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "a296ec90000b63031f398576"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67589276b4bda80009031ea8",
+      "analysis_run": null,
+      "label": "Current Power Consumed",
+      "realtime": "true",
+      "type": "line_chart",
+      "data": [
+        {
+          "qty": 25,
+          "origin": "67589242cab9ce0009eae41d",
+          "timezone": "America/Sao_Paulo",
+          "variables": ["powerconsumed"],
+          "start_date": "99 years"
+        }
+      ],
+      "display": {
+        "frame_settings": { "radius": { "top_left": 6, "top_right": 6, "bottom_left": 6, "bottom_right": 6 } },
+        "group_by": "time",
+        "header_buttons": [],
+        "help": "",
+        "intervals": ["1 hour", "1 day", "1 week", "1 week"],
+        "line_curve": "smooth",
+        "max_points": 25,
+        "order_by": "time",
+        "show_point_values": false,
+        "stacked": false,
+        "theme": {
+          "color": {
+            "background": "hsla(0, 0%, 99%, 0.56)",
+            "background_blur": 7,
+            "header": null,
+            "label": null,
+            "tick": "hsla(150, 0%, 0%, 1)",
+            "grid": null,
+            "text_border": "hsla(0, 0%, 0%, 1)",
+            "text": "hsla(150, 0%, 0%, 1)",
+            "tooltip_background": null,
+            "tooltip_border": null,
+            "tooltip_text": null
+          }
+        },
+        "variables": [
+          {
+            "color": "hsla(13, 67%, 62%, 1)",
+            "id": "2Im3ozkA_4cACSxVMsPYo",
+            "origin": "67589242cab9ce0009eae41d",
+            "variable": "powerconsumed",
+            "formula": { "unit_type": "origin" },
+            "qty": 25,
+            "timezone": "America/Sao_Paulo",
+            "alias": "Power Consumed",
+            "variables": ["powerconsumed"]
+          }
+        ],
+        "x_axis": { "plot_by": "realtime", "type": "time" },
+        "y_axis": { "scale": { "type": "dynamic" }, "show_metric_abbreviation": true }
+      },
+      "created_at": "2024-12-10T19:11:50.113Z",
+      "updated_at": "2024-12-10T19:41:35.955Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "qty": 25,
+            "origin": "67589242cab9ce0009eae41d",
+            "timezone": "America/Sao_Paulo",
+            "variables": ["powerconsumed"],
+            "start_date": "99 years",
+            "bucket": "67589242cab9ce0009eae41d"
+          },
+          "result": [
+            {
+              "id": "67589668fe1f7e0009b82177",
+              "time": "2024-12-10T19:28:40.740Z",
+              "value": 45,
+              "variable": "powerconsumed",
+              "group": "67128b9000e7f1ef86698576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "67128b9000e7f1ef86698576"
+            },
+            {
+              "id": "67589665e55d6f00093d342e",
+              "time": "2024-12-10T19:28:37.454Z",
+              "value": 40,
+              "variable": "powerconsumed",
+              "group": "d243d39000f6d55e56698576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "d243d39000f6d55e56698576"
+            },
+            {
+              "id": "67589661e55d6f00093d33c5",
+              "time": "2024-12-10T19:28:33.613Z",
+              "value": 80,
+              "variable": "powerconsumed",
+              "group": "4c33d39000f6d55e16698576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "4c33d39000f6d55e16698576"
+            },
+            {
+              "id": "67589657f5b23700097973fc",
+              "time": "2024-12-10T19:28:23.469Z",
+              "value": 50,
+              "variable": "powerconsumed",
+              "group": "bf37979000732b5f75698576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "bf37979000732b5f75698576"
+            },
+            {
+              "id": "675895c08c3960000911a489",
+              "time": "2024-12-10T19:25:52.320Z",
+              "value": 90,
+              "variable": "powerconsumed",
+              "group": "884a1190000693c80c598576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "884a1190000693c80c598576"
+            },
+            {
+              "id": "675895bc3229a300084b0f00",
+              "time": "2024-12-10T19:25:48.353Z",
+              "value": 15,
+              "variable": "powerconsumed",
+              "group": "ffe0b480003a9223cb598576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "ffe0b480003a9223cb598576"
+            },
+            {
+              "id": "675895b83036b00009ce98b2",
+              "time": "2024-12-10T19:25:44.418Z",
+              "value": 70,
+              "variable": "powerconsumed",
+              "group": "1b89ec90000b63038b598576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "1b89ec90000b63038b598576"
+            },
+            {
+              "id": "675895b21dded50009eac36f",
+              "time": "2024-12-10T19:25:38.046Z",
+              "value": 30,
+              "variable": "powerconsumed",
+              "group": "e63cae90005dedd12b598576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "e63cae90005dedd12b598576"
+            },
+            {
+              "id": "675895ad527bde00096dd307",
+              "time": "2024-12-10T19:25:33.600Z",
+              "value": 70,
+              "variable": "powerconsumed",
+              "group": "603dd69000edb725da598576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "603dd69000edb725da598576"
+            },
+            {
+              "id": "675895aa53301e000888a492",
+              "time": "2024-12-10T19:25:30.022Z",
+              "value": 100,
+              "variable": "powerconsumed",
+              "group": "194a888000e10335aa598576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "194a888000e10335aa598576"
+            },
+            {
+              "id": "675895a653301e000888a3d7",
+              "time": "2024-12-10T19:25:26.299Z",
+              "value": 80,
+              "variable": "powerconsumed",
+              "group": "6d3a888000e103356a598576",
+              "device": "67589242cab9ce0009eae41d",
+              "origin": "67589242cab9ce0009eae41d",
+              "serie": "6d3a888000e103356a598576"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    }
+  ]
+}
