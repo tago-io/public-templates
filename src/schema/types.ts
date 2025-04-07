@@ -1,7 +1,3 @@
-import { Dashboard } from "../validator/dashboard";
-import { Data } from "../validator/data";
-import { Widget } from "../validator/widget";
-
 type DashboardTemplateManifest = {
   name: string;
   images: {
@@ -22,7 +18,8 @@ type DashboardTemplateManifest = {
     | { standard: string }
     | { blueprint: string }
   );
-  description?: string;
+  category: "default" | "charts" | "control" | "energy" | "location" | "management";
+  description: string;
 };
 
 type DashboardTemplateConfig = {

@@ -7,6 +7,7 @@ import dashboardTemplateSchema from "../schema/dashboard-template.json" assert {
 import dashboardTemplateConfigSchema from "../schema/dashboard-template-config.json" assert { type: "json" };
 import type { DashboardTemplateConfig, DashboardTemplateManifest } from "../schema/types";
 import { zDashboardStructure } from "../validator/dashboard-structure";
+import { generateID } from "../helpers/generate-id";
 
 const __filename = nodeUrl.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -23,6 +24,8 @@ addFormats(ajv);
 // Compile Dashboard template schemas
 const validateDashTemplate = ajv.compile(dashboardTemplateSchema);
 const validateDashTemplateConfig = ajv.compile(dashboardTemplateConfigSchema);
+
+const ids = new Set<string>();
 
 function validateTemplateConfig(
   templateData: DashboardTemplateManifest,
@@ -56,7 +59,7 @@ function validateTemplateConfig(
       throw `field 'type' does not match in ${detailsPath}. Should be ${validateType}`;
     }
 
-    const isConfigValid = validateDashTemplateConfig(configData); // GPT: issue is happening here
+    const isConfigValid = validateDashTemplateConfig(configData);
     if (!isConfigValid) {
       throw `Validation errors in ${detailsPath}.\n\n${JSON.stringify(
         validateDashTemplateConfig.errors,
@@ -73,6 +76,7 @@ function validateTemplateConfig(
         )
       )
     );
+
     if (!isStructureValid.success) {
       throw `Validation errors in ${detailsPath}.\n\n${JSON.stringify(
         isStructureValid.error,
@@ -80,6 +84,29 @@ function validateTemplateConfig(
         2
       )}`;
     }
+
+    const { dashboard, widgets } = isStructureValid.data;
+
+    if (dashboard.arrangement?.length !== widgets.length) {
+      throw `Number of widgets in dashboard.arrangement does not match with widgets in structure.json in ${detailsPath}`;
+    }
+
+    for (const widget of widgets) {
+      if (configData.use_mock && !widget.mock_data) {
+        throw `Mock data is required for widget ${widget.id} in ${detailsPath}`;
+      }
+
+      if (!dashboard.arrangement?.find((arrange) => arrange.widget_id === widget.id)) {
+        throw `Widget ${widget.id} not found in dashboard.arrangement in ${detailsPath}`;
+      }
+    }
+
+    const id = generateID(templateData.name, configData.type);
+
+    if (ids.has(id)) {
+      throw `Name ${templateData.name} and type ${configData.type} already exists. Please change the template name or type.`;
+    }
+    ids.add(id);
   }
 }
 
@@ -103,6 +130,18 @@ async function validateTemplateFiles(directoryPath: string): Promise<void> {
       const dashboardTemplateData: DashboardTemplateManifest = JSON.parse(
         fs.readFileSync(manifestDir, "utf8")
       );
+
+      if (!fs.existsSync(path.join(filePath, dashboardTemplateData.description))) {
+        throw `${dashboardTemplateData.description} file not found in ${filePath}`;
+      }
+
+      if (dashboardTemplateData?.images.logo && !fs.existsSync(path.join(filePath, dashboardTemplateData?.images.logo))) {
+        throw `logo is being passed on images.logo, but file not found in ${filePath}`;
+      }
+
+      if (dashboardTemplateData?.images.banner && !fs.existsSync(path.join(filePath, dashboardTemplateData?.images.banner))) {
+        throw `logo is being passed on images.banner, but file not found in ${filePath}`;
+      }
 
       for (const element of Object.keys(dashboardTemplateData?.manifest || {})) {
         if (!fs.existsSync(path.join(filePath, element))) {

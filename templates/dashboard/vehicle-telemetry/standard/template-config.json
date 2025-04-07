@@ -1,0 +1,5 @@
+{
+  "type": "standard",
+  "use_mock": true,
+  "setup": { "devices": [{ "id": "6759891f53301e0008a41052", "name": "Bus Simulator" }], "analysis": [] }
+}

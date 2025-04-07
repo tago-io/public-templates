@@ -1,0 +1,11 @@
+{
+  "type": "standard",
+  "use_mock": true,
+  "setup": {
+    "devices": [
+      { "id": "6720fa33823623000acad2d8", "name": "Smart Agriculture" },
+      { "id": "66eb12a0f53bf700093a9862", "name": "Silo 4" }
+    ],
+    "analysis": []
+  }
+}

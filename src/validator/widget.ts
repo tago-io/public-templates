@@ -1,7 +1,8 @@
 import { z } from "zod";
 import { DateTime } from "luxon";
-import { zResourceID, zResourceIDAutoGen, zDateAutoGen, parseRelativeDate } from "./utils/common.ts";
+import { zResourceID, zResourceIDAutoGen, zDateAutoGen, parseRelativeDate, generateID } from "./utils/common.ts";
 import { zWidgetData, zWidgetResource } from "./widget-extend.ts";
+import { zDataCreate } from "./data.ts";
 
 const ONE_MINUTE_IN_SECONDS = 30;
 const FIFTEEN_MINUTES_IN_SECONDS = 1_296_000;
@@ -57,13 +58,12 @@ const zWidget = z.object({
     .optional()
     .nullable(),
   realtime: z.union([z.string(), z.boolean()]).optional().nullable(),
-  mock_data: z.string().nullish(),
+  mock_data: z.array(z.object({ data: zWidgetData, result: z.array(zDataCreate) })).nullish(),
   created_at: z.date(),
   updated_at: z.date(),
 });
 
 const zWidgetCreate = zWidget.extend({
-  id: zResourceIDAutoGen,
   data: zWidget.shape.data.default([]),
   resource: zWidget.shape.resource.default([]),
   realtime: zWidget.shape.realtime.default("true"),

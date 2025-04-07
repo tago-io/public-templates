@@ -24,7 +24,7 @@
           "description": "Path to the banner image."
         }
       },
-      "required": ["logo"]
+      "required": []
     },
     "structure": {
       "type": "object",
@@ -73,8 +73,20 @@
     "description": {
       "type": "string",
       "description": "Path to the description file."
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "default",
+        "charts",
+        "control",
+        "energy",
+        "location",
+        "management"
+      ],
+      "description": "Category of dashboards templates"
     }
   },
   "additionalProperties": false,
-  "required": ["name", "images"]
+  "required": ["name", "description", "structure", "manifest", "category"]
 }

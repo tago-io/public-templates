@@ -9,7 +9,10 @@
     },
     "type": {
       "type": "string",
-      "enum": ["standard", "blueprint"],
+      "enum": [
+        "standard",
+        "blueprint"
+      ],
       "description": "Type of dashboard, which can be either 'standard' or 'blueprint'."
     },
     "use_mock": {
@@ -26,7 +29,8 @@
             "type": "object",
             "properties": {
               "id": {
-                "type": "string"
+                "type": "string",
+                "description": "Analysis ID to be replaced in the template installation."
               },
               "name": {
                 "type": "string"
@@ -35,7 +39,10 @@
                 "type": "string"
               }
             },
-            "required": ["id", "name", "description"],
+            "required": [
+              "id",
+              "name"
+            ],
             "additionalProperties": false
           }
         },
@@ -45,7 +52,8 @@
             "type": "object",
             "properties": {
               "id": {
-                "type": "string"
+                "type": "string",
+                "description": "Device ID to be replaced in the template installation. This ID must the included in widget object"
               },
               "name": {
                 "type": "string"
@@ -54,7 +62,10 @@
                 "type": "string"
               }
             },
-            "required": ["id", "name", "description"],
+            "required": [
+              "id",
+              "name"
+            ],
             "additionalProperties": false
           }
         },
@@ -64,19 +75,84 @@
             "type": "object",
             "properties": {
               "id": {
-                "type": "string"
+                "type": "string",
+                "description": "Blueprint ID to be replaced in the template installation."
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "device",
+                  "entity"
+                ],
+                "description": "Type of resource to be replaced in the template installation."
               },
               "name": {
                 "type": "string"
               },
-              "device_id": {
-                "type": "string"
-              },
               "description": {
                 "type": "string"
+              },
+              "conditions": {
+                "type": "array",
+                "description": "Array of condition objects. Must contain at least one condition.",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "key": {
+                      "type": "string",
+                      "description": "Key for the condition."
+                    },
+                    "value": {
+                      "type": "string",
+                      "description": "Value for the condition."
+                    }
+                  },
+                  "required": [
+                    "key",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 1
+              },
+              "filter_conditions": {
+                "type": "array",
+                "description": "Array of filter condition objects. Optional.",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "description": "Type of the filter condition.",
+                      "enum": [
+                        "tag_match"
+                      ]
+                    },
+                    "tag_key": {
+                      "type": "string",
+                      "description": "Key for the tag to match."
+                    },
+                    "blueprint_device": {
+                      "type": "string",
+                      "description": "Blueprint device name."
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "type",
+                    "tag_key",
+                    "blueprint_device"
+                  ],
+                  "additionalProperties": false
+                }
               }
             },
-            "required": ["id", "device_id", "name", "description"],
+            "required": [
+              "id",
+              "name",
+              "conditions"
+            ],
             "additionalProperties": false
           }
         }
@@ -93,14 +169,22 @@
   "allOf": [
     {
       "if": {
-        "properties": { "type": { "const": "standard" } }
+        "properties": {
+          "type": {
+            "const": "standard"
+          }
+        }
       },
       "then": {
         "properties": {
           "setup": {
-            "required": ["devices"],
+            "required": [
+              "devices"
+            ],
             "not": {
-              "required": ["blueprints"]
+              "required": [
+                "blueprints"
+              ]
             }
           }
         }
@@ -108,14 +192,22 @@
     },
     {
       "if": {
-        "properties": { "type": { "const": "blueprint" } }
+        "properties": {
+          "type": {
+            "const": "blueprint"
+          }
+        }
       },
       "then": {
         "properties": {
           "setup": {
-            "required": ["blueprints"],
+            "required": [
+              "blueprints"
+            ],
             "not": {
-              "required": ["devices"]
+              "required": [
+                "devices"
+              ]
             }
           }
         }

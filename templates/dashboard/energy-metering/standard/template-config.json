@@ -1,0 +1,5 @@
+{
+  "type": "standard",
+  "use_mock": true,
+  "setup": { "devices": [{ "id": "67589242cab9ce0009eae41d", "name": "Energy Metering" }], "analysis": [] }
+}
