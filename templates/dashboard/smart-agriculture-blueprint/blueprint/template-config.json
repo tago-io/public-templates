@@ -1,0 +1,17 @@
+{
+  "type": "blueprint",
+  "use_mock": true,
+  "setup": {
+    "blueprints": [
+      {
+        "id": "67ffb84d013f38000a203db2",
+        "name": "agriculture",
+        "type": "device",
+        "label": "Device",
+        "conditions": [{ "key": "device_type", "value": "smart_agriculture" }],
+        "filter_conditions": []
+      }
+    ],
+    "analysis": []
+  }
+}
