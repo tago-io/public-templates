@@ -1,0 +1,17 @@
+{
+  "type": "blueprint",
+  "use_mock": true,
+  "setup": {
+    "blueprints": [
+      {
+        "id": "67ffb2e0c587b60009759db8",
+        "name": "energy_metering",
+        "type": "device",
+        "label": "Device",
+        "conditions": [{ "key": "device_type", "value": "energy" }],
+        "filter_conditions": []
+      }
+    ],
+    "analysis": []
+  }
+}

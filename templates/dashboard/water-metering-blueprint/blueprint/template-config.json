@@ -1,0 +1,17 @@
+{
+  "type": "blueprint",
+  "use_mock": true,
+  "setup": {
+    "blueprints": [
+      {
+        "id": "67ffbc63eff26b000aa692b8",
+        "name": "water_metering",
+        "type": "device",
+        "label": "Device",
+        "conditions": [{ "key": "device_type", "value": "water" }],
+        "filter_conditions": []
+      }
+    ],
+    "analysis": []
+  }
+}

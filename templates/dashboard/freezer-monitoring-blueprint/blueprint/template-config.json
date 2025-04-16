@@ -1,0 +1,17 @@
+{
+  "type": "blueprint",
+  "use_mock": true,
+  "setup": {
+    "blueprints": [
+      {
+        "id": "67ffb4806ae7fc000aac735d",
+        "name": "freezer",
+        "type": "device",
+        "label": "Freezer",
+        "conditions": [{ "key": "device_type", "value": "freezer" }],
+        "filter_conditions": []
+      }
+    ],
+    "analysis": []
+  }
+}

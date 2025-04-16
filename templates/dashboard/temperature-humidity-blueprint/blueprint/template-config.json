@@ -1,0 +1,17 @@
+{
+  "type": "blueprint",
+  "use_mock": true,
+  "setup": {
+    "blueprints": [
+      {
+        "id": "67ffb98c9a1d13000a0996fc",
+        "name": "temp_hum_dev",
+        "type": "device",
+        "label": "Device",
+        "conditions": [{ "key": "device_type", "value": "temp_hum" }],
+        "filter_conditions": []
+      }
+    ],
+    "analysis": []
+  }
+}

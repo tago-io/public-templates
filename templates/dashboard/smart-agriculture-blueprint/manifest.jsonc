@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../src/schema/dashboard-template.json",
+  "name": "Smart Agriculture",
+  "images": {
+    "logo": "./assets/smart_agriculture_template_thumbnail.webp"
+  },
+  "structure": {
+    "blueprint": "./blueprint/structure.json"
+  },
+  "manifest": {
+    "blueprint": "./blueprint/template-config.json"
+  },
+  "description": "./description.md",
+  "category": "charts"
+}

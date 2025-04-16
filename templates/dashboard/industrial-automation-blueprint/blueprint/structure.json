@@ -1,0 +1,675 @@
+{
+  "dashboard": {
+    "id": "67ffc20774a042000a6d69c4",
+    "type": "blueprint",
+    "label": "Industrial Automation - Blueprint",
+    "description": null,
+    "arrangement": [
+      {
+        "x": 0,
+        "y": 3,
+        "tab": null,
+        "width": 1.3333333333333333,
+        "height": 6,
+        "widget_id": "67ffc20774a042000a6d69c9"
+      },
+      {
+        "x": 1.3333333333333333,
+        "y": 0,
+        "tab": null,
+        "width": 0.6666666666666666,
+        "height": 7.5,
+        "widget_id": "67ffc20774a042000a6d69c6"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "tab": null,
+        "width": 0.6666666666666666,
+        "height": 7.5,
+        "widget_id": "67ffc20774a042000a6d69c7"
+      },
+      {
+        "x": 2.6666666666666665,
+        "y": 10,
+        "tab": null,
+        "width": 1.3333333333333333,
+        "height": 2.5,
+        "widget_id": "67ffc20774a042000a6d69c8"
+      },
+      {
+        "x": 2.6666666666666665,
+        "y": 5,
+        "tab": null,
+        "width": 1.3333333333333333,
+        "height": 2.5,
+        "widget_id": "67ffc20774a042000a6d69ca"
+      },
+      {
+        "x": 2.6666666666666665,
+        "y": 0,
+        "tab": null,
+        "width": 1.3333333333333333,
+        "height": 2.5,
+        "widget_id": "67ffc20774a042000a6d69cb"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "tab": null,
+        "width": 1.3333333333333333,
+        "height": 1.5,
+        "widget_id": "67ffc2c5013f38000a21b8d6"
+      }
+    ],
+    "created_at": "2025-04-16T14:43:19.814Z",
+    "updated_at": "2025-04-16T17:35:48.446Z",
+    "tags": [{ "key": "dashboard_type", "value": "Dark Dashboards" }],
+    "group_by": [],
+    "tabs": [],
+    "icon": { "url": "https://svg.internal.tago.io/industry.svg", "color": "hsl(203, 31%, 71%)" },
+    "background": { "isMigrate": true, "color": "hsl(215, 50%, 95%)" },
+    "blueprint_devices": [
+      {
+        "id": "67ffc243eff26b000aa754ef",
+        "name": "industrial_machine",
+        "type": "device",
+        "label": "Machine",
+        "conditions": [{ "key": "device_type", "value": "industrial" }],
+        "filter_conditions": []
+      }
+    ],
+    "blueprint_device_behavior": null,
+    "blueprint_selector_behavior": null,
+    "setup": { "blueprint_devices": { "67ffc243eff26b000aa754ef": { "device": { "id": "67587fe9e55d6f00093aad33" } } } },
+    "theme": null,
+    "public_token_expire": null,
+    "disable_blueprint_fallback": false,
+    "filter": { "period": { "enabled": false, "presets": [], "show_calendar": true, "max_range": "3 day" } }
+  },
+  "widgets": [
+    {
+      "id": "67ffc20774a042000a6d69c6",
+      "analysis_run": null,
+      "label": "Temperature Zone #1",
+      "realtime": null,
+      "type": "solid",
+      "data": [
+        {
+          "query": "last_value",
+          "origin": "67ffc243eff26b000aa754ef",
+          "variables": ["temperature_ini"]
+        }
+      ],
+      "display": {
+        "alias": "",
+        "formula": {
+          "enable": false,
+          "formula_type": "fixed",
+          "unit_type": "origin",
+          "value": ""
+        },
+        "frame_settings": {
+          "radius": {
+            "top_left": 10,
+            "top_right": 10,
+            "bottom_left": 10,
+            "bottom_right": 10
+          }
+        },
+        "header_buttons": [],
+        "help": "",
+        "number_format": {
+          "decimals": -1,
+          "show_thousand": false
+        },
+        "range": {
+          "maximum": 300,
+          "minimum": 0,
+          "type": "minmax"
+        },
+        "show_variables": false,
+        "theme": {
+          "color": {
+            "background": null,
+            "background_blur": null,
+            "header": null,
+            "fill": "hsla(30, 74%, 56%, 1)",
+            "text_border": null,
+            "text": "hsla(30, 74%, 56%, 1)",
+            "outline": null
+          }
+        }
+      },
+      "created_at": "2025-04-16T14:43:19.814Z",
+      "updated_at": "2025-04-16T14:44:31.581Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": { "query": "last_value", "origin": "67587fe9e55d6f00093aad33", "variables": ["temperature_ini"], "bucket": "67587fe9e55d6f00093aad33" },
+          "result": [
+            {
+              "id": "676582325e5f2e00092629cd",
+              "time": "2024-12-20T14:41:54.501Z",
+              "unit": "°F",
+              "value": 254,
+              "variable": "temperature_ini",
+              "metadata": { "x": 0.098, "y": 0.41 },
+              "group": "1734705667255",
+              "device": "67587fe9e55d6f00093aad33",
+              "origin": "67587fe9e55d6f00093aad33",
+              "serie": "1734705667255"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67ffc20774a042000a6d69c7",
+      "analysis_run": null,
+      "label": "Temperature Zone #2",
+      "realtime": null,
+      "type": "solid",
+      "data": [{ "query": "last_value", "origin": "67ffc243eff26b000aa754ef", "variables": ["temperature_mid"] }],
+      "display": {
+        "alias": "",
+        "formula": { "enable": false, "formula_type": "fixed", "unit_type": "origin", "value": "" },
+        "frame_settings": { "shadow": { "hide": false }, "radius": { "top_left": 10, "top_right": 10, "bottom_left": 10, "bottom_right": 10 } },
+        "header_buttons": [],
+        "help": "",
+        "number_format": { "decimals": -1, "show_thousand": false },
+        "range": { "maximum": 300, "minimum": 0, "type": "minmax" },
+        "show_variables": false,
+        "theme": {
+          "color": {
+            "background": null,
+            "background_blur": 0,
+            "header": null,
+            "fill": "hsla(30, 74%, 56%, 1)",
+            "text_border": null,
+            "text": "hsla(30, 74%, 56%, 1)",
+            "outline": null
+          }
+        }
+      },
+      "created_at": "2025-04-16T14:43:19.814Z",
+      "updated_at": "2025-04-16T14:44:41.000Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": { "query": "last_value", "origin": "67587fe9e55d6f00093aad33", "variables": ["temperature_mid"], "bucket": "67587fe9e55d6f00093aad33" },
+          "result": [
+            {
+              "id": "676582325e5f2e00092629ce",
+              "time": "2024-12-20T14:41:54.501Z",
+              "unit": "°F",
+              "value": 173,
+              "variable": "temperature_mid",
+              "metadata": { "x": 0.3, "y": 0.33 },
+              "group": "1734705667255",
+              "device": "67587fe9e55d6f00093aad33",
+              "origin": "67587fe9e55d6f00093aad33",
+              "serie": "1734705667255"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67ffc20774a042000a6d69ca",
+      "analysis_run": null,
+      "label": "Extrusion Speed",
+      "realtime": "true",
+      "type": "angular",
+      "data": [{ "query": "last_value", "origin": "67ffc243eff26b000aa754ef", "variables": ["speed"] }],
+      "display": {
+        "alias": "",
+        "formula": { "kind": "simple", "enable": false, "formula_type": "fixed", "unit_type": "origin", "value": "" },
+        "frame_settings": { "radius": { "top_left": 10, "top_right": 10, "bottom_left": 10, "bottom_right": 10 } },
+        "header_buttons": [],
+        "help": "",
+        "number_format": { "decimals": -1, "show_thousand": false },
+        "range": { "maximum": 100, "minimum": 0, "type": "minmax" },
+        "show_variables": false,
+        "theme": { "color": { "background": null, "fill": null, "outline": null, "text": "hsla(208, 56%, 46%, 1)", "text_border": null } }
+      },
+      "created_at": "2025-04-16T14:43:19.814Z",
+      "updated_at": "2025-04-16T14:44:59.824Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": { "query": "last_value", "origin": "67587fe9e55d6f00093aad33", "variables": ["speed"], "bucket": "67587fe9e55d6f00093aad33" },
+          "result": [
+            {
+              "id": "676582325e5f2e00092629d1",
+              "time": "2024-12-20T14:41:54.502Z",
+              "unit": "ft/min",
+              "value": 22.5,
+              "variable": "speed",
+              "group": "1734705667255",
+              "device": "67587fe9e55d6f00093aad33",
+              "origin": "67587fe9e55d6f00093aad33",
+              "serie": "1734705667255"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67ffc20774a042000a6d69c8",
+      "analysis_run": null,
+      "label": "Machine Pressure",
+      "realtime": "true",
+      "type": "angular",
+      "data": [{ "query": "last_value", "origin": "67ffc243eff26b000aa754ef", "variables": ["pressure"] }],
+      "display": {
+        "alias": "",
+        "formula": { "kind": "simple", "enable": false, "formula_type": "fixed", "unit_type": "origin", "value": "" },
+        "frame_settings": { "radius": { "top_left": 10, "top_right": 10, "bottom_left": 10, "bottom_right": 10 } },
+        "header_buttons": [],
+        "help": "",
+        "number_format": { "decimals": -1, "show_thousand": false },
+        "range": { "maximum": 5000, "minimum": 0, "type": "minmax" },
+        "show_variables": false,
+        "theme": {
+          "color": {
+            "background": null,
+            "background_blur": 0,
+            "header": null,
+            "fill": "hsla(0, 94%, 75%, 1)",
+            "text_border": null,
+            "text": "hsla(0, 94%, 75%, 1)",
+            "outline": null,
+            "needle": null,
+            "tick": null,
+            "hue": null
+          }
+        }
+      },
+      "created_at": "2025-04-16T14:43:19.814Z",
+      "updated_at": "2025-04-16T14:45:08.888Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": { "query": "last_value", "origin": "67587fe9e55d6f00093aad33", "variables": ["pressure"], "bucket": "67587fe9e55d6f00093aad33" },
+          "result": [
+            {
+              "id": "676582325e5f2e00092629d0",
+              "time": "2024-12-20T14:41:54.502Z",
+              "unit": "psi",
+              "value": 2560,
+              "variable": "pressure",
+              "group": "1734705667255",
+              "device": "67587fe9e55d6f00093aad33",
+              "origin": "67587fe9e55d6f00093aad33",
+              "serie": "1734705667255"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67ffc20774a042000a6d69c9",
+      "analysis_run": null,
+      "label": "Extrusion Machine",
+      "realtime": null,
+      "type": "heat_map",
+      "data": [
+        {
+          "qty": 3,
+          "bucket": "67587fe9e55d6f00093aad33",
+          "origin": "67ffc243eff26b000aa754ef",
+          "end_date": "1 min",
+          "timezone": "America/Sao_Paulo",
+          "variables": ["temperature_ini", "temperature_mid", "temperature_end"],
+          "start_date": "3 min"
+        }
+      ],
+      "display": {
+        "allow_zoom": true,
+        "header_buttons": [],
+        "help": "",
+        "max_points": "3",
+        "object_fit": "fill",
+        "occupy_whole_widget": false,
+        "radius": 3,
+        "scale": { "enable": false, "maximum": 100, "minimum": 1, "type": "fixed" },
+        "show_coordinates": true,
+        "show_last_update": false,
+        "show_scale": true,
+        "show_zoom_buttons": false,
+        "source": {
+          "static_image": "img-new.cgtrader.com/items/4351282/01cabbe705/automatic-double-station-lathe-loading-and-unloading-machine-3d-model-01cabbe705.jpg",
+          "type": "static"
+        },
+        "theme": {
+          "color": {
+            "background": null,
+            "background_blur": null,
+            "header": null,
+            "tint": null,
+            "text": null,
+            "text_border": null,
+            "button_background": null,
+            "button_border": null,
+            "button_icon": null,
+            "text_background": null
+          }
+        },
+        "timezone": { "id": "America/Sao_Paulo", "label": "(GMT-03:00) Sao Paulo" },
+        "variables": [
+          {
+            "origin": "67ffc243eff26b000aa754ef",
+            "variable": "temperature_ini",
+            "overwrite_coordinates": true,
+            "bucket": "67587fe9e55d6f00093aad33",
+            "data_params": { "interval": null, "query": null, "function": null, "value": null, "period": { "start_date": "3 min", "end_date": "1 min" } },
+            "x": "0.25",
+            "y": "0.4"
+          },
+          {
+            "overwrite_coordinates": true,
+            "origin": "67ffc243eff26b000aa754ef",
+            "variable": "temperature_mid",
+            "bucket": "67587fe9e55d6f00093aad33",
+            "data_params": { "interval": null, "query": null, "function": null, "value": null, "period": { "start_date": "3 min", "end_date": "1 min" } },
+            "x": "0.4",
+            "y": "0.6"
+          },
+          {
+            "overwrite_coordinates": true,
+            "origin": "67ffc243eff26b000aa754ef",
+            "variable": "temperature_end",
+            "bucket": "67587fe9e55d6f00093aad33",
+            "data_params": { "interval": null, "query": null, "function": null, "value": null, "period": { "start_date": "3 min", "end_date": "1 min" } },
+            "x": "0.7",
+            "y": "0.4"
+          }
+        ],
+        "display": {
+          "_date_range": "relative",
+          "_end_date": "1 min",
+          "_start_date": "3 min",
+          "allow_zoom": true,
+          "header_buttons": [],
+          "help": "",
+          "max_points": "3",
+          "object_fit": "fill",
+          "occupy_whole_widget": false,
+          "radius": 3,
+          "scale": { "enable": false, "maximum": 100, "minimum": 1, "type": "fixed" },
+          "show_coordinates": true,
+          "show_last_update": false,
+          "show_scale": true,
+          "show_zoom_buttons": false,
+          "source": {
+            "static_image": "img-new.cgtrader.com/items/4351282/01cabbe705/automatic-double-station-lathe-loading-and-unloading-machine-3d-model-01cabbe705.jpg",
+            "type": "static"
+          },
+          "theme": {
+            "color": {
+              "background": "hsla(223, 11%, 13%, 1)",
+              "button_background": null,
+              "button_border": null,
+              "button_icon": null,
+              "header": null,
+              "text": null,
+              "text_background": null,
+              "text_border": null
+            }
+          },
+          "timezone": { "id": "America/Sao_Paulo", "label": "(GMT-03:00) Sao Paulo" },
+          "variables": [
+            {
+              "origin": { "bucket": "67587fe9e55d6f00093aad33", "id": "67587fe9e55d6f00093aad33", "name": "Industrial Machine" },
+              "variable": "temperature_ini",
+              "overwrite_coordinates": true,
+              "bucket": "67587fe9e55d6f00093aad33",
+              "data_params": { "interval": null, "query": null, "function": null, "value": null, "period": { "start_date": "3 min", "end_date": "1 min" } },
+              "id": 1
+            },
+            {
+              "overwrite_coordinates": true,
+              "origin": { "bucket": "67587fe9e55d6f00093aad33", "id": "67587fe9e55d6f00093aad33", "name": "Industrial Machine" },
+              "variable": "temperature_mid",
+              "bucket": "67587fe9e55d6f00093aad33",
+              "data_params": { "interval": null, "query": null, "function": null, "value": null, "period": { "start_date": "3 min", "end_date": "1 min" } },
+              "id": 2
+            },
+            {
+              "overwrite_coordinates": true,
+              "origin": { "bucket": "67587fe9e55d6f00093aad33", "id": "67587fe9e55d6f00093aad33", "name": "Industrial Machine" },
+              "variable": "temperature_end",
+              "bucket": "67587fe9e55d6f00093aad33",
+              "data_params": { "interval": null, "query": null, "function": null, "value": null, "period": { "start_date": "3 min", "end_date": "1 min" } },
+              "id": 3
+            }
+          ],
+          "display": {
+            "_date_range": "relative",
+            "_end_date": "forever",
+            "_start_date": "6 min",
+            "allow_zoom": true,
+            "header_buttons": [],
+            "help": "",
+            "max_points": 500,
+            "object_fit": "fill",
+            "occupy_whole_widget": false,
+            "radius": 3,
+            "scale": { "enable": false, "maximum": 100, "minimum": 1, "type": "fixed" },
+            "show_coordinates": true,
+            "show_last_update": false,
+            "show_scale": true,
+            "show_zoom_buttons": false,
+            "source": { "static_image": "api.beta.tago.io/file/5bbcb03b667d7a002e56664b/simulator/industrial_automation.png", "type": "static" },
+            "theme": {
+              "color": {
+                "background": "hsla(250, 10%, 45%, 1)",
+                "button_background": null,
+                "button_border": null,
+                "button_icon": null,
+                "header": null,
+                "text": null,
+                "text_background": null,
+                "text_border": null
+              }
+            },
+            "timezone": { "id": "America/Sao_Paulo", "label": "(GMT-03:00) Sao Paulo" },
+            "variables": [
+              {
+                "origin": { "bucket": "67587fe9e55d6f00093aad33", "id": "67587fe9e55d6f00093aad33", "name": "IndustrialTest" },
+                "variable": "temperature_ini",
+                "overwrite_coordinates": true,
+                "bucket": "67587fe9e55d6f00093aad33",
+                "id": 4
+              },
+              {
+                "overwrite_coordinates": true,
+                "origin": { "bucket": "67587fe9e55d6f00093aad33", "id": "67587fe9e55d6f00093aad33", "name": "IndustrialTest" },
+                "variable": "temperature_mid",
+                "bucket": "67587fe9e55d6f00093aad33",
+                "id": 5
+              },
+              {
+                "overwrite_coordinates": true,
+                "origin": { "bucket": "67587fe9e55d6f00093aad33", "id": "67587fe9e55d6f00093aad33", "name": "IndustrialTest" },
+                "variable": "temperature_end",
+                "bucket": "67587fe9e55d6f00093aad33",
+                "id": 6
+              }
+            ],
+            "display": {
+              "_date_range": "relative",
+              "_end_date": "forever",
+              "_start_date": "forever",
+              "allow_zoom": true,
+              "header_buttons": [],
+              "help": "",
+              "max_points": 500,
+              "object_fit": "fill",
+              "occupy_whole_widget": false,
+              "radius": 3,
+              "scale": { "enable": false, "maximum": 100, "minimum": 1, "type": "fixed" },
+              "show_coordinates": true,
+              "show_last_update": false,
+              "show_scale": true,
+              "show_zoom_buttons": false,
+              "source": { "static_image": "api.tago.io/file/547e1bee7dbf3af122c02572/industrial_automation.jpg", "type": "static" },
+              "theme": {
+                "color": {
+                  "background": null,
+                  "button_background": null,
+                  "button_border": null,
+                  "button_icon": null,
+                  "header": null,
+                  "text": null,
+                  "text_background": null,
+                  "text_border": null
+                }
+              },
+              "timezone": { "id": "America/Sao_Paulo", "label": "(GMT-03:00) Sao Paulo" },
+              "variables": [
+                {
+                  "origin": { "id": "67587fe9e55d6f00093aad33", "name": "IndustrialTest", "bucket": "67587fe9e55d6f00093aad33", "tags": [] },
+                  "variable": "temperature_ini",
+                  "id": 1,
+                  "overwrite_coordinates": true
+                },
+                {
+                  "overwrite_coordinates": true,
+                  "id": 2,
+                  "origin": { "id": "67587fe9e55d6f00093aad33", "name": "IndustrialTest", "bucket": "67587fe9e55d6f00093aad33", "tags": [] },
+                  "variable": "temperature_mid"
+                },
+                {
+                  "overwrite_coordinates": true,
+                  "id": 3,
+                  "origin": { "id": "67587fe9e55d6f00093aad33", "name": "IndustrialTest", "bucket": "67587fe9e55d6f00093aad33", "tags": [] },
+                  "variable": "temperature_end"
+                }
+              ]
+            }
+          }
+        },
+        "frame_settings": { "header_visibility": "show_only_buttons", "radius": { "top_left": 10, "top_right": 10, "bottom_left": 10, "bottom_right": 10 } }
+      },
+      "created_at": "2025-04-16T14:43:19.814Z",
+      "updated_at": "2025-04-16T14:45:34.459Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": {
+            "qty": 3,
+            "bucket": "67587fe9e55d6f00093aad33",
+            "origin": "67587fe9e55d6f00093aad33",
+            "end_date": "1 min",
+            "timezone": "America/Sao_Paulo",
+            "variables": ["temperature_ini", "temperature_mid", "temperature_end"],
+            "start_date": "3 min"
+          },
+          "result": [],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67ffc20774a042000a6d69cb",
+      "analysis_run": null,
+      "label": "Extrusion Temperature",
+      "realtime": "true",
+      "type": "dial",
+      "data": [{ "query": "last_value", "origin": "67ffc243eff26b000aa754ef", "variables": ["temperature_end"] }],
+      "display": {
+        "alias": "",
+        "formula": { "kind": "simple", "enable": false, "formula_type": "fixed", "unit_type": "origin", "value": "" },
+        "frame_settings": { "radius": { "top_left": 10, "top_right": 10, "bottom_left": 10, "bottom_right": 10 } },
+        "header_buttons": [],
+        "help": "",
+        "number_format": { "decimals": -1, "show_thousand": false },
+        "range": { "maximum": 300, "minimum": 0, "type": "minmax" },
+        "show_variables": false,
+        "theme": { "color": { "background": null, "fill": "hsla(30, 74%, 56%, 1)", "outline": null, "text": "hsla(30, 74%, 56%, 1)", "text_border": null } }
+      },
+      "created_at": "2025-04-16T14:43:19.814Z",
+      "updated_at": "2025-04-16T14:44:50.911Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": { "query": "last_value", "origin": "67587fe9e55d6f00093aad33", "variables": ["temperature_end"], "bucket": "67587fe9e55d6f00093aad33" },
+          "result": [
+            {
+              "id": "676582325e5f2e00092629cf",
+              "time": "2024-12-20T14:41:54.501Z",
+              "unit": "°F",
+              "value": 192,
+              "variable": "temperature_end",
+              "metadata": { "x": 0.637, "y": 0.36 },
+              "group": "1734705667255",
+              "device": "67587fe9e55d6f00093aad33",
+              "origin": "67587fe9e55d6f00093aad33",
+              "serie": "1734705667255"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67ffc2c5013f38000a21b8d6",
+      "analysis_run": null,
+      "label": "Operation Status",
+      "realtime": "true",
+      "type": "display",
+      "data": [{ "query": "last_value", "origin": "67ffc243eff26b000aa754ef", "variables": ["message_system"] }],
+      "display": {
+        "variables": [
+          {
+            "source": "device",
+            "origin": "67ffc243eff26b000aa754ef",
+            "variable": "message_system",
+            "data_params": { "interval": null, "query": "last_value", "function": null, "value": null, "period": { "start_date": null, "end_date": null } },
+            "color_conditions": [{ "condition": "*", "color": "hsl(208, 0%, 24%)" }]
+          }
+        ],
+        "aggregate_intervals": [],
+        "header_buttons": [],
+        "help": "",
+        "show_units": true,
+        "show_variables": false,
+        "frame_settings": { "radius": { "top_left": 10, "top_right": 10, "bottom_left": 10, "bottom_right": 10 } }
+      },
+      "created_at": "2025-04-16T14:46:29.483Z",
+      "updated_at": "2025-04-16T14:49:11.786Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": { "query": "last_value", "origin": "67587fe9e55d6f00093aad33", "variables": ["message_system"], "bucket": "67587fe9e55d6f00093aad33" },
+          "result": [
+            {
+              "id": "676582325e5f2e00092629d2",
+              "time": "2024-12-20T14:41:54.502Z",
+              "value": "Alert - temperature zone #1",
+              "variable": "message_system",
+              "group": "1734705714502",
+              "device": "67587fe9e55d6f00093aad33",
+              "origin": "67587fe9e55d6f00093aad33",
+              "serie": "1734705714502"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    }
+  ]
+}

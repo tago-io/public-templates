@@ -1,0 +1,17 @@
+{
+  "type": "blueprint",
+  "use_mock": true,
+  "setup": {
+    "blueprints": [
+      {
+        "id": "67ffc243eff26b000aa754ef",
+        "name": "industrial_machine",
+        "type": "device",
+        "label": "Machine",
+        "conditions": [{ "key": "device_type", "value": "industrial" }],
+        "filter_conditions": []
+      }
+    ],
+    "analysis": []
+  }
+}

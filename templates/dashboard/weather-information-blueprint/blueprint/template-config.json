@@ -1,0 +1,17 @@
+{
+  "type": "blueprint",
+  "use_mock": true,
+  "setup": {
+    "blueprints": [
+      {
+        "id": "67ffbd94a148f5000a6c591c",
+        "name": "weather_dev",
+        "type": "device",
+        "label": "Device",
+        "conditions": [{ "key": "device_type", "value": "weather" }],
+        "filter_conditions": []
+      }
+    ],
+    "analysis": []
+  }
+}

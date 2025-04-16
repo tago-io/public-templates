@@ -1,0 +1,25 @@
+{
+  "type": "blueprint",
+  "use_mock": true,
+  "setup": {
+    "blueprints": [
+      {
+        "id": "67ffc5426ae7fc000aaeb1a9",
+        "name": "building",
+        "type": "device",
+        "label": "Building",
+        "conditions": [{ "key": "blueprint", "value": "building" }],
+        "filter_conditions": []
+      },
+      {
+        "id": "67ffc5426ae7fc000aaeb1aa",
+        "name": "energy_meter",
+        "type": "device",
+        "label": "Device",
+        "conditions": [{ "key": "device_type", "value": "energy_meter" }],
+        "filter_conditions": []
+      }
+    ],
+    "analysis": []
+  }
+}
