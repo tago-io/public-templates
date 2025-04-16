@@ -1,0 +1,17 @@
+{
+  "type": "blueprint",
+  "use_mock": true,
+  "setup": {
+    "blueprints": [
+      {
+        "id": "67ffbaf074a042000a6c64d3",
+        "name": "vehicle",
+        "type": "device",
+        "label": "Vehicle",
+        "conditions": [{ "key": "device_type", "value": "vehicle" }],
+        "filter_conditions": []
+      }
+    ],
+    "analysis": []
+  }
+}
