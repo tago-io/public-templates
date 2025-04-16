@@ -8,7 +8,7 @@
     "blueprint": "./blueprint/structure.json"
   },
   "manifest": {
-    "blueprint": "./standard/template-config.json"
+    "blueprint": "./blueprint/template-config.json"
   },
   "description": "./description.md",
   "category": "management"
