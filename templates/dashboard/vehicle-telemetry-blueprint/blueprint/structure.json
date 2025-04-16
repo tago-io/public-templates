@@ -13,7 +13,7 @@
       { "x": 2, "y": 5, "tab": "1619551481168", "width": 2, "height": 4.5, "widget_id": "67ffba650c797f000ab2f3dc" }
     ],
     "created_at": "2025-04-16T14:10:45.768Z",
-    "updated_at": "2025-04-16T17:48:24.231Z",
+    "updated_at": "2025-04-16T18:16:19.535Z",
     "tags": [{ "key": "dashboard_type", "value": "Dark Dashboards", "metadata": { "run": false } }],
     "group_by": [],
     "tabs": [{ "key": "1619551481168", "link": "", "value": "Main" }],
