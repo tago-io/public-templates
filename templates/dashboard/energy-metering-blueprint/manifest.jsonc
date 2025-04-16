@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../src/schema/dashboard-template.json",
+  "name": "Energy Metering",
+  "images": {
+    "logo": "./assets/energy_monitoring_template_thumbnail.webp"
+  },
+  "structure": {
+    "blueprint": "./blueprint/structure.json"
+  },
+  "manifest": {
+    "blueprint": "./blueprint/template-config.json"
+  },
+  "description": "./description.md",
+  "category": "energy"
+}
