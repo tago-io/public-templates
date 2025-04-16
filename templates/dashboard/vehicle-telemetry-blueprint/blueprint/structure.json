@@ -13,7 +13,7 @@
       { "x": 2, "y": 5, "tab": "1619551481168", "width": 2, "height": 4.5, "widget_id": "67ffba650c797f000ab2f3dc" }
     ],
     "created_at": "2025-04-16T14:10:45.768Z",
-    "updated_at": "2025-04-16T18:16:19.535Z",
+    "updated_at": "2025-04-16T18:23:40.198Z",
     "tags": [{ "key": "dashboard_type", "value": "Dark Dashboards", "metadata": { "run": false } }],
     "group_by": [],
     "tabs": [{ "key": "1619551481168", "link": "", "value": "Main" }],
@@ -39,39 +39,110 @@
   },
   "widgets": [
     {
-      "id": "67ffba650c797f000ab2f3de",
+      "id": "67ffba650c797f000ab2f3e0",
       "analysis_run": null,
-      "label": "Fuel Level",
+      "label": "Table with Indicators (Status)",
       "realtime": "1",
-      "type": "solid",
-      "data": [{ "query": "last_value", "origin": "67ffbaf074a042000a6c64d3", "variables": ["fuel_level"] }],
+      "type": "static_table",
+      "data": [{ "query": "last_value", "bucket": "6759891f53301e0008a41052", "origin": "67ffbaf074a042000a6c64d3", "variables": ["fuel_level", "trip_odometer", "speed"] }],
       "display": {
-        "alias": "",
-        "formula": { "formula_type": "fixed" },
         "header_buttons": [],
         "help": "",
-        "number_format": { "decimals": 1, "show_thousand": false },
-        "range": { "type": "minmax", "minimum": 0, "maximum": 100 },
-        "show_variables": false,
-        "theme": {
-          "color": {
-            "background": "hsla(206, 17%, 18%, 1)",
-            "background_blur": null,
-            "header": null,
-            "fill": "hsla(24, 95%, 48%, 1)",
-            "text_border": null,
-            "text": "hsla(250, 3%, 83%, 1)",
-            "outline": null
+        "theme": { "color": { "background": "hsla(206, 17%, 18%, 1)", "background_blur": null, "header": null, "alternate": null } },
+        "variables": [
+          { "data_type": "text", "id": "GV_XI3Low", "position": { "x": 0, "y": 0 }, "text_content": "" },
+          {
+            "data_type": "text",
+            "id": "TV1rICuYB7",
+            "position": { "x": 1, "y": 0 },
+            "text_content": "Bus #1",
+            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 3%, 79%, 1)" } }
+          },
+          {
+            "data_type": "text",
+            "id": "3KB1k5aUPR",
+            "position": { "x": 0, "y": 1 },
+            "text_content": "Fuel Level",
+            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 6%, 78%, 1)" } }
+          },
+          {
+            "content_type": "value",
+            "data": { "origin": "67ffbaf074a042000a6c64d3", "variable": "fuel_level", "bucket": "6759891f53301e0008a41052", "query": "last_value" },
+            "data_type": "variable",
+            "id": "K17DIvX7WL",
+            "position": { "x": 1, "y": 1 },
+            "override_color": true,
+            "color_conditions": [{ "condition": "*", "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 4%, 76%, 1)", "apply_before_formula": false }]
+          },
+          {
+            "data_type": "text",
+            "id": "p66gvI8wxY",
+            "position": { "x": 0, "y": 2 },
+            "text_content": "Trip odometer",
+            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 4%, 73%, 1)" } }
+          },
+          {
+            "content_type": "value",
+            "data": { "origin": "67ffbaf074a042000a6c64d3", "variable": "trip_odometer", "bucket": "6759891f53301e0008a41052", "query": "last_value" },
+            "data_type": "variable",
+            "id": "gPlY1ocqf4",
+            "position": { "x": 1, "y": 2 },
+            "override_color": true,
+            "color_conditions": [{ "condition": "*", "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 3%, 73%, 1)", "apply_before_formula": false }]
+          },
+          {
+            "data_type": "text",
+            "id": "95QypF5AVc",
+            "position": { "x": 0, "y": 3 },
+            "text_content": "Speed",
+            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 3%, 68%, 1)" } }
+          },
+          {
+            "content_type": "value",
+            "data": { "origin": "67ffbaf074a042000a6c64d3", "variable": "speed", "bucket": "6759891f53301e0008a41052", "query": "last_value" },
+            "data_type": "variable",
+            "id": "O0pGROHlMi",
+            "position": { "x": 1, "y": 3 },
+            "override_color": true,
+            "color_conditions": [{ "condition": "*", "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 2%, 71%, 1)", "apply_before_formula": false }]
+          },
+          {
+            "data_type": "text",
+            "id": "TzuSwSXyMU",
+            "position": { "x": 0, "y": 4 },
+            "text_content": "Internal temperature",
+            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 4%, 70%, 1)" } }
+          },
+          {
+            "data_type": "text",
+            "id": "mtuOtexmPW",
+            "position": { "x": 1, "y": 4 },
+            "text_content": "N/A",
+            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 2%, 74%, 1)" } }
+          },
+          {
+            "data_type": "text",
+            "id": "wn6x4PGlMJ",
+            "position": { "x": 0, "y": 5 },
+            "text_content": "Air conditioning (ON/OFF)",
+            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 4%, 74%, 1)" } }
+          },
+          {
+            "data_type": "text",
+            "id": "uYivoGlTwZ",
+            "position": { "x": 1, "y": 5 },
+            "text_content": "OFF",
+            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 1%, 65%, 1)" } }
           }
-        }
+        ]
       },
       "created_at": "2025-04-16T14:10:45.768Z",
-      "updated_at": "2025-04-16T14:14:04.777Z",
+      "updated_at": "2025-04-16T18:23:17.669Z",
       "resource": [],
       "cache": null,
       "mock_data": [
         {
-          "data": { "query": "last_value", "origin": "6759891f53301e0008a41052", "variables": ["fuel_level"], "bucket": "6759891f53301e0008a41052" },
+          "data": { "query": "last_value", "bucket": "6759891f53301e0008a41052", "origin": "6759891f53301e0008a41052", "variables": ["fuel_level", "trip_odometer", "speed"] },
           "result": [
             {
               "id": "6770f3a3cd6e6200090f6bbd",
@@ -79,6 +150,26 @@
               "unit": "%",
               "value": 20,
               "variable": "fuel_level",
+              "group": "1735455651211",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455651211"
+            },
+            {
+              "id": "6770f3a3cd6e6200090f6bbf",
+              "time": "2024-12-29T07:00:51.214Z",
+              "value": 0.19,
+              "variable": "trip_odometer",
+              "group": "1735455651211",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455651211"
+            },
+            {
+              "id": "6770f3a3cd6e6200090f6bbe",
+              "time": "2024-12-29T07:00:51.214Z",
+              "value": 9.64,
+              "variable": "speed",
               "group": "1735455651211",
               "device": "6759891f53301e0008a41052",
               "origin": "6759891f53301e0008a41052",
@@ -113,356 +204,10 @@
         }
       },
       "created_at": "2025-04-16T14:10:45.768Z",
-      "updated_at": "2025-04-16T14:10:45.768Z",
+      "updated_at": "2025-04-16T18:23:24.629Z",
       "resource": [],
       "cache": null,
       "mock_data": [{ "data": { "timezone": "America/Chicago" }, "result": [] }]
-    },
-    {
-      "id": "67ffba650c797f000ab2f3e1",
-      "analysis_run": null,
-      "label": "Gauge #6",
-      "realtime": "1",
-      "type": "gauge",
-      "data": [{ "timezone": "Indian/Chagos" }],
-      "display": { "no_bucket": true, "gauge_type": "clock", "help": "" },
-      "created_at": "2025-04-16T14:10:45.768Z",
-      "updated_at": "2025-04-16T14:10:45.768Z",
-      "resource": [],
-      "cache": null,
-      "mock_data": [{ "data": { "timezone": "Indian/Chagos" }, "result": [] }]
-    },
-    {
-      "id": "67ffba650c797f000ab2f3e2",
-      "analysis_run": null,
-      "label": "Gauge #6",
-      "realtime": "1",
-      "type": "gauge",
-      "data": [{ "timezone": "Indian/Chagos" }],
-      "display": { "no_bucket": true, "gauge_type": "clock", "help": "" },
-      "created_at": "2025-04-16T14:10:45.768Z",
-      "updated_at": "2025-04-16T14:10:45.768Z",
-      "resource": [],
-      "cache": null,
-      "mock_data": [{ "data": { "timezone": "Indian/Chagos" }, "result": [] }]
-    },
-    {
-      "id": "67ffba650c797f000ab2f3dd",
-      "analysis_run": null,
-      "label": "Location",
-      "realtime": "true",
-      "type": "map",
-      "data": [{ "qty": 20, "bucket": "6759891f53301e0008a41052", "origin": "67ffbaf074a042000a6c64d3", "timezone": "America/Sao_Paulo", "variables": ["location"] }],
-      "display": {
-        "center_options": { "center_all_variables": true, "show_only_last_values": false, "variables": [] },
-        "geofence": { "enable_user": false, "events_type": "static", "limit": 100, "type_enable_user": "all", "events_label": "Event" },
-        "header_buttons": [],
-        "help": "",
-        "infobox_config": { "date_format": "", "image": { "behavior": "landscape", "object_fit": "fill", "position": "top" } },
-        "initial_mode": "dark",
-        "max_points": "20",
-        "timezone": { "id": "America/Sao_Paulo", "label": "(GMT-03:00) Sao Paulo" },
-        "variables": [
-          {
-            "origin": "67ffbaf074a042000a6c64d3",
-            "variable": "location",
-            "bucket": "6759891f53301e0008a41052",
-            "pin_id": "xSj6rQvWEgZEtnr8Da9zE",
-            "data_params": { "interval": null, "query": null, "function": null, "value": null, "period": { "start_date": null, "end_date": null } }
-          }
-        ],
-        "show_last_update": false,
-        "show_lines": true,
-        "show_lines_animated": true,
-        "group_markers": true,
-        "initial_zoom": "70",
-        "frame_settings": { "header_visibility": "show_on_hover" }
-      },
-      "created_at": "2025-04-16T14:10:45.768Z",
-      "updated_at": "2025-04-16T14:13:55.293Z",
-      "resource": [],
-      "cache": null,
-      "mock_data": [
-        {
-          "data": { "qty": 20, "bucket": "6759891f53301e0008a41052", "origin": "6759891f53301e0008a41052", "timezone": "America/Sao_Paulo", "variables": ["location"] },
-          "result": [
-            {
-              "id": "6770f3a3cd6e6200090f6bbc",
-              "time": "2024-12-29T07:00:51.214Z",
-              "value": "41.886912,-87.631934",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.631934, 41.886912] },
-              "group": "1735455651211",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735455651211"
-            },
-            {
-              "id": "6770f351c5b98c0009300182",
-              "time": "2024-12-29T06:59:29.120Z",
-              "value": "41.887392,-87.626122",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.626122, 41.887392] },
-              "group": "1735455569118",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735455569118"
-            },
-            {
-              "id": "6770f2ebc5b98c00092ff5c4",
-              "time": "2024-12-29T06:57:47.276Z",
-              "value": "41.887392,-87.626122",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.626122, 41.887392] },
-              "group": "1735455467274",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735455467274"
-            },
-            {
-              "id": "6770f23af3765e0009150970",
-              "time": "2024-12-29T06:54:50.665Z",
-              "value": "41.888286,-87.625221",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.625221, 41.888286] },
-              "group": "1735455290662",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735455290662"
-            },
-            {
-              "id": "6770f2397b584e0009650876",
-              "time": "2024-12-29T06:54:49.902Z",
-              "value": "41.888286,-87.625221",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.625221, 41.888286] },
-              "group": "1735455289900",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735455289900"
-            },
-            {
-              "id": "6770f192ee077b0009362b0e",
-              "time": "2024-12-29T06:52:02.675Z",
-              "value": "41.88833,-87.624792",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.624792, 41.88833] },
-              "group": "1735455122673",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735455122673"
-            },
-            {
-              "id": "6770f11ef3765e000914ed34",
-              "time": "2024-12-29T06:50:06.121Z",
-              "value": "41.88757,-87.624448",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.624448, 41.88757] },
-              "group": "1735455006118",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735455006118"
-            },
-            {
-              "id": "6770f0d0830401000926c8a1",
-              "time": "2024-12-29T06:48:48.107Z",
-              "value": "41.884407,-87.624448",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.624448, 41.884407] },
-              "group": "1735454928105",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735454928105"
-            },
-            {
-              "id": "6770f00c5e5f2e00096b38af",
-              "time": "2024-12-29T06:45:32.095Z",
-              "value": "41.883297,-87.624205",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.624205, 41.883297] },
-              "group": "1735454732092",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735454732092"
-            },
-            {
-              "id": "6770efe1830401000926ae67",
-              "time": "2024-12-29T06:44:49.249Z",
-              "value": "41.877378,-87.624205",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.624205, 41.877378] },
-              "group": "1735454689247",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735454689247"
-            },
-            {
-              "id": "6770ef5422502900099b203c",
-              "time": "2024-12-29T06:42:28.596Z",
-              "value": "41.877175,-87.624205",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.624205, 41.877175] },
-              "group": "1735454548593",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735454548593"
-            },
-            {
-              "id": "6770eec67b584e000964b2c1",
-              "time": "2024-12-29T06:40:06.583Z",
-              "value": "41.875697,-87.625454",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.625454, 41.875697] },
-              "group": "1735454406578",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735454406578"
-            },
-            {
-              "id": "6770ee959b359200092b6c95",
-              "time": "2024-12-29T06:39:17.389Z",
-              "value": "41.875697,-87.626132",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.626132, 41.875697] },
-              "group": "1735454357386",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735454357386"
-            },
-            {
-              "id": "6770eddc5228b40009338d4b",
-              "time": "2024-12-29T06:36:12.077Z",
-              "value": "41.875569,-87.632495",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.632495, 41.875569] },
-              "group": "1735454172074",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735454172074"
-            },
-            {
-              "id": "6770edab22502900099af538",
-              "time": "2024-12-29T06:35:23.404Z",
-              "value": "41.875501,-87.633624",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.633624, 41.875501] },
-              "group": "1735454123402",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735454123402"
-            },
-            {
-              "id": "6770ed1eee077b000935b810",
-              "time": "2024-12-29T06:33:02.684Z",
-              "value": "41.876783,-87.633713",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.633713, 41.876783] },
-              "group": "1735453982682",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735453982682"
-            },
-            {
-              "id": "6770ec63ba8c4b000903a6a7",
-              "time": "2024-12-29T06:29:55.661Z",
-              "value": "41.876808,-87.634225",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.634225, 41.876808] },
-              "group": "1735453795658",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735453795658"
-            },
-            {
-              "id": "6770ec61f3765e0009146057",
-              "time": "2024-12-29T06:29:53.433Z",
-              "value": "41.876808,-87.634557",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.634557, 41.876808] },
-              "group": "1735453793430",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735453793430"
-            },
-            {
-              "id": "6770ebacc5b98c00092f2d3d",
-              "time": "2024-12-29T06:26:52.029Z",
-              "value": "41.876816,-87.636808",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.636808, 41.876816] },
-              "group": "1735453612026",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735453612026"
-            },
-            {
-              "id": "6770eb326b084c000902c9ca",
-              "time": "2024-12-29T06:24:50.166Z",
-              "value": "41.876816,-87.636808",
-              "variable": "location",
-              "location": { "type": "Point", "coordinates": [-87.636808, 41.876816] },
-              "group": "1735453490164",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735453490164"
-            }
-          ],
-          "cacheTime": null
-        }
-      ]
-    },
-    {
-      "id": "67ffba650c797f000ab2f3e3",
-      "analysis_run": null,
-      "label": "Bus Speed",
-      "realtime": "1",
-      "type": "angular",
-      "data": [{ "query": "last_value", "origin": "67ffbaf074a042000a6c64d3", "variables": ["speed"] }],
-      "display": {
-        "alias": "",
-        "formula": { "formula_type": "fixed", "unit_type": "fixed", "fixed_unit": "MPH" },
-        "header_buttons": [{ "color": null, "icon": "", "text": "", "trigger": "widget", "widget": null }],
-        "help": "",
-        "number_format": { "decimals": "2" },
-        "range": { "type": "minmax", "minimum": 0, "maximum": 50 },
-        "show_variables": false,
-        "theme": {
-          "color": {
-            "background": "hsla(206, 17%, 18%, 1)",
-            "background_blur": 0,
-            "header": null,
-            "fill": "hsla(54, 72%, 63%, 1)",
-            "text_border": null,
-            "text": "hsla(250, 3%, 83%, 1)",
-            "outline": null,
-            "needle": "hsla(250, 2%, 77%, 1)",
-            "tick": "hsla(250, 2%, 79%, 1)",
-            "hue": null
-          }
-        }
-      },
-      "created_at": "2025-04-16T14:10:45.768Z",
-      "updated_at": "2025-04-16T14:14:13.944Z",
-      "resource": [],
-      "cache": null,
-      "mock_data": [
-        {
-          "data": { "query": "last_value", "origin": "6759891f53301e0008a41052", "variables": ["speed"], "bucket": "6759891f53301e0008a41052" },
-          "result": [
-            {
-              "id": "6770f3a3cd6e6200090f6bbe",
-              "time": "2024-12-29T07:00:51.214Z",
-              "value": 9.64,
-              "variable": "speed",
-              "group": "1735455651211",
-              "device": "6759891f53301e0008a41052",
-              "origin": "6759891f53301e0008a41052",
-              "serie": "1735455651211"
-            }
-          ],
-          "cacheTime": null
-        }
-      ]
     },
     {
       "id": "67ffba650c797f000ab2f3dc",
@@ -515,7 +260,7 @@
         "aggregate_intervals": []
       },
       "created_at": "2025-04-16T14:10:45.768Z",
-      "updated_at": "2025-04-16T14:14:23.795Z",
+      "updated_at": "2025-04-16T18:23:33.088Z",
       "resource": [],
       "cache": null,
       "mock_data": [
@@ -1035,110 +780,39 @@
       ]
     },
     {
-      "id": "67ffba650c797f000ab2f3e0",
+      "id": "67ffba650c797f000ab2f3de",
       "analysis_run": null,
-      "label": "Table with Indicators (Status)",
+      "label": "Fuel Level",
       "realtime": "1",
-      "type": "static_table",
-      "data": [{ "query": "last_value", "bucket": "6759891f53301e0008a41052", "origin": "67ffbaf074a042000a6c64d3", "variables": ["fuel_level", "trip_odometer", "speed"] }],
+      "type": "solid",
+      "data": [{ "query": "last_value", "origin": "67ffbaf074a042000a6c64d3", "variables": ["fuel_level"] }],
       "display": {
+        "alias": "",
+        "formula": { "formula_type": "fixed" },
         "header_buttons": [],
         "help": "",
-        "theme": { "color": { "background": "hsla(206, 17%, 18%, 1)", "background_blur": null, "header": null, "alternate": null } },
-        "variables": [
-          { "data_type": "text", "id": "GV_XI3Low", "position": { "x": 0, "y": 0 }, "text_content": "" },
-          {
-            "data_type": "text",
-            "id": "TV1rICuYB7",
-            "position": { "x": 1, "y": 0 },
-            "text_content": "Bus #1",
-            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 3%, 79%, 1)" } }
-          },
-          {
-            "data_type": "text",
-            "id": "3KB1k5aUPR",
-            "position": { "x": 0, "y": 1 },
-            "text_content": "Fuel Level",
-            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 6%, 78%, 1)" } }
-          },
-          {
-            "content_type": "value",
-            "data": { "origin": "67ffbaf074a042000a6c64d3", "variable": "fuel_level", "bucket": "6759891f53301e0008a41052", "query": "last_value" },
-            "data_type": "variable",
-            "id": "K17DIvX7WL",
-            "position": { "x": 1, "y": 1 },
-            "override_color": true,
-            "color_conditions": [{ "condition": "*", "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 4%, 76%, 1)", "apply_before_formula": false }]
-          },
-          {
-            "data_type": "text",
-            "id": "p66gvI8wxY",
-            "position": { "x": 0, "y": 2 },
-            "text_content": "Trip odometer",
-            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 4%, 73%, 1)" } }
-          },
-          {
-            "content_type": "value",
-            "data": { "origin": "67ffbaf074a042000a6c64d3", "variable": "trip_odometer", "bucket": "6759891f53301e0008a41052", "query": "last_value" },
-            "data_type": "variable",
-            "id": "gPlY1ocqf4",
-            "position": { "x": 1, "y": 2 },
-            "override_color": true,
-            "color_conditions": [{ "condition": "*", "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 3%, 73%, 1)", "apply_before_formula": false }]
-          },
-          {
-            "data_type": "text",
-            "id": "95QypF5AVc",
-            "position": { "x": 0, "y": 3 },
-            "text_content": "Speed",
-            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 3%, 68%, 1)" } }
-          },
-          {
-            "content_type": "value",
-            "data": { "origin": "67ffbaf074a042000a6c64d3", "variable": "speed", "bucket": "6759891f53301e0008a41052", "query": "last_value" },
-            "data_type": "variable",
-            "id": "O0pGROHlMi",
-            "position": { "x": 1, "y": 3 },
-            "override_color": true,
-            "color_conditions": [{ "condition": "*", "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 2%, 71%, 1)", "apply_before_formula": false }]
-          },
-          {
-            "data_type": "text",
-            "id": "TzuSwSXyMU",
-            "position": { "x": 0, "y": 4 },
-            "text_content": "Internal temperature",
-            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 4%, 70%, 1)" } }
-          },
-          {
-            "data_type": "text",
-            "id": "mtuOtexmPW",
-            "position": { "x": 1, "y": 4 },
-            "text_content": "N/A",
-            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 2%, 74%, 1)" } }
-          },
-          {
-            "data_type": "text",
-            "id": "wn6x4PGlMJ",
-            "position": { "x": 0, "y": 5 },
-            "text_content": "Air conditioning (ON/OFF)",
-            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 4%, 74%, 1)" } }
-          },
-          {
-            "data_type": "text",
-            "id": "uYivoGlTwZ",
-            "position": { "x": 1, "y": 5 },
-            "text_content": "OFF",
-            "theme": { "color": { "background": "hsla(223, 11%, 13%, 1)", "font": "hsla(250, 1%, 65%, 1)" } }
+        "number_format": { "decimals": 1, "show_thousand": false },
+        "range": { "type": "minmax", "minimum": 0, "maximum": 100 },
+        "show_variables": false,
+        "theme": {
+          "color": {
+            "background": "hsla(206, 17%, 18%, 1)",
+            "background_blur": null,
+            "header": null,
+            "fill": "hsla(24, 95%, 48%, 1)",
+            "text_border": null,
+            "text": "hsla(250, 3%, 83%, 1)",
+            "outline": null
           }
-        ]
+        }
       },
       "created_at": "2025-04-16T14:10:45.768Z",
-      "updated_at": "2025-04-16T14:15:03.062Z",
+      "updated_at": "2025-04-16T18:23:03.091Z",
       "resource": [],
       "cache": null,
       "mock_data": [
         {
-          "data": { "query": "last_value", "bucket": "6759891f53301e0008a41052", "origin": "6759891f53301e0008a41052", "variables": ["fuel_level", "trip_odometer", "speed"] },
+          "data": { "query": "last_value", "origin": "6759891f53301e0008a41052", "variables": ["fuel_level"], "bucket": "6759891f53301e0008a41052" },
           "result": [
             {
               "id": "6770f3a3cd6e6200090f6bbd",
@@ -1150,17 +824,315 @@
               "device": "6759891f53301e0008a41052",
               "origin": "6759891f53301e0008a41052",
               "serie": "1735455651211"
-            },
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67ffba650c797f000ab2f3dd",
+      "analysis_run": null,
+      "label": "Location",
+      "realtime": "true",
+      "type": "map",
+      "data": [{ "qty": 20, "bucket": "6759891f53301e0008a41052", "origin": "67ffbaf074a042000a6c64d3", "timezone": "America/Sao_Paulo", "variables": ["location"] }],
+      "display": {
+        "center_options": { "center_all_variables": true, "show_only_last_values": false, "variables": [] },
+        "geofence": { "enable_user": false, "events_type": "static", "limit": 100, "type_enable_user": "all", "events_label": "Event" },
+        "header_buttons": [],
+        "help": "",
+        "infobox_config": { "date_format": "", "image": { "behavior": "landscape", "object_fit": "fill", "position": "top" } },
+        "initial_mode": "dark",
+        "max_points": "20",
+        "timezone": { "id": "America/Sao_Paulo", "label": "(GMT-03:00) Sao Paulo" },
+        "variables": [
+          {
+            "origin": "67ffbaf074a042000a6c64d3",
+            "variable": "location",
+            "bucket": "6759891f53301e0008a41052",
+            "pin_id": "xSj6rQvWEgZEtnr8Da9zE",
+            "data_params": { "interval": null, "query": null, "function": null, "value": null, "period": { "start_date": null, "end_date": null } }
+          }
+        ],
+        "show_last_update": false,
+        "show_lines": true,
+        "show_lines_animated": true,
+        "group_markers": true,
+        "initial_zoom": "70",
+        "frame_settings": { "header_visibility": "show_on_hover" }
+      },
+      "created_at": "2025-04-16T14:10:45.768Z",
+      "updated_at": "2025-04-16T14:13:55.293Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": { "qty": 20, "bucket": "6759891f53301e0008a41052", "origin": "6759891f53301e0008a41052", "timezone": "America/Sao_Paulo", "variables": ["location"] },
+          "result": [
             {
-              "id": "6770f3a3cd6e6200090f6bbf",
+              "id": "6770f3a3cd6e6200090f6bbc",
               "time": "2024-12-29T07:00:51.214Z",
-              "value": 0.19,
-              "variable": "trip_odometer",
+              "value": "41.886912,-87.631934",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.631934, 41.886912] },
               "group": "1735455651211",
               "device": "6759891f53301e0008a41052",
               "origin": "6759891f53301e0008a41052",
               "serie": "1735455651211"
             },
+            {
+              "id": "6770f351c5b98c0009300182",
+              "time": "2024-12-29T06:59:29.120Z",
+              "value": "41.887392,-87.626122",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.626122, 41.887392] },
+              "group": "1735455569118",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455569118"
+            },
+            {
+              "id": "6770f2ebc5b98c00092ff5c4",
+              "time": "2024-12-29T06:57:47.276Z",
+              "value": "41.887392,-87.626122",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.626122, 41.887392] },
+              "group": "1735455467274",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455467274"
+            },
+            {
+              "id": "6770f23af3765e0009150970",
+              "time": "2024-12-29T06:54:50.665Z",
+              "value": "41.888286,-87.625221",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.625221, 41.888286] },
+              "group": "1735455290662",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455290662"
+            },
+            {
+              "id": "6770f2397b584e0009650876",
+              "time": "2024-12-29T06:54:49.902Z",
+              "value": "41.888286,-87.625221",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.625221, 41.888286] },
+              "group": "1735455289900",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455289900"
+            },
+            {
+              "id": "6770f192ee077b0009362b0e",
+              "time": "2024-12-29T06:52:02.675Z",
+              "value": "41.88833,-87.624792",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.624792, 41.88833] },
+              "group": "1735455122673",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455122673"
+            },
+            {
+              "id": "6770f11ef3765e000914ed34",
+              "time": "2024-12-29T06:50:06.121Z",
+              "value": "41.88757,-87.624448",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.624448, 41.88757] },
+              "group": "1735455006118",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735455006118"
+            },
+            {
+              "id": "6770f0d0830401000926c8a1",
+              "time": "2024-12-29T06:48:48.107Z",
+              "value": "41.884407,-87.624448",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.624448, 41.884407] },
+              "group": "1735454928105",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454928105"
+            },
+            {
+              "id": "6770f00c5e5f2e00096b38af",
+              "time": "2024-12-29T06:45:32.095Z",
+              "value": "41.883297,-87.624205",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.624205, 41.883297] },
+              "group": "1735454732092",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454732092"
+            },
+            {
+              "id": "6770efe1830401000926ae67",
+              "time": "2024-12-29T06:44:49.249Z",
+              "value": "41.877378,-87.624205",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.624205, 41.877378] },
+              "group": "1735454689247",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454689247"
+            },
+            {
+              "id": "6770ef5422502900099b203c",
+              "time": "2024-12-29T06:42:28.596Z",
+              "value": "41.877175,-87.624205",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.624205, 41.877175] },
+              "group": "1735454548593",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454548593"
+            },
+            {
+              "id": "6770eec67b584e000964b2c1",
+              "time": "2024-12-29T06:40:06.583Z",
+              "value": "41.875697,-87.625454",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.625454, 41.875697] },
+              "group": "1735454406578",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454406578"
+            },
+            {
+              "id": "6770ee959b359200092b6c95",
+              "time": "2024-12-29T06:39:17.389Z",
+              "value": "41.875697,-87.626132",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.626132, 41.875697] },
+              "group": "1735454357386",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454357386"
+            },
+            {
+              "id": "6770eddc5228b40009338d4b",
+              "time": "2024-12-29T06:36:12.077Z",
+              "value": "41.875569,-87.632495",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.632495, 41.875569] },
+              "group": "1735454172074",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454172074"
+            },
+            {
+              "id": "6770edab22502900099af538",
+              "time": "2024-12-29T06:35:23.404Z",
+              "value": "41.875501,-87.633624",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.633624, 41.875501] },
+              "group": "1735454123402",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735454123402"
+            },
+            {
+              "id": "6770ed1eee077b000935b810",
+              "time": "2024-12-29T06:33:02.684Z",
+              "value": "41.876783,-87.633713",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.633713, 41.876783] },
+              "group": "1735453982682",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453982682"
+            },
+            {
+              "id": "6770ec63ba8c4b000903a6a7",
+              "time": "2024-12-29T06:29:55.661Z",
+              "value": "41.876808,-87.634225",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.634225, 41.876808] },
+              "group": "1735453795658",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453795658"
+            },
+            {
+              "id": "6770ec61f3765e0009146057",
+              "time": "2024-12-29T06:29:53.433Z",
+              "value": "41.876808,-87.634557",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.634557, 41.876808] },
+              "group": "1735453793430",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453793430"
+            },
+            {
+              "id": "6770ebacc5b98c00092f2d3d",
+              "time": "2024-12-29T06:26:52.029Z",
+              "value": "41.876816,-87.636808",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.636808, 41.876816] },
+              "group": "1735453612026",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453612026"
+            },
+            {
+              "id": "6770eb326b084c000902c9ca",
+              "time": "2024-12-29T06:24:50.166Z",
+              "value": "41.876816,-87.636808",
+              "variable": "location",
+              "location": { "type": "Point", "coordinates": [-87.636808, 41.876816] },
+              "group": "1735453490164",
+              "device": "6759891f53301e0008a41052",
+              "origin": "6759891f53301e0008a41052",
+              "serie": "1735453490164"
+            }
+          ],
+          "cacheTime": null
+        }
+      ]
+    },
+    {
+      "id": "67ffba650c797f000ab2f3e3",
+      "analysis_run": null,
+      "label": "Bus Speed",
+      "realtime": "1",
+      "type": "angular",
+      "data": [{ "query": "last_value", "origin": "67ffbaf074a042000a6c64d3", "variables": ["speed"] }],
+      "display": {
+        "alias": "",
+        "formula": { "formula_type": "fixed", "unit_type": "fixed", "fixed_unit": "MPH" },
+        "header_buttons": [{ "color": null, "icon": "", "text": "", "trigger": "widget", "widget": null }],
+        "help": "",
+        "number_format": { "decimals": "2" },
+        "range": { "type": "minmax", "minimum": 0, "maximum": 50 },
+        "show_variables": false,
+        "theme": {
+          "color": {
+            "background": "hsla(206, 17%, 18%, 1)",
+            "background_blur": 0,
+            "header": null,
+            "fill": "hsla(54, 72%, 63%, 1)",
+            "text_border": null,
+            "text": "hsla(250, 3%, 83%, 1)",
+            "outline": null,
+            "needle": "hsla(250, 2%, 77%, 1)",
+            "tick": "hsla(250, 2%, 79%, 1)",
+            "hue": null
+          }
+        }
+      },
+      "created_at": "2025-04-16T14:10:45.768Z",
+      "updated_at": "2025-04-16T14:14:13.944Z",
+      "resource": [],
+      "cache": null,
+      "mock_data": [
+        {
+          "data": { "query": "last_value", "origin": "6759891f53301e0008a41052", "variables": ["speed"], "bucket": "6759891f53301e0008a41052" },
+          "result": [
             {
               "id": "6770f3a3cd6e6200090f6bbe",
               "time": "2024-12-29T07:00:51.214Z",
