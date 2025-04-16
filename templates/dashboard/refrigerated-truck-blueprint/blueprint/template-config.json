@@ -1,0 +1,17 @@
+{
+  "type": "blueprint",
+  "use_mock": true,
+  "setup": {
+    "blueprints": [
+      {
+        "id": "67ffb7273b56fa000aea9fc0",
+        "name": "truck",
+        "type": "device",
+        "label": "Truck",
+        "conditions": [{ "key": "device_type", "value": "refrigerated_truck" }],
+        "filter_conditions": []
+      }
+    ],
+    "analysis": []
+  }
+}
