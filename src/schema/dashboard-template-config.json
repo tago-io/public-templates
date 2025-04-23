@@ -78,6 +78,7 @@
                 "type": "string",
                 "description": "Blueprint ID to be replaced in the template installation."
               },
+
               "type": {
                 "type": "string",
                 "enum": [
@@ -91,6 +92,26 @@
               },
               "description": {
                 "type": "string"
+              },
+              "label": {
+                "type": "string",
+                "description": "Label for the blueprint."
+              },
+              "placeholder": {
+                "type": "string",
+                "description": "placeholder for the blueprint."
+              },
+              "tag_to_replace": {
+                "type": "string",
+                "description": "tag_to_replace for the blueprint."
+              },
+              "use_item_label_tag": {
+                "type": "boolean",
+                "description": "use_item_label_tag for the blueprint."
+              },
+              "hide_when_empty": {
+                "type": "boolean",
+                "description": "hide_when_empty for the blueprint."
               },
               "conditions": {
                 "type": "array",
