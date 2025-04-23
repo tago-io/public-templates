@@ -18,6 +18,11 @@ const zBlueprintsField = z.object({
   type: z.enum(["device", "entity"]),
   name: z.string(),
   description: z.string().nullish(),
+  label: z.string().nullish(),
+  placeholder: z.string().nullish(),
+  tag_to_replace: z.string().nullish(),
+  use_item_label_tag: z.boolean().nullish(),
+  hide_when_empty: z.boolean().nullish(),
   conditions: z.array(
     z.object({
       key: z.string(),
